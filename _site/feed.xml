@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vincent Tao HU</title>
+    <description>some thoughts about blog
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 21 Mar 2020 23:10:28 +0100</pubDate>
+    <lastBuildDate>Sat, 21 Mar 2020 23:10:28 +0100</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>ML Research Job Hunt</title>
+        <description>&lt;!-- # ML Research Job Hunt --&gt;
+
+&lt;p&gt;Test&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 29 Dec 2019 15:49:00 +0100</pubDate>
+        <link>http://localhost:4000/ml/2019/12/29/how_to_get_that_job.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ml/2019/12/29/how_to_get_that_job.html</guid>
+        
+        
+        <category>ml</category>
+        
+      </item>
+    
+  </channel>
+</rss>
