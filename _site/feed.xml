@@ -2,28 +2,88 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vincent Tao HU</title>
-    <description>some thoughts about blog
+    <description>research summary and random thoughts
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 23 Mar 2020 15:39:56 +0100</pubDate>
-    <lastBuildDate>Mon, 23 Mar 2020 15:39:56 +0100</lastBuildDate>
+    <pubDate>Mon, 23 Mar 2020 18:03:35 +0100</pubDate>
+    <lastBuildDate>Mon, 23 Mar 2020 18:03:35 +0100</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
         <title>Semi-supervised learning by Normalization Flow</title>
-        <description>&lt;h1 id=&quot;basic-solutions&quot;&gt;Basic solutions&lt;/h1&gt;
+        <description>&lt;h1 id=&quot;basic-solution&quot;&gt;Basic solution&lt;/h1&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;one&lt;/li&gt;
-  &lt;li&gt;two&lt;/li&gt;
-  &lt;li&gt;three&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Train:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L(\theta) = \sum_{(x_{i},y_{i}) \in labelled} log p_{\theta} (x_{i}, y_{i}) + \sum_{x_{j} \in unlabelled} log p_{\theta}(x_{j})&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;p_{\theta} (x_{i}, y_{i})&lt;/script&gt; can be solved by(1). &lt;em&gt;Hybrid models&lt;/em&gt;&lt;sup id=&quot;fnref:hybridmodel&quot;&gt;&lt;a href=&quot;#fn:hybridmodel&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; or (2). further decomposed as&lt;script type=&quot;math/tex&quot;&gt;p_{\theta} (x_{i}, y_{i}) = p_{\theta}(y_{i}) * p_{\theta}(x_{i}|y_{i})&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;(1). Hybrid model decompose
+&lt;script type=&quot;math/tex&quot;&gt;p_{\theta} (x_{i}, y_{i})&lt;/script&gt;  to  &lt;script type=&quot;math/tex&quot;&gt;p_{\theta}(x_{i})*p_{\theta}(y_{i}|x_{i})&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;This paper  use Generalized Linear Models(GLM) to model 
+ &lt;script type=&quot;math/tex&quot;&gt;p(y_{i}|x_{i})&lt;/script&gt;, P(x) is modeled by Normalization Flow.&lt;/p&gt;
+
+&lt;p&gt;(2). &lt;script type=&quot;math/tex&quot;&gt;p(x_{i})&lt;/script&gt; is modeled by normalization flow, &lt;script type=&quot;math/tex&quot;&gt;p(x_{i}|y_{i})&lt;/script&gt; is modeled by conditional normalization flow(novelty lies in).&lt;/p&gt;
+
+&lt;p&gt;Testing:
+&lt;script type=&quot;math/tex&quot;&gt;p(y|x) = p(x,y)/p(x)&lt;/script&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h4&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:hybridmodel&quot;&gt;
+      &lt;p&gt;Hybrid Models with Deep and Invertible Features, ICML19. &lt;a href=&quot;#fnref:hybridmodel&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 
 </description>
         <pubDate>Sun, 22 Mar 2020 15:49:00 +0100</pubDate>
         <link>http://localhost:4000/ml/2020/03/22/semi_supervised_learning_by_normalization_flow.html</link>
         <guid isPermaLink="true">http://localhost:4000/ml/2020/03/22/semi_supervised_learning_by_normalization_flow.html</guid>
+        
+        
+        <category>ml</category>
+        
+      </item>
+    
+      <item>
+        <title>Mutual Information in Deep Learning</title>
+        <description>&lt;h1 id=&quot;basic-solution&quot;&gt;Basic solution&lt;/h1&gt;
+
+&lt;p&gt;Train:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L(\theta) = \sum_{(x_{i},y_{i}) \in labelled} log p_{\theta} (x_{i}, y_{i}) + \sum_{x_{j} \in unlabelled} log p_{\theta}(x_{j})&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;p_{\theta} (x_{i}, y_{i})&lt;/script&gt; can be solved by(1). &lt;em&gt;Hybrid models&lt;/em&gt;&lt;sup id=&quot;fnref:hybridmodel&quot;&gt;&lt;a href=&quot;#fn:hybridmodel&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; or (2). further decomposed as&lt;script type=&quot;math/tex&quot;&gt;p_{\theta} (x_{i}, y_{i}) = p_{\theta}(y_{i}) * p_{\theta}(x_{i}|y_{i})&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;(1). Hybrid model decompose
+&lt;script type=&quot;math/tex&quot;&gt;p_{\theta} (x_{i}, y_{i})&lt;/script&gt;  to  &lt;script type=&quot;math/tex&quot;&gt;p_{\theta}(x_{i})*p_{\theta}(y_{i}|x_{i})&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;This paper  use Generalized Linear Models(GLM) to model 
+ &lt;script type=&quot;math/tex&quot;&gt;p(y_{i}|x_{i})&lt;/script&gt;, P(x) is modeled by Normalization Flow.&lt;/p&gt;
+
+&lt;p&gt;(2). &lt;script type=&quot;math/tex&quot;&gt;p(x_{i})&lt;/script&gt; is modeled by normalization flow, &lt;script type=&quot;math/tex&quot;&gt;p(x_{i}|y_{i})&lt;/script&gt; is modeled by conditional normalization flow(novelty lies in).&lt;/p&gt;
+
+&lt;p&gt;Testing:
+&lt;script type=&quot;math/tex&quot;&gt;p(y|x) = p(x,y)/p(x)&lt;/script&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h4&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:hybridmodel&quot;&gt;
+      &lt;p&gt;Hybrid Models with Deep and Invertible Features, ICML19. &lt;a href=&quot;#fnref:hybridmodel&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Sun, 22 Mar 2020 15:49:00 +0100</pubDate>
+        <link>http://localhost:4000/ml/2020/03/22/mutual_information_in_deeplearning.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ml/2020/03/22/mutual_information_in_deeplearning.html</guid>
         
         
         <category>ml</category>

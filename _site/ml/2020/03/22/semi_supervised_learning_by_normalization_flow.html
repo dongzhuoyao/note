@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Semi-supervised learning by Normalization Flow</title>
-  <meta name="description" content="Basic solutions">
+  <meta name="description" content="Basic solution">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://localhost:4000/ml/2020/03/22/semi_supervised_learning_by_normalization_flow.html">
@@ -18,23 +18,16 @@
 
   <link rel="stylesheet" href="/css/blogposts.css">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/resources/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/resources/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/resources/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/resources/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/resources/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/resources/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/resources/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/resources/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/resources/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="http://localhost:4000/resources/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/resources/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="http://localhost:4000/resources/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/resources/favicon/favicon-16x16.png">
-    <link rel="manifest" href="http://localhost:4000/resources/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="http://localhost:4000/resources/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/resources/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/resources/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/resources/favicon/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:4000/resources/favicon/site.webmanifest">
+<link rel="mask-icon" href="http://localhost:4000/resources/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!--https://realfavicongenerator.net/favicon_result?file_id=p1e445a6m31cgavri1pnl1i0nojp6#.Xnjq_5NKhhE
+-->
 </head>
 
 
@@ -99,19 +92,88 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <h1 id="basic-solutions">Basic solutions</h1>
+    <h1 id="basic-solution">Basic solution</h1>
 
-<ul>
-  <li>one</li>
-  <li>two</li>
-  <li>three</li>
-</ul>
+<p>Train:</p>
+
+<script type="math/tex; mode=display">L(\theta) = \sum_{(x_{i},y_{i}) \in labelled} log p_{\theta} (x_{i}, y_{i}) + \sum_{x_{j} \in unlabelled} log p_{\theta}(x_{j})</script>
+
+<p><script type="math/tex">p_{\theta} (x_{i}, y_{i})</script> can be solved by(1). <em>Hybrid models</em><sup id="fnref:hybridmodel"><a href="#fn:hybridmodel" class="footnote">1</a></sup> or (2). further decomposed as<script type="math/tex">p_{\theta} (x_{i}, y_{i}) = p_{\theta}(y_{i}) * p_{\theta}(x_{i}|y_{i})</script></p>
+
+<p>(1). Hybrid model decompose
+<script type="math/tex">p_{\theta} (x_{i}, y_{i})</script>  to  <script type="math/tex">p_{\theta}(x_{i})*p_{\theta}(y_{i}|x_{i})</script></p>
+
+<p>This paper  use Generalized Linear Models(GLM) to model 
+ <script type="math/tex">p(y_{i}|x_{i})</script>, P(x) is modeled by Normalization Flow.</p>
+
+<p>(2). <script type="math/tex">p(x_{i})</script> is modeled by normalization flow, <script type="math/tex">p(x_{i}|y_{i})</script> is modeled by conditional normalization flow(novelty lies in).</p>
+
+<p>Testing:
+<script type="math/tex">p(y|x) = p(x,y)/p(x)</script></p>
+
+<h4 id="footnotes">Footnotes</h4>
+<div class="footnotes">
+  <ol>
+    <li id="fn:hybridmodel">
+      <p>Hybrid Models with Deep and Invertible Features, ICML19. <a href="#fnref:hybridmodel" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 
 
   </div>
   
+    <div class="share-bar">
+  <h3>Share this:</h3>
+  <div class="share-buttons">
+    <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fexample.com%2F" -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fml%2F2020%2F03%2F22%2Fsemi_supervised_learning_by_normalization_flow.html"
+    class="share-button facebook" target="_blank">
+      <i class="fa fa-facebook-square"></i>Facebook
+    </a>
+
+    <a  href="https://twitter.com/intent/tweet?text=Semi-supervised learning by Normalization Flow&url=http://localhost:4000/ml/2020/03/22/semi_supervised_learning_by_normalization_flow.html"
+    class="share-button twitter" target="_blank">
+      <i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter
+    </a>
+
+    <a  href="https://plus.google.com/share?url=http://localhost:4000/ml/2020/03/22/semi_supervised_learning_by_normalization_flow.html"
+    class="share-button google-plus" target="_blank">
+      <i class="fa fa-google-plus-square" aria-hidden="true"></i>Google+
+    </a>
+
+    <a  href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/ml/2020/03/22/semi_supervised_learning_by_normalization_flow.html&title=Semi-supervised learning by Normalization Flow&summary=&source=Vincent Tao HU"
+    class="share-button linkedin"
+    target="_blank">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a>
+  </div>
+</div>
+
+  
   <div style="padding: 20px;"></div>
+  
+    <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://http-taohu-me-blog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
   
 
 </article>
@@ -153,7 +215,7 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>some thoughts about blog
+        <p>research summary and random thoughts
 </p>
       </div>
     </div>

@@ -1,9 +1,9 @@
 ---
 layout: draft
-title: "Semi-supervised learning by Normalization Flow"
+title: "Mutual Information in Deep Learning"
 date: 2020-03-22 14:49:0 +0000
 comments: True
-share: True
+share: False
 categories: ml
 ---
 
