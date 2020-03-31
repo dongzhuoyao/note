@@ -7,7 +7,7 @@ share: False
 categories: ml
 ---
 
-# Basic solution
+## Basic solution
 
 Train:
 
@@ -40,6 +40,8 @@ $$ is modeled by conditional normalization flow(novelty lies in).
 
 Testing:
 $$p(y|x) = p(x,y)/p(x)$$
+
+## Mean Teacher
 
 #### Footnotes
 * footnotes will be placed here. This line is necessary

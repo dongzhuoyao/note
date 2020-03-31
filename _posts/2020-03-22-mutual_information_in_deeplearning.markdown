@@ -6,11 +6,15 @@ comments: False
 share: False
 categories: ml
 ---
+<!--
+https://www.zhihu.com/question/355779873/answer/895625711
 
-## Self-supervised learning
+https://zhuanlan.zhihu.com/p/108906502
 
-CPC: Representation Learning with
-Contrastive Predictive Coding
+
+-->
+
+## CPC: Representation Learning with Contrastive Predictive Coding,Arxiv18
 
 ### Basic idea
 
@@ -53,6 +57,8 @@ A futher provement relating InfoNCE and $$
 p(d=i|X,c_{t})$$ can be seen in supplimentary file.
 
 After finishing traing by InfoNCE loss, the $$g_{enc}$$ is trained optimally so that it can be utilized in many downstream tasks.
+
+## [CMC: Contrastive Multiview Coding](http://people.csail.mit.edu/yonglong/yonglong/cmc_icml_workshop.pdf)
 
 
 
