@@ -41,6 +41,10 @@ $$ is modeled by conditional normalization flow(novelty lies in).
 Testing:
 $$p(y|x) = p(x,y)/p(x)$$
 
+#### Semi-supervised image classification
+
+#### Semi-supervised semantic segmentation
+
 ## Mean Teacher
 
 #### Footnotes
