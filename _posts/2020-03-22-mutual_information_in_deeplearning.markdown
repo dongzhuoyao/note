@@ -7,7 +7,14 @@ share: False
 categories: ml
 ---
 
-# Basic solution
+# Self-supervised learning
+
+CPC: Representation Learning with
+Contrastive Predictive Coding
+
+Basic idea:
+
+
 
 
 

@@ -9,6 +9,16 @@ categories: ml
 
 # Basic solution
 
+Capsule network[^capsule]
+
+
+#### Footnotes
+* footnotes will be placed here. This line is necessary
+{:footnotes}
+
+[^capsule]: Stacked capsule autoencoders, NIPS19.
+
+
 
 
 
