@@ -11,7 +11,7 @@ categories: cv
 https://www.zhihu.com/question/355779873
 
 -->
-## [K-pair Loss,NIPS16](Improved Deep Metric Learning with Multi-class N-pair Loss Objective)
+## [K-pair Loss: Improved Deep Metric Learning with Multi-class N-pair Loss Objective,NIPS16](https://papers.nips.cc/paper/6200-improved-deep-metric-learning-with-multi-class-n-pair-loss-objective)
 
 
 ## CPC
@@ -23,6 +23,8 @@ https://www.zhihu.com/question/355779873
 ## AMDIM
 
 ## MoCO
+
+## SimCLR
 
 
 

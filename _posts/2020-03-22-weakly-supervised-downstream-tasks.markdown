@@ -9,6 +9,10 @@ categories: cv
 
 ## Weakly-supervised object detection
 
+#### [Adversarial Complementary Learning for Weakly Supervised Object Localization(CVPR18)](https://arxiv.org/abs/1804.06962): an intuitive,simple,elegant way to do adversarial erasing, but only focused on simple dataset: ILSVRC, Caltech256 and CUB-200-2011(mostly contain single object per image). How about three classifiers? can the performance be further boosted?
+
+#### Evaluating Weakly Supervised Object Localization Methods Right(CVPR20): this task is ill.
+
 ## Weakly-supervised image segmentation
 
 ## co-segmentation, co-detection
