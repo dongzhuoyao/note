@@ -13,6 +13,13 @@ https://www.zhihu.com/question/382802283/answer/1118867880
 -->
 
 
+#### [Hyperbolic Image Embeddings](https://arxiv.org/pdf/1904.02239.pdf)
+
+Useful for image classification, retrieval, few-shot learning
+
+
+
+
 
 
 

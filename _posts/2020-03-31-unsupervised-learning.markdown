@@ -26,6 +26,7 @@ https://www.zhihu.com/question/355779873
 
 ## SimCLR
 
+How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from [CVPR20](https://arxiv.org/abs/2003.14323)
 
 
 
