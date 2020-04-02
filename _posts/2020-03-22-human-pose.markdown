@@ -17,3 +17,11 @@ for Skeleton-Based Action Recognition
 
 ## skeleton-based action recognition
 
+## person image synthesis
+
+A challenging problem in
+areas of Computer Vision and Computer Graphics, has huge
+potential applications for image editing, movie making, person re-identification (Re-ID), virtual clothes try-on and so on. 
+
+hard to evaluate.
+
