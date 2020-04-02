@@ -10,6 +10,9 @@ categories: cv
 
 https://www.zhihu.com/question/355779873
 
+https://loewex.github.io/GreedyInfoMax.html
+
+
 -->
 ## [K-pair Loss: Improved Deep Metric Learning with Multi-class N-pair Loss Objective,NIPS16](https://papers.nips.cc/paper/6200-improved-deep-metric-learning-with-multi-class-n-pair-loss-objective)
 
@@ -25,6 +28,8 @@ https://www.zhihu.com/question/355779873
 ## MoCO
 
 ## SimCLR
+
+## Greedy InfoMax
 
 How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from [CVPR20](https://arxiv.org/abs/2003.14323)
 
