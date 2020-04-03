@@ -31,6 +31,7 @@ https://loewex.github.io/GreedyInfoMax.html
 
 ## Greedy InfoMax
 
+
 How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from [CVPR20](https://arxiv.org/abs/2003.14323)
 
 
