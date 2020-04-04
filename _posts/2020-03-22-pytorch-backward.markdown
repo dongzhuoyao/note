@@ -106,7 +106,7 @@ inplace=True means that it will modify the input directly, without allocating an
 
 ## Reference
 
-- [colab]([https://colab.research.google.com/drive/1US3uQNTWUse1-D_4oK5TlKBRfAbrZmxD](https://colab.research.google.com/drive/1US3uQNTWUse1-D_4oK5TlKBRfAbrZmxD))
+- [colab](https://colab.research.google.com/drive/1US3uQNTWUse1-D_4oK5TlKBRfAbrZmxD)
 - [https://zhuanlan.zhihu.com/p/83517817](https://zhuanlan.zhihu.com/p/83517817)
 - [https://zhuanlan.zhihu.com/p/56924766](https://zhuanlan.zhihu.com/p/56924766)
 
