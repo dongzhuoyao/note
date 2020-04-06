@@ -7,15 +7,18 @@ share: False
 categories: ml
 ---
 
-## Classification
-
-## Segmentation
-
 ## Detection
 
 #### Anchor-free
 
-- [CenterNet](https://arxiv.org/pdf/1904.07850.pdf):
+- [CenterNet](https://arxiv.org/pdf/1904.07850.pdf): no anchor any more; we only have one positive “anchor” per object, and hence do not need NonMaximum Suppression (NMS);a larger output resolution (output stride of 4) compared to traditional object detectors(output stride of 16). We use a single network to predict
+the keypoints Yˆ , offset Oˆ(recover the discretization error caused by the output
+stride,), and size Sˆ(regress the width and width of bboxes). The network predicts a total of C + 4 outputs at each location. All outputs share a common fully-convolutional backbone network. Compared with **CornerNet,ExtremeNet**, they require a combinatorial grouping stage after keypoint detection, which significantly slows
+down each algorithm.
+- [CornerNet,ECCV18](https://arxiv.org/pdf/1808.01244.pdf):A convolutional network outputs a heatmap
+for all top-left corners, a heatmap for all bottom-right corners, and an embedding vector for each detected corner. The network is trained to predict similar embeddings for corners that belong to the same object.
+- [ExtremeNet,CVPR19](https://arxiv.org/pdf/1901.08043.pdf):
+  
 
 #### Different det heads
 
@@ -44,6 +47,24 @@ check [related work part](https://arxiv.org/pdf/1904.06493.pdf),
 
 ## Instance Segmentation
 <!--https://www.zhihu.com/question/360594484-->
+
+#### [SOLOv2](https://arxiv.org/pdf/2003.10152.pdf):
+
+## Classification
+
+## Segmentation
+
+#### [PSANet,ECCV18](https://hszhao.github.io/papers/eccv18_psanet.pdf)
+
+
+
+#### [Context Prior,CVPR20](https://arxiv.org/pdf/2004.01547.pdf)
+Learn a $$WH \times WH$$ affinity matrix,
+k=11 in context aggregation is vital for the functionality of Context Prior, without k=11, CP cannot work.
+
+
+
+- 
 
 
 ## Reference
