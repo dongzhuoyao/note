@@ -56,6 +56,9 @@ check [related work part](https://arxiv.org/pdf/1904.06493.pdf),
 
 #### [PSANet,ECCV18](https://hszhao.github.io/papers/eccv18_psanet.pdf)
 
+#### [DANet](https://arxiv.org/pdf/1809.02983.pdf):non-local on channel and spatial.
+
+
 
 
 #### [Context Prior,CVPR20](https://arxiv.org/pdf/2004.01547.pdf)
