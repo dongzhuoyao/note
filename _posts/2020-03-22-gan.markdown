@@ -4,7 +4,7 @@ title: "Classification, segmentation, detection"
 date: 2020-03-22 14:49:0 +0000
 comments: False
 share: False
-categories: ml
+categories: cv
 ---
 
 #### [CNN-generated images are surprisingly easy to spot... for now,CVPR20](https://arxiv.org/pdf/1912.11035.pdf)
