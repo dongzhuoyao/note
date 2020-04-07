@@ -9,6 +9,9 @@ categories: ml
 
 ## Detection
 
+[Survey 2019](https://link.springer.com/content/pdf/10.1007/s11263-019-01247-4.pdf)
+
+
 #### Anchor-free
 
 - [CenterNet](https://arxiv.org/pdf/1904.07850.pdf): no anchor any more; we only have one positive “anchor” per object, and hence do not need NonMaximum Suppression (NMS);a larger output resolution (output stride of 4) compared to traditional object detectors(output stride of 16). We use a single network to predict
@@ -52,6 +55,42 @@ check [related work part](https://arxiv.org/pdf/1904.06493.pdf),
 
 ## Classification
 
+#### architecture
+
+[HRNet,PAMI20](https://arxiv.org/pdf/1908.07919.pdf), check Fig 2.
+
+[Res2Net,PAMI20](https://arxiv.org/pdf/1904.01169.pdf):The Res2Net strategy exposes a new dimension, namely scale
+(the number of feature groups in the Res2Net block), as an
+essential factor in addition to existing dimensions of depth,
+width, and cardinality. 
+
+[DHM,CVPR20](https://arxiv.org/pdf/2003.10739.pdf)
+
+
+#### Attention-related
+
+SENet
+
+[CBAM，ECCV18](https://arxiv.org/pdf/1807.06521.pdf): use max pooling and avgpooling together. 
+<!--sss work-->
+
+[SKNet,CVPR19](https://arxiv.org/pdf/1903.06586.pdf): select kernel between $$3 \times 3$$ and $$5 \times 5$$.
+
+[ECA-Net,CVPR20](https://arxiv.org/abs/1910.03151): A improvement based on SENeti with less parameter and better performance. Check Fig 2. do k-d convolution along feature dimension$$1 \times 1 \times C$$ is a little weird for me, there should be no concept of neibourhood in feature dimension.
+
+#### Second-order information
+
+[Bilinear CNN](http://vis-www.cs.umass.edu/bcnn/docs/bcnn_iccv15.pdf):
+
+[MPN-COV](https://arxiv.org/pdf/1703.08050.pdf):
+
+
+#### Visualization-related
+
+CAM
+
+[grad-CAM](https://arxiv.org/abs/1610.02391)
+
 ## Segmentation
 
 #### [PSANet,ECCV18](https://hszhao.github.io/papers/eccv18_psanet.pdf)
@@ -68,11 +107,3 @@ k=11 in context aggregation is vital for the functionality of Context Prior, wit
 
 
 - 
-
-
-## Reference
-
-- [colab](https://colab.research.google.com/drive/1US3uQNTWUse1-D_4oK5TlKBRfAbrZmxD)
-- [https://zhuanlan.zhihu.com/p/83517817](https://zhuanlan.zhihu.com/p/83517817)
-- [https://zhuanlan.zhihu.com/p/56924766](https://zhuanlan.zhihu.com/p/56924766)
-
