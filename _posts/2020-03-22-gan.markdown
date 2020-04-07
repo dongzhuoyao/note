@@ -1,0 +1,19 @@
+---
+layout: draft
+title: "Classification, segmentation, detection"
+date: 2020-03-22 14:49:0 +0000
+comments: False
+share: False
+categories: ml
+---
+
+#### [CNN-generated images are surprisingly easy to spot... for now,CVPR20](https://arxiv.org/pdf/1912.11035.pdf)
+
+classifiers trained to detect CNN-generated images can exhibit a surprising amount of generalization ability across datasets, architectures, and tasks.
+
+#### [Seeing What a GAN Cannot Generate,ICCV19](http://ganseeing.csail.mit.edu/)
+
+- What does a GAN miss in its overall distribution?
+- What does a GAN miss in each individual image?
+
+
