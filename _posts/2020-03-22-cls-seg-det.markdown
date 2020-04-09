@@ -93,6 +93,9 @@ CAM
 
 ## Segmentation
 
+Check the survey [here](https://arxiv.org/pdf/2001.05566.pdf).
+
+
 #### [PSANet,ECCV18](https://hszhao.github.io/papers/eccv18_psanet.pdf)
 
 #### [DANet](https://arxiv.org/pdf/1809.02983.pdf):non-local on channel and spatial.
@@ -104,6 +107,28 @@ CAM
 Learn a $$WH \times WH$$ affinity matrix,
 k=11 in context aggregation is vital for the functionality of Context Prior, without k=11, CP cannot work.
 
+
+## Batch Normalization
+
+check related work in [ICLR20](https://arxiv.org/pdf/2001.06838.pdf).
+
+## Pooling
+
+#### Bilinear Pooling
+
+#### [Strip Pooling,CVPR20](https://arxiv.org/pdf/2003.13328.pdf)
+
+Check Fig2, the spatial dimension doesn't change, why name it ``pooling''?
+
+Unlike the two-dimensional average pooling, the proposed strip pooling averages all the feature values in a row or a column. Given the horizontal and vertical strip pooling layers, it is easy to build long-range dependencies between regions distributed discretely and encode regions with the banded shape, thanks to the long and narrow kernel shape.
+
+check implementation [here](https://github.com/Andrew-Qibin/SPNet/blob/master/models/customize.py).
+
+
+
+#### Spatial Pyramid Pooling
+
+By adopting a set of parallel pooling operations with a unique kernel size at each pyramid level, the network is able to capture largerange context. It has been shown promising on several scene parsing benchmarks.its ability to exploit contextual information is limited since only square kernel shapes are applied. Moreover, the spatial pyramid pooling is only modularized on top of the backbone network thus rendering it is not flexible or directly applicable in the network building block for feature learning. 
 
 
 - 
