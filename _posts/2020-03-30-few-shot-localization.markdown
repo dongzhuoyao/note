@@ -17,7 +17,7 @@ Masked Average Pooling + Cosine similarity, obtain final segmentation result.
 
 [Few-Shot Object Detection with Attention-RPN and Multi-Relation Detector,CVPR20](https://arxiv.org/abs/1908.01998https://arxiv.org/abs/1908.01998)
 
-
+[Context-Transformer: Tackling Object Confusion for Few-Shot Detection,AAAI20](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YangZ.2509.pdf)
 
 ## Few-shot instance segmentation
 
