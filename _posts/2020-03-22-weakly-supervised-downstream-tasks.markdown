@@ -25,7 +25,9 @@ Segmentation in Different Image Domains](https://arxiv.org/pdf/1912.11186.pdf).
 Deep seeded region growing(DSRG) and Boundary loss. see Fig 2. similar work to SEC.
 
 
-## co-segmentation, co-detection
+## co-segmentation, co-detection, [co-saliency detection](https://hzfu.github.io/proj_cosal_review.html)
+
+
 
 ## (multiple images) common-object localization
 
