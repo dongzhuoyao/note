@@ -9,13 +9,21 @@ categories: cv
 
 ## Acctivity classification
 
-[Temporal Pyramid Network for Action Recognition,CVPR20](https://arxiv.org/pdf/2004.03548.pdf):
+**[TEA: Temporal Excitation and Aggregation for Action Recognition,CVPR20](https://arxiv.org/pdf/2004.01398.pdf)**
+
+- the FLOPs of 3D CNN methods is much larger than 2D CNN methods. The superiority of our TEA on Something-Something is quite impressive. Check Table 2.
+- motion excitation module is inspired by SENet, Mutiple temporal aggregation(MTA) is inspired by Res2Net.
+- achieves impressive results at low FLOPs on several action recognition benchmarks, such as Kinetics Something-Something, HMDB51, and UCF101.
+
+
+
+**[Temporal Pyramid Network for Action Recognition,CVPR20](https://arxiv.org/pdf/2004.03548.pdf)**
 
 dataset: Kinetics-400, Something-Something, Epic-Kitchen. 8GPU.
 
 ## Spatial-tempotal localization
 
-[Actions as Moving Points(MOC-detector)](https://arxiv.org/pdf/2001.04608.pdf):
+**[Actions as Moving Points(MOC-detector)](https://arxiv.org/pdf/2001.04608.pdf)**
 
 Anchor-free based activity localization.
 

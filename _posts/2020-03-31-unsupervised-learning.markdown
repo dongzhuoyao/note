@@ -14,6 +14,11 @@ https://loewex.github.io/GreedyInfoMax.html
 
 
 -->
+
+## LeCun's opinion between self-supervised learning and unsupervised learning
+
+[https://www.facebook.com/yann.lecun/posts/10155934004262143](https://www.facebook.com/yann.lecun/posts/10155934004262143)
+
 ## [K-pair Loss: Improved Deep Metric Learning with Multi-class N-pair Loss Objective,NIPS16](https://papers.nips.cc/paper/6200-improved-deep-metric-learning-with-multi-class-n-pair-loss-objective)
 
 

@@ -11,6 +11,10 @@ categories: ml
 
 [Survey 2019](https://link.springer.com/content/pdf/10.1007/s11263-019-01247-4.pdf)
 
+#### Mainstream progress
+
+**[EfficientDet: Scalable and Efficient Object Detection,CVPR20](https://arxiv.org/pdf/1911.09070.pdf)**
+
 
 #### Anchor-free
 
@@ -56,6 +60,8 @@ check [related work part](https://arxiv.org/pdf/1904.06493.pdf),
 ## Classification
 
 #### architecture
+
+**[EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks,ICML19](https://arxiv.org/pdf/1905.11946.pdf)**
 
 [HRNet,PAMI20](https://arxiv.org/pdf/1908.07919.pdf), check Fig 2.
 
