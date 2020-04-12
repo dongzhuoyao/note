@@ -53,6 +53,9 @@ Reviewer's opinion.
 > We further investigate if we can **automatically learn the tau value instead of grid search**. To this end, following cRT, we set tau as a learnable parameter and learn it on the training set with balanced sampling,  while keeping all the other parameters fixed (including both backbone network and classifier). Also, we compare the learned tau value and the corresponding results in the above table (denoted by ‘learn’ = ‘Y’).  This further reduces the manual effort of searching best tau values and make the strategy more accessible for practical usage. We will incorporate these new findings in the paper, and once again, we thank all reviewers for the inspiring comments. All above discussion is updated to our manuscript in Appendix B.5. 
 
 
+
+**[Learning to Segment the Tail,CVPR20](https://arxiv.org/abs/2004.00900)**
+
 **[BBN: Bilateral-Branch Network with Cumulative Learning for Long-Tailed Visual Recognition,CVPR20,oral](https://github.com/Megvii-Nanjing/BBN)**
 
 same intuition as  ICLR20 paper above. check Fig 2.

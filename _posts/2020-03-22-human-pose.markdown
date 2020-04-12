@@ -11,6 +11,8 @@ Combining detection and tracking for human pose estimation in videos
 
 Disentangling and Unifying Graph Convolutions
 for Skeleton-Based Action Recognition
+
+https://zhuanlan.zhihu.com/p/53057942
 -->
 ## Basic solution
 

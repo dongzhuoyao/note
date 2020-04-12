@@ -97,7 +97,7 @@ CAM
 
 [grad-CAM](https://arxiv.org/abs/1610.02391)
 
-## Segmentation
+## Semantic Segmentation
 
 Check the survey [here](https://arxiv.org/pdf/2001.05566.pdf).
 
@@ -113,6 +113,10 @@ Check the survey [here](https://arxiv.org/pdf/2001.05566.pdf).
 Learn a $$WH \times WH$$ affinity matrix,
 k=11 in context aggregation is vital for the functionality of Context Prior, without k=11, CP cannot work.
 
+
+## Instance Segmentation
+
+**[Deep Snake for Real-Time Instance Segmentation,CVPR20,oral](https://arxiv.org/pdf/2001.01629.pdf)**
 
 ## Batch Normalization
 
