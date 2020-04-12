@@ -97,12 +97,59 @@ When we write a atomic operation, we need a backward function to realize autogra
 
 ## Inplace=True
 
-inplace=True means that it will modify the input directly, without allocating any additional output(larger computation graph). It can sometimes slightly decrease the memory usage, but may not always be a valid operation (because the original input is destroyed). However, if you don’t see an error, it means that your use case is valid.
+inplace=True means that it will modify the input directly, without allocating any additional output(extra node/vertex in  computation graph). It can sometimes slightly decrease the memory usage, but may not always be a valid operation (because the original input is destroyed). However, if you don’t see an error, it means that your use case is valid.
 
 
-##  torch.cat 
+## different backward function in pytorch
 
-## torch.mean
+**torch.nn.functional.soft_max**
+
+this is a mapping function from $$B \times C$$ to $$B \times C$$, the derivation is splittable along all dimensions, therefore we can simply consider the scalar case,
+consider $$y_{i}=\frac{exp(x_{i})}{\sum_{j \in C} exp(x_{j})}$$
+
+$$\frac{\partial{y_{i}}}{\partial{x_{i}}} = y_{i}^{2} - y_{i}$$
+
+You can also illustrate it by $$x_{i}$$ by replacing $$y_{i}$$ to $$x_{i}$$, the vector form is:
+
+$$\frac{\partial{Y}}{\partial{X}} = Y^{2} - Y=(sigmoid(X))^{2} - sigmoid(X)$$
+
+**torch.log**
+
+$$y_{i}=log_{e} (x_{i})$$
+
+the gradient is 
+
+$$\frac{\partial{y_{i}}}{\partial{x_{i}}} = \frac{1}{x_{i}}$$
+
+
+
+**nn.LogSoftmax**
+
+$$y_{i}=log(softmax(z_{i})) = log(\frac{exp(x_{i})}{\sum_{j} exp(x_{j})})$$
+
+This is a combination of nn.LogSoftmax and torch.nn.functional.soft_max, use chain rule can solve it.
+
+**torch.NLLLoss**
+
+torch.NLLLoss + nn.LogSoftmax = CrossEntropy Loss
+
+
+**torch.nn.functional.cross_entropy**
+
+$$L= - \sum_{j}^{C} y_{j} log(softmax(x_{j})) = - \sum_{j}^{C} y_{j} log(\frac{exp(x_{y})}{\sum_{m} exp(x_{m})})$$
+
+let $$z_{j}= \frac{exp(x_{y})}{\sum_{m} exp(x_{m})}$$
+
+$$\frac{\partial{L}}{\partial{x_{j}}} = z_{j}-1$$  if $$y_{j}=1$$,
+else $$\frac{\partial{L}}{\partial{x_{j}}} = z_{j}$$
+
+check [here](https://arxiv.org/pdf/2003.05176.pdf)
+
+**torch.cat**
+
+concatenation can be operated between diverse dimensions. As here we only reorganize the tensor and don't change the value, all gradients are just the reverse-organsed(with value unchanged).
+
+**torch.mean**
 
 ## Reference
 
