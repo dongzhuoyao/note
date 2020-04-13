@@ -79,6 +79,10 @@ check [zhihu](https://www.zhihu.com/question/372070853/answer/1082980270), mainl
 
 ## Few-shot segmentation
 
+**[Pyramid Graph Networks with Connection Attentions for Region-Based
+One-Shot Semantic Segmentation,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Zhang_Pyramid_Graph_Networks_With_Connection_Attentions_for_Region-Based_One-Shot_Semantic_ICCV_2019_paper.pdf)**
+
+
 **[One-Shot Segmentation in Clutter,ICML18](https://arxiv.org/pdf/1803.09597.pdf)**
 
 **[CANet: Class-Agnostic Segmentation Networks with Iterative Refinement and
@@ -96,6 +100,8 @@ Masked Average Pooling + Cosine similarity, obtain final segmentation result.
 - The objectness module is trained to segment out all objects in the image.(train the objectness module for 300,000 iterations with batch size 4, which takes about 50 hours on GeForce GTX 1080Ti. )
 - Check Fig 2, support feature, query feature, and objectness feature are congregated by adding operation.
 
+
+**[Attention-based Multi-Context Guiding for Few-Shot Semantic Segmentation](http://taohu.me/pdf/few-shot-seg.pdf)**
 
 ## Few-shot detection
 

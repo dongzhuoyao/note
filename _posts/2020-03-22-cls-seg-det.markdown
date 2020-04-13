@@ -102,14 +102,14 @@ CAM
 Check the survey [here](https://arxiv.org/pdf/2001.05566.pdf).
 
 
-#### [PSANet,ECCV18](https://hszhao.github.io/papers/eccv18_psanet.pdf)
+**[PSANet,ECCV18](https://hszhao.github.io/papers/eccv18_psanet.pdf)**
 
-#### [DANet](https://arxiv.org/pdf/1809.02983.pdf):non-local on channel and spatial.
+**[DANet](https://arxiv.org/pdf/1809.02983.pdf)**
+
+non-local on channel and spatial.
 
 
-
-
-#### [Context Prior,CVPR20](https://arxiv.org/pdf/2004.01547.pdf)
+**[Context Prior,CVPR20](https://arxiv.org/pdf/2004.01547.pdf)**
 Learn a $$WH \times WH$$ affinity matrix,
 k=11 in context aggregation is vital for the functionality of Context Prior, without k=11, CP cannot work.
 
@@ -117,6 +117,12 @@ k=11 in context aggregation is vital for the functionality of Context Prior, wit
 ## Instance Segmentation
 
 **[Deep Snake for Real-Time Instance Segmentation,CVPR20,oral](https://arxiv.org/pdf/2001.01629.pdf)**
+
+
+## Human-object interaction
+
+[Spatial Priming for Detecting Human-Object Interactions,Arxiv2004](https://arxiv.org/pdf/2004.04851.pdf)
+
 
 ## Batch Normalization
 
