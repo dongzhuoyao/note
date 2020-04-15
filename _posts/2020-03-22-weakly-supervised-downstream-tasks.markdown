@@ -9,7 +9,15 @@ categories: cv
 
 ## Weakly-supervised object detection
 
-#### [Adversarial Complementary Learning for Weakly Supervised Object Localization(CVPR18)](https://arxiv.org/abs/1804.06962): an intuitive,simple,elegant way to do adversarial erasing, but only focused on simple dataset: ILSVRC, Caltech256 and CUB-200-2011(mostly contain single object per image). How about three classifiers? can the performance be further boosted?
+**[ADL,Attention-based Dropout Layer for Weakly Supervised Object Localization,CVPR19](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8954302&tag=1)**
+
+propose an Attention-based Dropout Layer (ADL), which utilizes the self-attention mechanism to process the feature maps of the model. The proposed method is composed of two key components: 1) hiding the most
+discriminative part from the model for capturing the integral extent of object, and 2) highlighting the informative region for improving the recognition power of the model. ADL is an auxiliary module which is applied only during training. During the testing phase, ADL is deactivated.
+
+
+**[Adversarial Complementary Learning for Weakly Supervised Object Localization(CVPR18)](https://arxiv.org/abs/1804.06962)**
+
+an intuitive,simple,elegant way to do adversarial erasing, but only focused on simple dataset: ILSVRC, Caltech256 and CUB-200-2011(mostly contain single object per image). How about three classifiers? can the performance be further boosted?
 
 #### [Evaluating Weakly Supervised Object Localization Methods Right(CVPR20)](https://github.com/clovaai/wsolevaluation): this task is ill.
 
