@@ -79,6 +79,8 @@ check [zhihu](https://www.zhihu.com/question/372070853/answer/1082980270), mainl
 
 ## Few-shot segmentation
 
+**[Self-Supervised Tuning for Few-Shot Segmentation,Arxiv2004](https://arxiv.org/pdf/2004.05538.pdf)**
+
 **[Pyramid Graph Networks with Connection Attentions for Region-Based
 One-Shot Semantic Segmentation,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Zhang_Pyramid_Graph_Networks_With_Connection_Attentions_for_Region-Based_One-Shot_Semantic_ICCV_2019_paper.pdf)**
 

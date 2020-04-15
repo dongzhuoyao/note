@@ -15,6 +15,10 @@ categories: ml
 
 **[EfficientDet: Scalable and Efficient Object Detection,CVPR20](https://arxiv.org/pdf/1911.09070.pdf)**
 
+**[Dynamic R-CNN: Towards High Quality Object Detection via Dynamic Training,Arxiv2004](https://arxiv.org/pdf/2004.06002.pdf)
+
+Dynamic R-CNN to adjust the label assignment criteria (IoU threshold) and the shape of regression loss function (parameters of SmoothL1 Loss) automatically based on the statistics of proposals during training
+
 
 #### Anchor-free
 
@@ -59,6 +63,13 @@ check [related work part](https://arxiv.org/pdf/1904.06493.pdf),
 
 ## Classification
 
+
+[Adversarial Examples Improve Image Recognition,CVPR20](https://arxiv.org/pdf/1911.09665.pdf)
+
+ - propose to use two batch norm statistics, one for clean images and one auxiliary for adversarial examples. The two batchnorms properly disentangle the two distributions at normalization layers for accurate statistics estimation. We show this distribution disentangling is crucial, enabling us to successfully improve, rather than degrade, model performance with adversarial examples
+- the first to show adversarial examples can improve model performance in the fully-supervised setting on the large-scale ImageNet dataset.
+- a simple  auxiliary BN design, check Fig 3.
+
 #### architecture
 
 **[EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks,ICML19](https://arxiv.org/pdf/1905.11946.pdf)**
@@ -73,20 +84,13 @@ width, and cardinality.
 [DHM,CVPR20](https://arxiv.org/pdf/2003.10739.pdf)
 
 
-#### Attention-related
 
-SENet
-
-[CBAM，ECCV18](https://arxiv.org/pdf/1807.06521.pdf): use max pooling and avgpooling together. 
-<!--sss work-->
-
-[SKNet,CVPR19](https://arxiv.org/pdf/1903.06586.pdf): select kernel between $$3 \times 3$$ and $$5 \times 5$$.
-
-[ECA-Net,CVPR20](https://arxiv.org/abs/1910.03151): A improvement based on SENeti with less parameter and better performance. Check Fig 2. do k-d convolution along feature dimension$$1 \times 1 \times C$$ is a little weird for me, there should be no concept of neibourhood in feature dimension.
 
 #### Second-order information
 
-[Bilinear CNN](http://vis-www.cs.umass.edu/bcnn/docs/bcnn_iccv15.pdf):
+**[Bilinear CNN](http://vis-www.cs.umass.edu/bcnn/docs/bcnn_iccv15.pdf)**
+
+check code for understading: [https://github.com/HaoMood/bilinear-cnn/blob/master/src/bilinear_cnn_all.py#L71](https://github.com/HaoMood/bilinear-cnn/blob/master/src/bilinear_cnn_all.py#L71)
 
 [MPN-COV](https://arxiv.org/pdf/1703.08050.pdf):
 

@@ -7,6 +7,7 @@ share: False
 categories: ml
 ---
 
-## Basic solution
+
+**[FBNetV2: Differentiable Neural Architecture Search for Spatial and Channel Dimensions,CVPR20](https://arxiv.org/pdf/2004.05565.pdf)**
 
 
