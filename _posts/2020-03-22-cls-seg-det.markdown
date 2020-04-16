@@ -4,31 +4,41 @@ title: "Classification, segmentation, detection"
 date: 2020-03-22 14:49:0 +0000
 comments: False
 share: False
-categories: ml
+categories: cv
 ---
 
 ## Detection
 
-[Survey 2019](https://link.springer.com/content/pdf/10.1007/s11263-019-01247-4.pdf)
+For main progress check [Survey 2019](https://link.springer.com/content/pdf/10.1007/s11263-019-01247-4.pdf)
 
 #### Mainstream progress
 
 **[EfficientDet: Scalable and Efficient Object Detection,CVPR20](https://arxiv.org/pdf/1911.09070.pdf)**
 
-**[Dynamic R-CNN: Towards High Quality Object Detection via Dynamic Training,Arxiv2004](https://arxiv.org/pdf/2004.06002.pdf)
+**[Dynamic R-CNN: Towards High Quality Object Detection via Dynamic Training,Arxiv2004](https://arxiv.org/pdf/2004.06002.pdf)**
 
 Dynamic R-CNN to adjust the label assignment criteria (IoU threshold) and the shape of regression loss function (parameters of SmoothL1 Loss) automatically based on the statistics of proposals during training
 
 
 #### Anchor-free
 
-- [CenterNet](https://arxiv.org/pdf/1904.07850.pdf): no anchor any more; we only have one positive “anchor” per object, and hence do not need NonMaximum Suppression (NMS);a larger output resolution (output stride of 4) compared to traditional object detectors(output stride of 16). We use a single network to predict
-the keypoints Yˆ , offset Oˆ(recover the discretization error caused by the output
-stride,), and size Sˆ(regress the width and width of bboxes). The network predicts a total of C + 4 outputs at each location. All outputs share a common fully-convolutional backbone network. Compared with **CornerNet,ExtremeNet**, they require a combinatorial grouping stage after keypoint detection, which significantly slows
+  **[CenterNet](https://arxiv.org/pdf/1904.07850.pdf)**
+  
+  
+  no anchor any more; we only have one positive “anchor” per object, and hence do not need NonMaximum Suppression (NMS);a larger output resolution (output stride of 4) compared to traditional object detectors(output stride of 16). We use a single network to predict
+the keypoints  , offset (recover the discretization error caused by the output
+stride,), and size (regress the width and width of bboxes). The network predicts a total of C + 4 outputs at each location. All outputs share a common fully-convolutional backbone network. 
+
+Compared with **CornerNet,ExtremeNet**, they require a combinatorial grouping stage after keypoint detection, which significantly slows
 down each algorithm.
-- [CornerNet,ECCV18](https://arxiv.org/pdf/1808.01244.pdf):A convolutional network outputs a heatmap
+
+  **[CornerNet,ECCV18](https://arxiv.org/pdf/1808.01244.pdf)**
+  
+  A convolutional network outputs a heatmap
 for all top-left corners, a heatmap for all bottom-right corners, and an embedding vector for each detected corner. The network is trained to predict similar embeddings for corners that belong to the same object.
-- [ExtremeNet,CVPR19](https://arxiv.org/pdf/1901.08043.pdf):
+
+
+**[ExtremeNet,CVPR19](https://arxiv.org/pdf/1901.08043.pdf)**
   
 
 #### Different det heads
@@ -74,14 +84,18 @@ check [related work part](https://arxiv.org/pdf/1904.06493.pdf),
 
 **[EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks,ICML19](https://arxiv.org/pdf/1905.11946.pdf)**
 
-[HRNet,PAMI20](https://arxiv.org/pdf/1908.07919.pdf), check Fig 2.
+**[HRNet,PAMI20](https://arxiv.org/pdf/1908.07919.pdf)**
 
-[Res2Net,PAMI20](https://arxiv.org/pdf/1904.01169.pdf):The Res2Net strategy exposes a new dimension, namely scale
+check Fig 2.
+
+**[Res2Net,PAMI20](https://arxiv.org/pdf/1904.01169.pdf)**
+
+The Res2Net strategy exposes a new dimension, namely scale
 (the number of feature groups in the Res2Net block), as an
 essential factor in addition to existing dimensions of depth,
 width, and cardinality. 
 
-[DHM,CVPR20](https://arxiv.org/pdf/2003.10739.pdf)
+**[DHM,CVPR20](https://arxiv.org/pdf/2003.10739.pdf)**
 
 
 

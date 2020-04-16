@@ -43,6 +43,25 @@ Check Fig 2.
 
 > use non local networks (i.e self attention) to help compute local relations? 
 
+
+
+
+**[Dynamic Graph Message Passing Networks](https://arxiv.org/pdf/1909.05235.pdf)**
+
+quite similart o deformable convolution. A fundamental difference to deformable convolution is
+that it only learns the offset dependent on the input feature
+while the filter weights are fixed for all inputs. In contrast,
+our model learns the random walk, weight and affinity as
+all being dependent on the input. This property makes our
+weights and affinities position-specific whereas deformable
+convolution shares the same weight across all convolution
+positions in the feature map. learns to sample
+a set of K nodes (where K  9) for message passing globally from the whole feature map. This allows our model to
+capture a larger receptive field than deformable convolution.
+
+
+
+
 **[SKNet,CVPR19](https://arxiv.org/pdf/1903.06586.pdf)**
 
  select kernel between $$3 \times 3$$ and $$5 \times 5$$.

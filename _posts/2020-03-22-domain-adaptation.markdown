@@ -8,6 +8,11 @@ categories: cv
 ---
 
 
+**[Towards Discriminability and Diversity:
+Batch Nuclear-norm Maximization under Label Insufficient Situations,CVPR20,oral](https://arxiv.org/pdf/2003.12237.pdf)**
+
+
+
 **[FDA: Fourier Domain Adaptation for Semantic Segmentation,Arxiv](https://arxiv.org/pdf/2004.05498.pdf)**
 
 
