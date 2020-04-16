@@ -1,6 +1,7 @@
 ---
 layout: draft
 title: "attention mechanism"
+permalink: /attention_mechanism
 date: 2020-03-30 14:49:0 +0000
 comments: False
 share: False
@@ -40,6 +41,9 @@ only one node. It is not designed for regional reasoning
 as our proposed method. Extensive experiments show that
 inserting our GloRe can consistently boost performance of
 state-of-the-art CNN architectures on diverse tasks including image classification, semantic segmentation and video action recognition.
+
+![](../imgs/global_reasoning_unit.png)
+
 
 **[CBAM，ECCV18](https://arxiv.org/pdf/1807.06521.pdf)**
 
