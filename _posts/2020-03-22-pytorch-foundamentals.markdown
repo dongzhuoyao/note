@@ -149,7 +149,14 @@ check [here](https://arxiv.org/pdf/2003.05176.pdf)
 
 concatenation can be operated between diverse dimensions. As here we only reorganize the tensor and don't change the value, all gradients are just the reverse-organsed(with value unchanged).
 
+
 **torch.mean**
+
+
+**Convolution is equivalent with Unfold + Matrix Multiplication + Fold (or view to output shape)**
+
+**[https://colab.research.google.com/drive/10aVzydfnBYWJKXe5SCTxGx0t529kufRd](https://colab.research.google.com/drive/10aVzydfnBYWJKXe5SCTxGx0t529kufRd)**
+
 
 ## Reference
 

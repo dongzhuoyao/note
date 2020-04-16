@@ -7,6 +7,8 @@ share: False
 categories: cv
 ---
 
+**im2col tricks**
+
 
 
 

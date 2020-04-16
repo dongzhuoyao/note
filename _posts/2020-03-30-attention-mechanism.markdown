@@ -6,6 +6,7 @@ date: 2020-03-30 14:49:0 +0000
 comments: False
 share: False
 categories: cv
+tags:   [ First Tag, Second Tag,    Third Tag ]
 ---
 <!--
 todo: https://zhuanlan.zhihu.com/p/33345791
@@ -15,7 +16,7 @@ todo: https://zhuanlan.zhihu.com/p/33345791
 
 **[A2-nets-double-attention-networks,NIPS18](https://papers.nips.cc/paper/7318-a2-nets-double-attention-networks.pdf)**
 
-- global average pooling is used in the gathering process, while the
+For SENet, global average pooling is used in the gathering process, while the
 resulted single global feature is distributed to all locations, ignoring different needs across locations.
 Seeing these shortcomings, we introduce this genetic formulation and propose the Double Attention
 block.
@@ -24,7 +25,12 @@ check demo code: [https://github.com/gjylt/DoubleAttentionNet](https://github.co
 
 [colab demo](https://colab.research.google.com/drive/1sHSWP9Z_dTLH3hkJ5rbdJeWwpQ4GfK9G)
 
+[NeuIPS review](https://media.nips.cc/nipsbooks/nipspapers/paper_files/nips31/reviews/233.html)
+
+
 check figure tensor size illustration: [drive google](https://docs.google.com/presentation/d/1oeBbvqvvzddo6G6j43NaYSW6u0dZrxkMc1yoJS02sgk/edit?usp=sharing).
+
+![](/imgs/DoubleAttentionNetwork_NIPS.png)
 
 **[Graph-Based Global Reasoning Networks,CVPR19](https://arxiv.org/pdf/1811.12814.pdf)**
 
@@ -80,6 +86,30 @@ a set of K nodes (where K  9) for message passing globally from the whole featu
 capture a larger receptive field than deformable convolution.
 
 
+**[Adaptive Pyramid Context Network for Semantic Segmentation,CVPR19](http://openaccess.thecvf.com/content_CVPR_2019/papers/He_Adaptive_Pyramid_Context_Network_for_Semantic_Segmentation_CVPR_2019_paper.pdf)**
+
+unlike non-local with three inputs, the moudule here has only two input. Check Fig 2. Reshaping from $$H\times W \times S^{2}$$ to $$HW \times S^{2}$$ for forming affinity matrix is a little counter-intuitive. 
+
+divide the feature map X of image I into s×s subregions, running adaptive pooling to generate 1x1,2x2,3x3,4x4... region pooled features.
+
+**[Asymmetric Non-local Neural Networks for Semantic Segmentation,ICCV19](https://arxiv.org/pdf/1908.07678.pdf)**
+
+check Fig 1.
+
+
+**[CARAFE: Content-Aware ReAssembly of FEatures,ICCV19](https://arxiv.org/pdf/1905.02188.pdf)**
+
+
+CARAFE can be seamlessly integrated into existing
+frameworks where upsampling operators are needed
+
+CARAFE works as a reassembly operator with contentaware kernels. It consists of two steps. The first step is to
+predict a reassembly kernel for each target location according to its content, and the second step is to reassemble the features with predicted kernels.
+
+check [code](https://github.com/XiaLiPKU/CARAFE/blob/master/carafe.py)
+
+**[Spatial Pyramid Based Graph Reasoning for Semantic Segmentation,CVPR20](https://arxiv.org/pdf/2003.10211.pdf)**
+
 
 
 **[SKNet,CVPR19](https://arxiv.org/pdf/1903.06586.pdf)**
@@ -88,24 +118,24 @@ capture a larger receptive field than deformable convolution.
 
 **[ECA-Net,CVPR20](https://arxiv.org/abs/1910.03151)**
 
- A improvement based on SENeti with less parameter and better performance. Check Fig 2. do k-d convolution along feature dimension$$1 \times 1 \times C$$ is a little weird for me, there should be no concept of neibourhood in feature dimension.
+ An improvement based on SENet with less parameter and better performance. Check Fig 2. do 1D convolution with kernel size k along feature dimension$$1 \times 1 \times C$$ is a little counter-intuitive for me, there should be no concept of 'neibourhood' in feature dimension.
 
 **[Bilinear Attention Networks,NIPS18](https://arxiv.org/pdf/1805.07932.pdf)**
 
 **[Compact Generalized Non-local Network,NIPS](https://papers.nips.cc/paper/7886-compact-generalized-non-local-network.pdf)**
 
-[Stand-Alone Self-Attention in Vision Models,NIPS19](https://arxiv.org/pdf/1906.05909.pdf)
+**[Stand-Alone Self-Attention in Vision Models,NIPS19](https://arxiv.org/pdf/1906.05909.pdf)**
 
-[GCNet: Non-local Networks Meet Squeeze-Excitation Networks and Beyond,ICCV19](https://arxiv.org/abs/1904.11492)
+**[GCNet: Non-local Networks Meet Squeeze-Excitation Networks and Beyond,ICCV19](https://arxiv.org/abs/1904.11492)**
 
-[Exploring Self-attention for Image Recognition,arxiv](http://vladlen.info/papers/self-attention.pdf)
+**[Exploring Self-attention for Image Recognition,arxiv](http://vladlen.info/papers/self-attention.pdf)**
 
 
-[BAM: Bottleneck Attention Module,BMVC18](https://arxiv.org/abs/1807.06514)
+**[BAM: Bottleneck Attention Module,BMVC18](https://arxiv.org/abs/1807.06514)**
 
-[Non-local block,CVPR18](https://arxiv.org/abs/1711.07971)
+**[Non-local block,CVPR18](https://arxiv.org/abs/1711.07971)**
 
-[SENet,CVPR18](https://arxiv.org/abs/1709.01507)
+**[SENet,CVPR18](https://arxiv.org/abs/1709.01507)**
 
 
 ## Applications

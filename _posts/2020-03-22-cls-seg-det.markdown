@@ -100,15 +100,6 @@ width, and cardinality.
 
 
 
-#### Second-order information
-
-**[Bilinear CNN](http://vis-www.cs.umass.edu/bcnn/docs/bcnn_iccv15.pdf)**
-
-check code for understading: [https://github.com/HaoMood/bilinear-cnn/blob/master/src/bilinear_cnn_all.py#L71](https://github.com/HaoMood/bilinear-cnn/blob/master/src/bilinear_cnn_all.py#L71)
-
-[MPN-COV](https://arxiv.org/pdf/1703.08050.pdf):
-
-
 #### Visualization-related
 
 CAM
@@ -131,6 +122,8 @@ non-local on channel and spatial.
 Learn a $$WH \times WH$$ affinity matrix,
 k=11 in context aggregation is vital for the functionality of Context Prior, without k=11, CP cannot work.
 
+Affinity matrix construction is similar to **[Adaptive Pyramid Context Network for Semantic Segmentation,CVPR19](http://openaccess.thecvf.com/content_CVPR_2019/papers/He_Adaptive_Pyramid_Context_Network_for_Semantic_Segmentation_CVPR_2019_paper.pdf)**
+
 
 ## Instance Segmentation
 
@@ -149,6 +142,34 @@ check related work in [ICLR20](https://arxiv.org/pdf/2001.06838.pdf).
 ## Pooling
 
 #### Bilinear Pooling
+
+
+**[Bilinear CNN](http://vis-www.cs.umass.edu/bcnn/docs/bcnn_iccv15.pdf)**
+
+check code for understading: [https://github.com/HaoMood/bilinear-cnn/blob/master/src/bilinear_cnn_all.py#L71](https://github.com/HaoMood/bilinear-cnn/blob/master/src/bilinear_cnn_all.py#L71)
+
+
+**[](http://openaccess.thecvf.com/content_ICCV_2017/papers/Li_Factorized_Bilinear_Models_ICCV_2017_paper.pdf)**
+Although the bilinear pooling is capable of capturing pairwise interactions, it also introduces a quadratic
+number of parameters in weight matrices $$W^{R}_{j}$$ leading to
+huge computational cost and the risk of overfitting.
+
+$$
+y = b + w^{T}x +x^{T}F^{T}Fx
+$$
+
+where $$R \in \mathbb{R}^{k \times n}$$
+
+The key idea of our DropFactor is to randomly drop the bilinear paths corresponding to k factors during the training.
+
+performs nearly the same with bilinear pooling in fine-grained classification task. therefore the author mainly focus on the experimental of traditional classifcation task. check last subsession.
+
+
+
+**[MPN-COV](https://arxiv.org/pdf/1703.08050.pdf)**
+
+
+
 
 #### [Strip Pooling,CVPR20](https://arxiv.org/pdf/2003.13328.pdf)
 
