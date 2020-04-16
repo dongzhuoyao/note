@@ -12,7 +12,7 @@ todo: https://zhuanlan.zhihu.com/p/33345791
 
 ## Variants
 
-**[A2-nets-double-attention-networks,NIPS](https://papers.nips.cc/paper/7318-a2-nets-double-attention-networks.pdf)**
+**[A2-nets-double-attention-networks,NIPS18](https://papers.nips.cc/paper/7318-a2-nets-double-attention-networks.pdf)**
 
 - global average pooling is used in the gathering process, while the
 resulted single global feature is distributed to all locations, ignoring different needs across locations.
@@ -24,6 +24,22 @@ check demo code: [https://github.com/gjylt/DoubleAttentionNet](https://github.co
 [colab demo](https://colab.research.google.com/drive/1sHSWP9Z_dTLH3hkJ5rbdJeWwpQ4GfK9G)
 
 check figure tensor size illustration: [drive google](https://docs.google.com/presentation/d/1oeBbvqvvzddo6G6j43NaYSW6u0dZrxkMc1yoJS02sgk/edit?usp=sharing).
+
+**[Graph-Based Global Reasoning Networks,CVPR19](https://arxiv.org/pdf/1811.12814.pdf)**
+
+
+check [tensor size fig](https://docs.google.com/presentation/d/1AlmSFH0C00f74pgYOV5VaCAdTDuZcg6AwoLVN3huOhA/edit?usp=sharing)
+
+- Different from the recently proposed Non-local Neural Networks (NL-Nets)  and Double Attention Networks  which only focus on delivering information and
+rely on convolution layers for reasoning, our proposed
+model is able to directly reason on relations over regions.
+Similarly, Squeeze-and-Extension Networks (SE-Nets) 
+only focus on incorporating image-level features via global
+average pooling, leading to an interaction graph containing
+only one node. It is not designed for regional reasoning
+as our proposed method. Extensive experiments show that
+inserting our GloRe can consistently boost performance of
+state-of-the-art CNN architectures on diverse tasks including image classification, semantic segmentation and video action recognition.
 
 **[CBAM，ECCV18](https://arxiv.org/pdf/1807.06521.pdf)**
 
