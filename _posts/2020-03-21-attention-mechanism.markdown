@@ -151,3 +151,12 @@ check [code](https://github.com/XiaLiPKU/CARAFE/blob/master/carafe.py)
 ## Applications
 
 Few-shot detection: [Context-Transformer: Tackling Object Confusion for Few-Shot Detection,AAAI20](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YangZ.2509.pdf)
+
+**[Self-Attention Generative Adversarial Networks](https://arxiv.org/pdf/1805.08318.pdf)**
+
+copy non-local block into GAN.
+
+**[Actor-Transformers for Group Activity Recognition,CVPR20](https://isis-data.science.uva.nl/cgmsnoek/pub/gavrilyuk-transformers-cvpr2020.pdf)**
+
+Group Activity Recognition: use non-local block to fuse optical flow, pose, RGB. check Fig 2.
+
