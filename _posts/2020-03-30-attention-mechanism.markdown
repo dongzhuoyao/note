@@ -1,6 +1,6 @@
 ---
 layout: draft
-title: "attention mechanism"
+title: "Attention mechanism"
 permalink: /attention_mechanism
 date: 2020-03-30 14:49:0 +0000
 comments: False
@@ -11,8 +11,6 @@ tags:   [ First Tag, Second Tag,    Third Tag ]
 <!--
 todo: https://zhuanlan.zhihu.com/p/33345791
 -->
-
-## Variants
 
 **[A2-nets-double-attention-networks,NIPS18](https://papers.nips.cc/paper/7318-a2-nets-double-attention-networks.pdf)**
 
@@ -37,7 +35,7 @@ check figure tensor size illustration: [drive google](https://docs.google.com/pr
 
 check [tensor size fig](https://docs.google.com/presentation/d/1AlmSFH0C00f74pgYOV5VaCAdTDuZcg6AwoLVN3huOhA/edit?usp=sharing)
 
-- Different from the recently proposed Non-local Neural Networks (NL-Nets)  and Double Attention Networks  which only focus on delivering information and
+Different from the recently proposed Non-local Neural Networks (NL-Nets)  and Double Attention Networks  which only focus on delivering information and
 rely on convolution layers for reasoning, our proposed
 model is able to directly reason on relations over regions.
 Similarly, Squeeze-and-Extension Networks (SE-Nets) 
@@ -92,6 +90,12 @@ unlike non-local with three inputs, the moudule here has only two input. Check F
 
 divide the feature map X of image I into s×s subregions, running adaptive pooling to generate 1x1,2x2,3x3,4x4... region pooled features.
 
+![](imgs/adaptive-context-module.png)
+
+**[Long-Term Feature Banks for Detailed Video Understanding,CVPR19](https://arxiv.org/abs/1812.05038)**
+
+![](imgs/long-term-feature-bank.png)
+
 **[Asymmetric Non-local Neural Networks for Semantic Segmentation,ICCV19](https://arxiv.org/pdf/1908.07678.pdf)**
 
 check Fig 1.
@@ -132,6 +136,9 @@ check [code](https://github.com/XiaLiPKU/CARAFE/blob/master/carafe.py)
 
 
 **[BAM: Bottleneck Attention Module,BMVC18](https://arxiv.org/abs/1807.06514)**
+
+![](imgs/BAM.png)
+
 
 **[Non-local block,CVPR18](https://arxiv.org/abs/1711.07971)**
 

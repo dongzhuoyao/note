@@ -1,6 +1,7 @@
 ---
 layout: draft
 title: "Classification, segmentation, detection"
+permalink: /cls_seg_det
 date: 2020-03-22 14:49:0 +0000
 comments: False
 share: False
@@ -74,6 +75,11 @@ check [related work part](https://arxiv.org/pdf/1904.06493.pdf),
 ## Classification
 
 
+**[Spatially Attentive Output Layer for Image Classification,CVPR20](https://arxiv.org/pdf/2004.07570.pdf)**
+
+waiting for code.
+
+
 [Adversarial Examples Improve Image Recognition,CVPR20](https://arxiv.org/pdf/1911.09665.pdf)
 
  - propose to use two batch norm statistics, one for clean images and one auxiliary for adversarial examples. The two batchnorms properly disentangle the two distributions at normalization layers for accurate statistics estimation. We show this distribution disentangling is crucial, enabling us to successfully improve, rather than degrade, model performance with adversarial examples
@@ -125,9 +131,27 @@ k=11 in context aggregation is vital for the functionality of Context Prior, wit
 Affinity matrix construction is similar to **[Adaptive Pyramid Context Network for Semantic Segmentation,CVPR19](http://openaccess.thecvf.com/content_CVPR_2019/papers/He_Adaptive_Pyramid_Context_Network_for_Semantic_Segmentation_CVPR_2019_paper.pdf)**
 
 
+
+
+
+
+
+
+
+
 ## Instance Segmentation
 
 **[Deep Snake for Real-Time Instance Segmentation,CVPR20,oral](https://arxiv.org/pdf/2001.01629.pdf)**
+
+
+
+
+
+
+
+
+
+
 
 
 ## Human-object interaction
@@ -135,9 +159,38 @@ Affinity matrix construction is similar to **[Adaptive Pyramid Context Network f
 [Spatial Priming for Detecting Human-Object Interactions,Arxiv2004](https://arxiv.org/pdf/2004.04851.pdf)
 
 
+
+
+
+
+
+
+
+
 ## Batch Normalization
 
 check related work in [ICLR20](https://arxiv.org/pdf/2001.06838.pdf).
+
+
+
+
+
+
+
+
+
+## Upsampling 
+
+[Understanding Convolution for Semantic Segmentation,WACV18](https://arxiv.org/abs/1702.08502)
+
+
+
+
+
+
+
+
+
 
 ## Pooling
 
