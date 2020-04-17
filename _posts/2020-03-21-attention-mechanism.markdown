@@ -12,6 +12,9 @@ tags:   [ First Tag, Second Tag,    Third Tag ]
 todo: https://zhuanlan.zhihu.com/p/33345791
 -->
 
+
+## Variants
+
 **[A2-nets-double-attention-networks,NIPS18](https://papers.nips.cc/paper/7318-a2-nets-double-attention-networks.pdf)**
 
 For SENet, global average pooling is used in the gathering process, while the
