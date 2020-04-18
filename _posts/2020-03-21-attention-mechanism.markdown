@@ -93,6 +93,10 @@ unlike non-local with three inputs, the moudule here has only two input. Check F
 
 divide the feature map X of image I into s×s subregions, running adaptive pooling to generate 1x1,2x2,3x3,4x4... region pooled features.
 
+No softmax is applied around affinity matrix.
+
+
+
 ![](imgs/adaptive-context-module.png)
 
 **[Long-Term Feature Banks for Detailed Video Understanding,CVPR19](https://arxiv.org/abs/1812.05038)**
@@ -122,6 +126,25 @@ check [code](https://github.com/XiaLiPKU/CARAFE/blob/master/carafe.py)
 **[SKNet,CVPR19](https://arxiv.org/pdf/1903.06586.pdf)**
 
  select kernel between $$3 \times 3$$ and $$5 \times 5$$.
+
+ [code repo](https://github.com/pppLang/SKNet/blob/master/sknet.py)
+
+ ![](imgs/sknet.png)
+
+ [source file](https://docs.google.com/presentation/d/18ewlZqw8RR0t_ElRRSrEI9raykxgsuThKnv27DWhlUE/edit?usp=sharing)
+
+ **[ResNeSt: Split-Attention Networks,Arxiv2002](https://hangzhang.org/files/resnest.pdf)**
+
+As in ResNeXt blocks, the input feature-map can
+be divided into several groups along the **channel** dimension, and the number of
+feature-map groups is given by a **cardinality** hyperparameter K. We refer to the
+resulting feature-map groups as cardinal groups. We introduce a new **radix** hyperparameter R that dictates the number of splits within a cardinal group. Then the block input X are split into G = KR groups along the channel dimension.
+
+Can be seen as a combination of ResNext and SKNet.
+
+![](imgs/resnest.png)
+
+
 
 **[ECA-Net,CVPR20](https://arxiv.org/abs/1910.03151)**
 

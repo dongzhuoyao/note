@@ -104,6 +104,14 @@ width, and cardinality.
 **[DHM,CVPR20](https://arxiv.org/pdf/2003.10739.pdf)**
 
 
+**[Drop an Octave: Reducing Spatial Redundancy in Convolutional Neural Networks with Octave Convolution,ICCV19](https://arxiv.org/pdf/1904.05049.pdf)**
+
+[reddit discussion](https://www.reddit.com/r/MachineLearning/comments/bdn5ix/190405049_drop_an_octave_reducing_spatial/)
+
+**[Multigrid Neural Architectures,CVPR17](http://openaccess.thecvf.com/content_cvpr_2017/papers/Ke_Multigrid_Neural_Architectures_CVPR_2017_paper.pdf)**
+![](imgs/mgconv.png)
+
+
 
 
 #### Visualization-related
