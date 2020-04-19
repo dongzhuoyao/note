@@ -1,6 +1,7 @@
 ---
 layout: draft
 title: "Unsupervised learning"
+permalink: /unsupervised_learning
 date: 2020-03-31 14:49:0 +0000
 comments: False
 share: False
@@ -19,13 +20,22 @@ check [zhihu discussion](https://www.zhihu.com/question/355779873)
 
 
 
-## LeCun's opinion between self-supervised learning and unsupervised learning
+**LeCun's opinion between self-supervised learning and unsupervised learning**
 
 [https://www.facebook.com/yann.lecun/posts/10155934004262143](https://www.facebook.com/yann.lecun/posts/10155934004262143)
 
 [Visual Task Adaptation Benchmark](https://google-research.github.io/task_adaptation/)
 
 Similarly, representations may be pre-trained on any data, VTAB permits supervised, unsupervised, or other pre-training strategy. There is one constraint: the evaluation datasets must not be used during pre-training. This constraint is designed to mitigate overfitting to the evaluation tasks.
+
+
+**[Noise Contrastive Estimation]()**
+
+A broadly used method in NLP, also used in CPC, **[Unsupervised Feature Learning via Non-Parametric Instance Discrimination,CVPR18](https://arxiv.org/pdf/1805.01978.pdf)**, etc.
+
+in NLP, NCE fixes the value of normalizer Z, making the inference (if you need probability values) faster. You don't need to sum over all the vocabulary to get the normalizer value.s
+
+[https://zhuanlan.zhihu.com/p/76568362](https://zhuanlan.zhihu.com/p/76568362)
 
 
 **[Unsupervised Feature Learning via Non-Parametric Instance Discrimination,CVPR18](https://arxiv.org/pdf/1805.01978.pdf)**
@@ -37,7 +47,7 @@ use noise-contrastive estimation[NCE]
 Computing the non-parametric softmax above is cost prohibitive when the number of classes n(n images in the dataset) is very large, e.g. at the scale of millions.  The solution is to cast the multi(n)-class classification problem into a set of binary classification problems, where the binary classification task is to discriminate between data samples and noise samples. 
 
 
-## [K-pair Loss: Improved Deep Metric Learning with Multi-class N-pair Loss Objective,NIPS16](https://papers.nips.cc/paper/6200-improved-deep-metric-learning-with-multi-class-n-pair-loss-objective)
+**[K-pair Loss: Improved Deep Metric Learning with Multi-class N-pair Loss Objective,NIPS16](https://papers.nips.cc/paper/6200-improved-deep-metric-learning-with-multi-class-n-pair-loss-objective)**
 
 
 **[Contrastive Representation Distillation,ICLR20](https://hobbitlong.github.io/CRD/)**
@@ -50,9 +60,15 @@ Computing the non-parametric softmax above is cost prohibitive when the number o
 
 **[CPC: Representation Learning with Contrastive Predictive Coding,Arxiv18](https://arxiv.org/abs/1807.03748)**
 
+
+**The key insight** of CPC is to learn such representations by predicting the future in latent
+space by using powerful autoregressive models.
+
+![](imgs/cpc.png)
+
 ### Basic idea
 
-latent representations $$z_{t}=g_{enc}(x_{ts})$$. An autoregressive model $$g_{ar}$$ summarizes all z<=t  in the latent space and produces a context latent representation $$c_{t}=g_{ar}(z\le t)$$.
+latent representations $$z_{t}=g_{enc}(x_{t})$$. An autoregressive model $$g_{ar}$$ summarizes all z<=t  in the latent space and produces a context latent representation $$c_{t}=g_{ar}(z\le t)$$.
 
 Mutual information between original signal x and c:
 $$
@@ -94,7 +110,7 @@ After finishing traing by InfoNCE loss, the $$g_{enc}$$ is trained optimally so 
 
 **[CPC v2](https://arxiv.org/pdf/1905.09272.pdf)**
 
-**[Learning deep representations by mutual information estimation
+**[DIM: Learning deep representations by mutual information estimation
 and maximization,ICLR19,oral](https://arxiv.org/pdf/1808.06670.pdf)**
 
 **[AMDIM:Learning Representations by Maximizing Mutual
