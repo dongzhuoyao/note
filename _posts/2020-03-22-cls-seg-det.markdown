@@ -1,6 +1,6 @@
 ---
 layout: draft
-title: "Classification, segmentation, detection"
+title: "Classification, Segmentation, Detection"
 permalink: /cls_seg_det
 date: 2020-03-22 14:49:0 +0000
 comments: False
@@ -67,10 +67,7 @@ check [related work part](https://arxiv.org/pdf/1904.06493.pdf),
 - learning to NMS
   
 
-## Instance Segmentation
-<!--https://www.zhihu.com/question/360594484-->
 
-#### [SOLOv2](https://arxiv.org/pdf/2003.10152.pdf):
 
 ## Classification
 
@@ -143,22 +140,13 @@ Affinity matrix construction is similar to **[Adaptive Pyramid Context Network f
 
 
 
-
-
-
-
 ## Instance Segmentation
 
 **[Deep Snake for Real-Time Instance Segmentation,CVPR20,oral](https://arxiv.org/pdf/2001.01629.pdf)**
 
+<!--https://www.zhihu.com/question/360594484-->
 
-
-
-
-
-
-
-
+**[SOLOv2](https://arxiv.org/pdf/2003.10152.pdf)**
 
 
 
@@ -179,12 +167,56 @@ Affinity matrix construction is similar to **[Adaptive Pyramid Context Network f
 
 check related work in [ICLR20](https://arxiv.org/pdf/2001.06838.pdf).
 
+Input tensor size $$NxCxHxW$$
+
+
+![](imgs/normalization.png)
+
+**Batch Normalization**
+
+mean, std tensor size is $$C \times 1$$
+
+mainly used in segmentation, pixelwise instance normalization(each instance is a pixel rather than a image)
+
+**Batch Renormalization**
+
+BR  introduces two extra parameters (r and d) that constrain the estimated mean and variance of
+BN. Their values are controlled by $$r_{max}$$ and $$d_{max}$$.
+
+**[Layer Normalization](https://arxiv.org/abs/1607.06450)**
+
+mean, std tensor size is $$N \times 1$$
+
+Empirically, there is no need for affine tranformation(they name it as "bias ang gain parameter") in Layer Normalization, check [Understanding and Improving Layer Normalization](https://papers.nips.cc/paper/8689-understanding-and-improving-layer-normalization.pdf). Therefore, there is no extra trainable parameter in Layer Normalization.
 
 
 
+![](imgs/invariance_normalization.png)
+
+**Instance Normalization**
+
+mean, std tensor size is $$N \times C$$
+
+**Group Normalization**
+
+mean, std tensor size is $$N \times C/K$$
+
+GN becomes LN if we set the group number as G = 1.
+
+GN becomes IN  if we set the group number as G = C (i.e., one channel per group).
 
 
+**[Rethinking Normalization and Elimination Singularity in Neural Networks,Arxiv1911](https://arxiv.org/pdf/1911.09738.pdf)**
 
+equip channel-based normalization(IN,LN,GN) with batch information,
+and the result is Batch-Channel Normalization.
+
+![](imgs/bcn.png)
+
+
+**[Weight normalization: A simple reparameterization to accelerate training of deep neural networks,NIPS16]()**
+
+**[Riemannian approach to batch normalization,NIPS](https://arxiv.org/pdf/1709.09603.pdf)**
 
 
 ## Upsampling 
