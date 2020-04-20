@@ -181,6 +181,20 @@ shot supervision use augmentation as supervison.
 video supervison use binary order prediction(forward or backward).
 
 
+## Self-supervised learning for video correspondence
+
+**[Learning Correspondence from the Cycle-consistency of Time,](https://arxiv.org/pdf/1903.07593.pdf)**
+
+
+**[Self-supervised Learning for Video Correspondence Flow,BMVC19](https://arxiv.org/pdf/1905.00875.pdf)**
+
+
+**[MAST: A Memory-Augmented Self-Supervised Tracker,CVPR20](https://arxiv.org/pdf/2002.07793.pdf)**
+
+<!--
+https://zhuanlan.zhihu.com/p/125506819
+-->
+
 
 
 

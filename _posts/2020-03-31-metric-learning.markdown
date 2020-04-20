@@ -13,6 +13,12 @@ https://www.zhihu.com/question/382802283/answer/1118867880
 -->
 
 
+**[NormFace: L2 Hypersphere Embedding for Face Verification,ACM17](https://arxiv.org/pdf/1704.06369.pdf)**
+
+<!--
+https://www.zhihu.com/question/67589242
+-->
+
 **[SoftTriple Loss: Deep Metric Learning Without Triplet Sampling,ICCV19](https://arxiv.org/pdf/1909.05235.pdf)**
 
 
