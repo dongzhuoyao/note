@@ -193,6 +193,10 @@ Empirically, there is no need for affine tranformation(they name it as "bias ang
 
 ![](imgs/invariance_normalization.png)
 
+Why LN is invariant when weight matrix re-centering?
+
+
+
 **Instance Normalization**
 
 mean, std tensor size is $$N \times C$$
@@ -213,8 +217,43 @@ and the result is Batch-Channel Normalization.
 
 ![](imgs/bcn.png)
 
+**[Understanding the Disharmony between Weight Normalization Family and Weight Decay:−shifted L2 Regularizer,Arxiv](https://arxiv.org/pdf/1911.05920.pdf)**
 
-**[Weight normalization: A simple reparameterization to accelerate training of deep neural networks,NIPS16]()**
+
+
+**[Weight normalization: A simple reparameterization to accelerate training of deep neural networks,NIPS16](https://arxiv.org/pdf/1602.07868.pdf)**
+
+
+Weight normalization can thus be viewed as a cheaper and less noisy approximation to batch
+normalization.
+
+Given a activation:
+$$
+y = \phi(w \dot x +b)
+$$
+
+reparameterize each weight vector w in terms of a parameter vector v and a scalar parameter g and to perform stochastic gradient descent with respect to those parameters instead.
+
+$$
+w =\frac{g}{||v||} v
+$$
+
+similar intuition occurs in STN: STN network, try to learning translation matrax rather than directly learning the translated result. Deep learning is a block box, decompose the problem towards a better form will help optimization.
+
+similar thought is also applied in normalization flow: [ActNorm in Glow](https://github.com/rosinality/glow-pytorch/blob/master/model.py#L11)
+
+**Data-Dependent Initialization of Parameters matters**: this method ensures that all features initially have
+zero mean and unit variance before application of the nonlinearity. 
+
+**[Towards Stabilizing Batch Statistics in Backward Propagation of Batch Normalization,ICLR20](https://openreview.net/forum?id=SkgGjRVKDS)**
+
+motivated by BN back propogation.
+
+
+
+[ICLR review](https://openreview.net/forum?id=SkgGjRVKDS)
+
+> The paper extends recently proposed BatchRenormalization (BRN) technique which uses exponential moving average (EMA) statistics in forward and backward passes of BatchNorm (BN) instead of vanilla batch statistics. Motivation of the work is to stabilize training neural networks on small batch size setup. Authors propose to replace EMA in backward pass by simple moving average (SMA) and show that under some assumptions such replacement reduces variance. Also they consider slightly different way of normalization without centralizing features X, but centralizing convolutional kernels according to Qiao et al. (2019).
 
 **[Riemannian approach to batch normalization,NIPS](https://arxiv.org/pdf/1709.09603.pdf)**
 
