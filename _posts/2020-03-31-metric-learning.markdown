@@ -1,6 +1,7 @@
 ---
 layout: draft
 title: "Metric Learning"
+permalink: /metric_learning
 date: 2020-03-31 14:49:0 +0000
 comments: False
 share: False
