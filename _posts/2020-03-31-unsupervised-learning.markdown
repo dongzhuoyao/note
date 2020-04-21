@@ -64,7 +64,7 @@ Computing the non-parametric softmax above is cost prohibitive when the number o
 **The key insight** of CPC is to learn such representations by predicting the future in latent
 space by using powerful autoregressive models.
 
-![](imgs/cpc.png)
+![](/imgs/cpc.png)
 
 ### Basic idea
 
@@ -129,7 +129,7 @@ TODO
 **[MoCo: Momentum Contrast for Unsupervised Visual Representation Learning,CVPR20](https://arxiv.org/abs/1911.05722)**
 
 
-![](imgs/moco.png)
+![](/imgs/moco.png)
 
 Preliminary: InfoNCE paper.
 
