@@ -1,0 +1,16 @@
+---
+layout: draft
+title: "Mixup"
+date: 2020-03-22 14:49:0 +0000
+comments: False
+share: False
+categories: cv
+---
+
+**[Self-Adaptive Training: beyond Empirical Risk Minimization,Arxiv2002](https://arxiv.org/abs/2002.10319)**
+
+
+
+
+
+
