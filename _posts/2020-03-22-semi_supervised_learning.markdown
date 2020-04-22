@@ -46,8 +46,7 @@ $$p(y|x) = p(x,y)/p(x)$$
 
 #### Semi-supervised image classification
 
-**[TEMPORAL ENSEMBLING FOR SEMI-SUPERVISED
-LEARNING,ICLR17](https://arxiv.org/pdf/1610.02242.pdf)**
+**[Temporal Ensembling for Semi-Supervised Learning,ICLR17](https://arxiv.org/pdf/1610.02242.pdf)**
 
 ![](/imgs/temporal-ensembling.png)
 
@@ -56,15 +55,18 @@ $$z_{i}$$ is $$N \times C$$, will moving averaged to $$\tilde{z_{i}}$$, check al
 
 
 
-**[Mean Teacher,Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results](NIPS17)**
+**[Mean Teacher,Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results,NIPS17](https://arxiv.org/abs/1703.01780)**
 
-Motivated by Temporal Emsembling.
+Motivated by Temporal Emsembling. Temporal Emsembling is moving averaged on output, mean teacher is moving averaged on network parameters.
+
+Teacher model is the moving average of student model, do not reverse.
+
+![](/imgs/mean-teacher.png)
+
+Three different noises $$\upeta$$ are considered: The model architecture is a 13-layer convolutional neural network (ConvNet) with three types of noise: random translations and horizontal flips of the input images, Gaussian noise on the input layer, and dropout applied within the network.
 
 
-
-Three different noises are considered: The model architecture is a 13-layer convolutional neural network (ConvNet) with three types of noise: random translations and horizontal flips of the input images, Gaussian noise on the input layer, and dropout applied within the network.
-
-
+**CutOut**
 
 **CutMix**
 

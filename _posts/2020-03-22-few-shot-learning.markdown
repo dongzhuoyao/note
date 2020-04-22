@@ -142,6 +142,13 @@ Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an
 
 [FGN: Fully Guided Network for Few-Shot Instance Segmentation,CVPR20](https://arxiv.org/abs/2003.13954)
 
+
+## Few-shot video classification
+
+**[TAEN: Temporal Aware Embedding Network for Few-Shot Action Recognition,Arxiv2004](https://arxiv.org/pdf/2004.10141.pdf)**
+
+
+
 ## Few-shot Edge Detection
 
 [CAFENet: Class-Agnostic Few-Shot
@@ -150,6 +157,8 @@ Edge Detection Network,Arxiv](https://arxiv.org/pdf/2003.08235.pdf)
 ## Few-shot video activity localization 
 
 **[METAL: Minimum Effort Temporal Activity Localization in Untrimmed Videos,CVPR20](https://sites.cs.ucsb.edu/~yfwang/papers/cvpr2020.pdf)**
+
+**[TAEN: Temporal Aware Embedding Network for Few-Shot Action Recognition,Arxiv2004](https://arxiv.org/pdf/2004.10141.pdf)**
 
 
 #### Footnotes
