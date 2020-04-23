@@ -11,6 +11,12 @@ categories: cv
 
 check [Meta-Learning in Neural Networks: A Survey](https://arxiv.org/pdf/2004.05439.pdf)
 
+**[Matching Networks for One Shot Learning,NIPS16](https://arxiv.org/pdf/1606.04080.pdf)**
+
+**[Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks,ICML17](https://arxiv.org/pdf/1703.03400.pdf)**
+
+**[One-Shot Generalization in Deep Generative Model](https://arxiv.org/pdf/1603.05106.pdf)**
+
 ## imbalanced classification
 
 ## Long-tailed recognition

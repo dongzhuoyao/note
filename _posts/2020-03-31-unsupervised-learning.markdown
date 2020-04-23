@@ -33,16 +33,22 @@ Similarly, representations may be pre-trained on any data, VTAB permits supervis
 
 A broadly used method in NLP, also used in CPC, **[Unsupervised Feature Learning via Non-Parametric Instance Discrimination,CVPR18](https://arxiv.org/pdf/1805.01978.pdf)**, etc.
 
-in NLP, NCE fixes the value of normalizer Z, making the inference (if you need probability values) faster. You don't need to sum over all the vocabulary to get the normalizer value.s
+in NLP, NCE fixes the value of normalizer Z, making the inference (if you need probability values) faster. You don't need to sum over all the vocabulary to get the normalizer value.
 
 [https://zhuanlan.zhihu.com/p/76568362](https://zhuanlan.zhihu.com/p/76568362)
 
 
 **[Unsupervised Feature Learning via Non-Parametric Instance Discrimination,CVPR18](https://arxiv.org/pdf/1805.01978.pdf)**
 
+[pytorch code](https://github.com/zhirongw/lemniscate.pytorch)
+
 maintain a image-levell memory bank. Check Fig 2.
 
 use noise-contrastive estimation[NCE] 
+
+The conceptual change from class weight vector wj to feature representation vj directly is significant.
+The weight vectors {wj} in the original softmax formulation are only valid for training classes. Consequently, they are not generalized to new classes, or in our setting, new instances. When we get rid of these weight vectors, our learning objective focuses entirely on the feature representation and its induced metric, which can be applied everywhere in the space and to any new instances at the test.
+
 
 Computing the non-parametric softmax above is cost prohibitive when the number of classes n(n images in the dataset) is very large, e.g. at the scale of millions.  The solution is to cast the multi(n)-class classification problem into a set of binary classification problems, where the binary classification task is to discriminate between data samples and noise samples. 
 
@@ -135,6 +141,11 @@ Preliminary: InfoNCE paper.
 
 
 A contrastive loss function, called InfoNCE, is considered in this paper. Contrastive loss functions can also be based on other forms , such as margin-based losses and variants of NCE losses.
+
+
+Motivation of queue setting:  removing the oldest mini-batch can be beneficial, because its encoded keys are the most outdated and thus the least consistent with the newest ones.
+
+Motivation of moment update: Using a queue can make the dictionary large, but it also makes it intractable to update the key encoder by back-propagation (the gradient should propagate to all samples in the queue).
 
 dictionary size can be much larger than a typical mini-batch size, and can be flexibly and independently set as a hyper-parameter.
 
