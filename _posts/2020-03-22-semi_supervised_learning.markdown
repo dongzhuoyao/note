@@ -63,6 +63,8 @@ Teacher model is the moving average of student model, do not reverse.
 
 ![](/imgs/mean-teacher.png)
 
+mean squared error (MSE) as our consistency cost function, MSE is better than KL-divergence experimentally.
+
 Three different noises $$\upeta$$ are considered: The model architecture is a 13-layer convolutional neural network (ConvNet) with three types of noise: random translations and horizontal flips of the input images, Gaussian noise on the input layer, and dropout applied within the network.
 
 

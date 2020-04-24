@@ -20,6 +20,15 @@ For main progress check [Survey 2019](https://link.springer.com/content/pdf/10.1
 
 Dynamic R-CNN to adjust the label assignment criteria (IoU threshold) and the shape of regression loss function (parameters of SmoothL1 Loss) automatically based on the statistics of proposals during training
 
+**[YOLOv4](https://arxiv.org/pdf/2004.10934.pdf)**
+
+Creating a CNN that operates in real-time on a conventional GPU, and for which
+training requires only one conventional GPU.
+
+
+Need a careful check for practical tricks in det task.
+
+
 
 #### Anchor-free
 
@@ -106,7 +115,7 @@ width, and cardinality.
 [reddit discussion](https://www.reddit.com/r/MachineLearning/comments/bdn5ix/190405049_drop_an_octave_reducing_spatial/)
 
 **[Multigrid Neural Architectures,CVPR17](http://openaccess.thecvf.com/content_cvpr_2017/papers/Ke_Multigrid_Neural_Architectures_CVPR_2017_paper.pdf)**
-![](imgs/mgconv.png)
+![](/imgs/mgconv.png)
 
 
 
@@ -170,7 +179,7 @@ check related work in [ICLR20](https://arxiv.org/pdf/2001.06838.pdf).
 Input tensor size $$NxCxHxW$$
 
 
-![](imgs/normalization.png)
+![](/imgs/normalization.png)
 
 **Batch Normalization**
 
@@ -191,7 +200,7 @@ Empirically, there is no need for affine tranformation(they name it as "bias ang
 
 
 
-![](imgs/invariance_normalization.png)
+![](/imgs/invariance_normalization.png)
 
 Why LN is invariant when weight matrix re-centering?
 
@@ -215,7 +224,7 @@ GN becomes IN  if we set the group number as G = C (i.e., one channel per group)
 equip channel-based normalization(IN,LN,GN) with batch information,
 and the result is Batch-Channel Normalization.
 
-![](imgs/bcn.png)
+![](/imgs/bcn.png)
 
 **[Understanding the Disharmony between Weight Normalization Family and Weight Decay:−shifted L2 Regularizer,Arxiv](https://arxiv.org/pdf/1911.05920.pdf)**
 

@@ -20,6 +20,21 @@ check [zhihu discussion](https://www.zhihu.com/question/355779873)
 
 
 
+## Mutual Information
+
+I(X;Y)=0 if X and Y is unrelated. otherwise I(X;Y) is larger than zero.
+
+Intuitively, mutual information measures the information that X and Y share: It measures how much knowing one of these variables reduces uncertainty about the other. If X=Y+3 or X=Y^3, which means X is a deterministic function of Y and vice versa, then mutual information I(X;Y) is the entropy of Y(or X).
+
+**Property: ** Non-negativity, and Symmetry.
+
+![Venne gram](imgs/information-measure.png)
+
+TO CONTINUE
+
+
+
+
 **LeCun's opinion between self-supervised learning and unsupervised learning**
 
 [https://www.facebook.com/yann.lecun/posts/10155934004262143](https://www.facebook.com/yann.lecun/posts/10155934004262143)
@@ -27,6 +42,7 @@ check [zhihu discussion](https://www.zhihu.com/question/355779873)
 [Visual Task Adaptation Benchmark](https://google-research.github.io/task_adaptation/)
 
 Similarly, representations may be pre-trained on any data, VTAB permits supervised, unsupervised, or other pre-training strategy. There is one constraint: the evaluation datasets must not be used during pre-training. This constraint is designed to mitigate overfitting to the evaluation tasks.
+
 
 
 **[Noise Contrastive Estimation]()**
@@ -149,7 +165,9 @@ Motivation of moment update: Using a queue can make the dictionary large, but it
 
 dictionary size can be much larger than a typical mini-batch size, and can be flexibly and independently set as a hyper-parameter.
 
-momentum update is  on **the parameter of the encoder**, not the feature of samples.
+momentum update is  on **the parameter of the encoder**, not the feature of samples.  same pattern also occurs in [mean teacher paper](https://arxiv.org/pdf/1703.01780.pdf).
+
+
 
 
 In experiments, a relatively large momentum (e.g., m = 0.999, our default) works much better than a smaller value (e.g., m = 0.9), suggesting that a slowly evolving key encoder is a core to making use of a queue.  The temperature  in InfoNCE in is set as 0.07. We set query length K = 65536.
