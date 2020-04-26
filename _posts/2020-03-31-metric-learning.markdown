@@ -11,8 +11,15 @@ categories: cv
 
 https://www.zhihu.com/question/382802283/answer/1118867880
 
+https://zhuanlan.zhihu.com/p/136522363
+
 -->
 
+**[Cross-Batch Memory for Embedding Learning,CVPR20,oral](https://arxiv.org/pdf/1912.06798.pdf)**
+
+<!--
+https://zhuanlan.zhihu.com/p/136522363
+-->
 
 **[NormFace: L2 Hypersphere Embedding for Face Verification,ACM17](https://arxiv.org/pdf/1704.06369.pdf)**
 

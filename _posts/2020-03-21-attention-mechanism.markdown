@@ -97,11 +97,11 @@ No softmax is applied around affinity matrix.
 
 
 
-![](imgs/adaptive-context-module.png)
+![](/imgs/adaptive-context-module.png)
 
 **[Long-Term Feature Banks for Detailed Video Understanding,CVPR19](https://arxiv.org/abs/1812.05038)**
 
-![](imgs/long-term-feature-bank.png)
+![](/imgs/long-term-feature-bank.png)
 
 **[Asymmetric Non-local Neural Networks for Semantic Segmentation,ICCV19](https://arxiv.org/pdf/1908.07678.pdf)**
 
@@ -129,7 +129,7 @@ check [code](https://github.com/XiaLiPKU/CARAFE/blob/master/carafe.py)
 
  [code repo](https://github.com/pppLang/SKNet/blob/master/sknet.py)
 
- ![](imgs/sknet.png)
+ ![](/imgs/sknet.png)
 
  [source file](https://docs.google.com/presentation/d/18ewlZqw8RR0t_ElRRSrEI9raykxgsuThKnv27DWhlUE/edit?usp=sharing)
 
@@ -142,7 +142,7 @@ resulting feature-map groups as cardinal groups. We introduce a new **radix** hy
 
 Can be seen as a combination of ResNext and SKNet.
 
-![](imgs/resnest.png)
+![](/imgs/resnest.png)
 
 
 
@@ -163,7 +163,7 @@ Can be seen as a combination of ResNext and SKNet.
 
 **[BAM: Bottleneck Attention Module,BMVC18](https://arxiv.org/abs/1807.06514)**
 
-![](imgs/BAM.png)
+![](/imgs/BAM.png)
 
 
 **[Non-local block,CVPR18](https://arxiv.org/abs/1711.07971)**

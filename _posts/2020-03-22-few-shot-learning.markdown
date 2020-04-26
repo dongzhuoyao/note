@@ -121,7 +121,7 @@ Masked Average Pooling + Cosine similarity, obtain final segmentation result.
 - Check Fig 2, support feature, query feature, and objectness feature are congregated by adding operation.
 
 
-**[Attention-based Multi-Context Guiding for Few-Shot Semantic Segmentation](http://taohu.me/pdf/few-shot-seg.pdf)**
+**[Attention-based Multi-Context Guiding for Few-Shot Semantic Segmentation,AAAI19](http://taohu.me/pdf/few-shot-seg.pdf)**
 
 ## Few-shot detection
 

@@ -200,6 +200,11 @@ Empirically, there is no need for affine tranformation(they name it as "bias ang
 
 
 
+Another difference between BN mentioned in [this unsupervised-learning paper](https://openreview.net/pdf?id=rkxoh24FPH)
+
+> LayerNorm avoids the possibility of information leakage within mini-batches that can be induced through
+batch normalization, potentially leading to poor performance
+
 ![](/imgs/invariance_normalization.png)
 
 Why LN is invariant when weight matrix re-centering?

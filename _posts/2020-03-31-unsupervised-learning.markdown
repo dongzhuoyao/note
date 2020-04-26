@@ -26,7 +26,7 @@ I(X;Y)=0 if X and Y is unrelated. otherwise I(X;Y) is larger than zero.
 
 Intuitively, mutual information measures the information that X and Y share: It measures how much knowing one of these variables reduces uncertainty about the other. If X=Y+3 or X=Y^3, which means X is a deterministic function of Y and vice versa, then mutual information I(X;Y) is the entropy of Y(or X).
 
-**Property: ** Non-negativity, and Symmetry.
+**Property**:  Non-negativity, and Symmetry.
 
 ![Venne gram](imgs/information-measure.png)
 
@@ -45,13 +45,35 @@ Similarly, representations may be pre-trained on any data, VTAB permits supervis
 
 
 
-**[Noise Contrastive Estimation]()**
+**[Noise Contrastive Estimation](http://proceedings.mlr.press/v9/gutmann10a/gutmann10a.pdf)**
 
-A broadly used method in NLP, also used in CPC, **[Unsupervised Feature Learning via Non-Parametric Instance Discrimination,CVPR18](https://arxiv.org/pdf/1805.01978.pdf)**, etc.
+A broadly used method in NLP, also used in [CPC: Representation Learning with Contrastive Predictive Coding,Arxiv18](https://arxiv.org/abs/1807.03748), [Unsupervised Feature Learning via Non-Parametric Instance Discrimination,CVPR18](https://arxiv.org/pdf/1805.01978.pdf), etc.
 
-in NLP, NCE fixes the value of normalizer Z, making the inference (if you need probability values) faster. You don't need to sum over all the vocabulary to get the normalizer value.
+Originally proposed in 2010, used in NLP from [this paper: A fast and simple algorithm for training neural probabilistic language models](https://www.cs.toronto.edu/~amnih/papers/ncelm.pdf). In NLP, NCE fixes the value of normalizer Z, making the inference (if you need probability values) faster. You don't need to sum over all the vocabulary to get the normalizer value.
 
-[https://zhuanlan.zhihu.com/p/76568362](https://zhuanlan.zhihu.com/p/76568362)
+
+The reason why NCE loss will work is because NCE approximates maximum likelihood estimation (MLE) when the ratio of noise to real data 𝑘 increases.
+
+
+Negative Sample is a special case of NCE, for reason you can check the [summary of approximating softmax](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650720050&idx=2&sn=9fedc937d3128462c478ef7911e77687&chksm=871b034cb06c8a5a8db8a10f708c81025fc62084d871ac5d184bab5098cb64e939c1c23a7369&mpshare=1&scene=1&srcid=0613xBLYGgZUw99YG99QMP6p#rd), also you can check a detailed comparison between negative sample and NCE in [this note: Notes on Noise Contrastive Estimation and Negative Sampling](https://arxiv.org/pdf/1410.8251.pdf)
+
+
+
+**[A fast and simple algorithm for training neural probabilistic language models](https://www.cs.toronto.edu/~amnih/papers/ncelm.pdf)**
+
+Motivation of this work is based on the following points:
+
+- gradient-based back propogation is a must.
+- We cannot sum over all vocabulary to get the normalizer value, then we need to approximate it.
+- Why not approximate it from the perspective of gradient?
+- softmax classifier summarize the classification problem as a N-class problem, NCE summarizes the classification problem as a binary-class problem. Even though, the gradient derivation pattern is similar.
+
+Equation 10 can be derived by normal derivation rule.
+
+Equation 11 is from the definition of expectation. 
+
+TODO, why Equation 12 is the Maximum Likelihood gradient
+
 
 
 **[Unsupervised Feature Learning via Non-Parametric Instance Discrimination,CVPR18](https://arxiv.org/pdf/1805.01978.pdf)**
@@ -78,6 +100,10 @@ Computing the non-parametric softmax above is cost prohibitive when the number o
 
 **[CMC: Contrastive Multiview Coding](http://people.csail.mit.edu/yonglong/yonglong/cmc_icml_workshop.pdf)**
 
+an extension based on CPC.
+
+check session 2.2
+
 
 
 **[CPC: Representation Learning with Contrastive Predictive Coding,Arxiv18](https://arxiv.org/abs/1807.03748)**
@@ -86,16 +112,22 @@ Computing the non-parametric softmax above is cost prohibitive when the number o
 **The key insight** of CPC is to learn such representations by predicting the future in latent
 space by using powerful autoregressive models.
 
+
+Check [NIPS invited talks here](https://slideslive.com/38922758/invited-talk-contrastive-predictive-coding)
+
+For a brief summary, you can check the session 2 of [this paper](https://arxiv.org/pdf/1905.11786.pdf).
+
+
 ![](/imgs/cpc.png)
 
 ### Basic idea
 
 latent representations $$z_{t}=g_{enc}(x_{t})$$. An autoregressive model $$g_{ar}$$ summarizes all z<=t  in the latent space and produces a context latent representation $$c_{t}=g_{ar}(z\le t)$$.
 
-Mutual information between original signal x and c:
-$$
-I(x;c) = \sum_{x,c} p(x,c) log \frac{p(x|c)}{p(x)}
-$$
+Mutual information between original signal x and c: 
+$$ 
+I(x;c) = \sum_{x,c} p(x,c) log \frac{p(x|c)}{p(x)} 
+$$, here is another writing of mutual information because of the bayesian rule(common rule, no extra condition is needed).
 
 
 predict future observations as $$\frac{p(x_{t+k}|c_{t})}{p(x_{t+k})}$$ 
@@ -104,7 +136,7 @@ $$p_{k}(x_{t+k}|c_{t})$$
 
 In reality, a simple log-bilinear model $$
 f_{k}(x_{t+k},c_{t})=exp(z^{T}_{t+k}W_{k}c_{t})
-$$ is used.
+$$ is used. The authors precise that the linear transformation $$Wc_{t}$$ can be replaced by non-linear models like neural nets.
 
 Given X=$$x_{1},...,x_{N}$$ of N random samples containing one positive sample from $$p(x_{t+k}|c_{t})$$ and N-1 negative samples from the 'proposal' distribution $$
 p(x_{t+k})
@@ -116,21 +148,28 @@ $$
 Considering $$f_{k}(.,.)$$ is a **log**-bilinear model, InfoNCE loss can also be viewed as a softmax loss.
 
 
-### Optimizing InfoNCE loss is optimizing a **lower bound** on the mutual information between x and c.
+#### Optimizing InfoNCE loss is optimizing a **lower bound** on the mutual information between x and c.
 
-The observation is 1 positive sammple and N-1 negative samples. Therefore, The probability of that the i-th sample is positive is:
+The observation(game rule) is 1 positive sample from $$p(x_{t+k}/c_{t})$$ and N-1 negative samples from $$p(x_{t+k})$$. Each event contains 1 positive sample and N-1 negative samples, that's the rule defining an event.
+
+Therefore, The probability of that the i-th sample is positive(meantime the other N-1 is negative) is:
 
 $$
-p(d=i|X,c_{t}) = \frac{p(x_{i}|c_{t})\prod_{l \neq i} p(x_{l}|c_{t})}{\sum_{j=1}^{N} p(x_{j}|c_{t}) \prod_{l \neq j} p(x_{l}|c_{t})}= \frac{p(x_{i}|c_{t})\prod_{l \neq i} p(x_{l})}{\sum_{j=1}^{N} p(x_{j}|c_{t}) \prod_{l \neq j} p(x_{l})}
+p(d=i|X,c_{t}) = \frac{p(x_{i}|c_{t})\prod_{l \neq i} p(x_{l})}{\sum_{j=1}^{N} p(x_{j}|c_{t}) \prod_{l \neq j} p(x_{l})}
 = \frac{p(x_{i}|c_{t})/p(x_{i})}{\sum_{j=1}^{N} p(x_{j}|c_{t})/p(x_{j})}
 $$
+
 
 A futher provement relating InfoNCE and $$
 p(d=i|X,c_{t})$$ can be seen in supplimentary file.
 
+TODO, cannot figure out the logic from Equation 10 to Equation 11. how to induce p(x,c) is equivalant to p(x)?
+
 After finishing traing by InfoNCE loss, the $$g_{enc}$$ is trained optimally so that it can be utilized in many downstream tasks.
 
-**[CPC v2](https://arxiv.org/pdf/1905.09272.pdf)**
+**[CPCv2: Data-Efficient Image Recognition with Contrastive Predictive Coding](https://openreview.net/forum?id=rJerHlrYwH)**
+
+[check review](https://openreview.net/forum?id=rJerHlrYwH)
 
 **[DIM: Learning deep representations by mutual information estimation
 and maximization,ICLR19,oral](https://arxiv.org/pdf/1808.06670.pdf)**
@@ -158,6 +197,8 @@ Preliminary: InfoNCE paper.
 
 A contrastive loss function, called InfoNCE, is considered in this paper. Contrastive loss functions can also be based on other forms , such as margin-based losses and variants of NCE losses.
 
+
+Relationship with previous works: Compared to another similar idea of memory bank (Wu et al, 2018) which stores representations of all the data points in the database and samples a random set of keys as negative examples, a queue-based dictionary in MoCo enables us to reuse representations of immediate preceding mini-batches of data.
 
 Motivation of queue setting:  removing the oldest mini-batch can be beneficial, because its encoded keys are the most outdated and thus the least consistent with the newest ones.
 
@@ -189,9 +230,44 @@ MoCo v1/2 is also useful in CURL which finds MoCo "is extremely useful in Deep R
 <div class="fb-post" data-href="https://www.facebook.com/hekaiming/posts/10158594924257150" data-show-text="true" data-width=""><blockquote cite="https://developers.facebook.com/hekaiming/posts/10158594924257150" class="fb-xfbml-parse-ignore"><p>Happen to see this nice video introducing MoCo v1/v2! It also covers Berkeley&#039;s recent work on CURL which finds MoCo &quot;is extremely useful in Deep RL&quot; (quote Aravind Srinivas, CURL author).</p>Posted by <a href="#" role="button">Kaiming He</a> on&nbsp;<a href="https://developers.facebook.com/hekaiming/posts/10158594924257150">Wednesday, April 15, 2020</a></blockquote></div>
 
 
-## SimCLR
+**[SimCLR:A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709)**
 
-## Greedy InfoMax
+
+check [zhihu](https://www.zhihu.com/question/372064916)
+
+With 128 TPU v3 cores, it takes ∼1.5 hours to train our ResNet-50 with a batch size of 4096 for 100 epochs.
+
+
+check suppimentary, find a detailed comparison with previous methods.
+
+![](imgs/simclr.png)
+
+
+**[On Mutual Information Maximization for Representation Learning,ICLR20](https://openreview.net/forum?id=rkxoh24FPH)**
+
+check concolusions.
+
+ it is unclear whether the connection to MI is a sufficient (or
+necessary) component for designing powerful unsupervised representation learning algorithms. We
+propose that the success of these recent methods could be explained through the view of triplet-based
+metric learning and that leveraging advances in that domain might lead to further improvements. 
+
+
+**[Greedy InfoMax:Putting An End to End-to-End:Gradient-Isolated Learning of Representations,NIPS19](https://arxiv.org/pdf/1905.11786.pdf)**
+
+[NIPS proceeding link](http://papers.nips.cc/paper/8568-putting-an-end-to-end-to-end-gradient-isolated-learning-of-representations)
+
+[code](https://github.com/loeweX/Greedy_InfoMax)
+
+
+
+Gradient is isolated between modules, but still need gradient in modules.
+
+Each module will generate a CPC loss.
+
+
+
+![](imgs/greedy-infomax.png)
 
 
 How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from [CVPR20](https://arxiv.org/abs/2003.14323)
