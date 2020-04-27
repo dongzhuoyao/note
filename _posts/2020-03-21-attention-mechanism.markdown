@@ -150,6 +150,8 @@ Can be seen as a combination of ResNext and SKNet.
 
  An improvement based on SENet with less parameter and better performance. Check Fig 2. do 1D convolution with kernel size k along feature dimension$$1 \times 1 \times C$$ is a little counter-intuitive for me, there should be no concept of 'neibourhood' in feature dimension.
 
+**[DANet:Dual Attention Network for Scene Segmentation(CVPR2019)](https://arxiv.org/abs/1809.02983)**
+
 **[Bilinear Attention Networks,NIPS18](https://arxiv.org/pdf/1805.07932.pdf)**
 
 **[Compact Generalized Non-local Network,NIPS](https://papers.nips.cc/paper/7886-compact-generalized-non-local-network.pdf)**

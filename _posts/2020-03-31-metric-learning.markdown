@@ -30,7 +30,7 @@ https://www.zhihu.com/question/67589242
 **[SoftTriple Loss: Deep Metric Learning Without Triplet Sampling,ICCV19](https://arxiv.org/pdf/1909.05235.pdf)**
 
 
-#### [Hyperbolic Image Embeddings](https://arxiv.org/pdf/1904.02239.pdf)
+**[Hyperbolic Image Embeddings](https://arxiv.org/pdf/1904.02239.pdf)**
 
 Useful for image classification, retrieval, few-shot learning
 

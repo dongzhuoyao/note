@@ -86,7 +86,11 @@ check [related work part](https://arxiv.org/pdf/1904.06493.pdf),
 waiting for code.
 
 
-[Adversarial Examples Improve Image Recognition,CVPR20](https://arxiv.org/pdf/1911.09665.pdf)
+
+**[NetVLAD: CNN architecture for weakly supervised place recognition,CVPR16](https://arxiv.org/pdf/1511.07247.pdf)**
+
+
+**[Adversarial Examples Improve Image Recognition,CVPR20](https://arxiv.org/pdf/1911.09665.pdf)**
 
  - propose to use two batch norm statistics, one for clean images and one auxiliary for adversarial examples. The two batchnorms properly disentangle the two distributions at normalization layers for accurate statistics estimation. We show this distribution disentangling is crucial, enabling us to successfully improve, rather than degrade, model performance with adversarial examples
 - the first to show adversarial examples can improve model performance in the fully-supervised setting on the large-scale ImageNet dataset.
@@ -130,6 +134,11 @@ CAM
 
 Check the survey [here](https://arxiv.org/pdf/2001.05566.pdf).
 
+
+**[CFNet:Co-occurrent Features in Semantic Segmentation,CVPR19](http://openaccess.thecvf.com/content_CVPR_2019/papers/Zhang_Co-Occurrent_Features_in_Semantic_Segmentation_CVPR_2019_paper.pdf)**
+
+
+similar to non-local block
 
 **[PSANet,ECCV18](https://hszhao.github.io/papers/eccv18_psanet.pdf)**
 
