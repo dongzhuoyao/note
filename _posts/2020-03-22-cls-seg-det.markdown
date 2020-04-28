@@ -28,6 +28,12 @@ training requires only one conventional GPU.
 
 Need a careful check for practical tricks in det task.
 
+[zhihu](https://www.zhihu.com/question/390191723/answer/1177584901)
+
+- Mosaic
+- Self-adversarial training
+- Cross mini-batch normalization
+- Pointwise SAM
 
 
 #### Anchor-free
@@ -50,6 +56,18 @@ for all top-left corners, a heatmap for all bottom-right corners, and an embeddi
 
 **[ExtremeNet,CVPR19](https://arxiv.org/pdf/1901.08043.pdf)**
   
+**[Stitcher: Feedback-driven Data Provider for Object Detection,Arxiv2004](https://arxiv.org/pdf/2004.12432.pdf)**
+
+![](/imgs/stitcher.png)
+
+[zhihu](https://www.zhihu.com/question/390191723/answer/1185984775)
+
+similar to Mosaic tricks in YOLOv4
+
+feedback-driven data provider is interesting
+
+
+
 
 #### Different det heads
 
@@ -96,7 +114,7 @@ waiting for code.
 - the first to show adversarial examples can improve model performance in the fully-supervised setting on the large-scale ImageNet dataset.
 - a simple  auxiliary BN design, check Fig 3.
 
-#### architecture
+#### Architecture
 
 **[EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks,ICML19](https://arxiv.org/pdf/1905.11946.pdf)**
 
