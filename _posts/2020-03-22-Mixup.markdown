@@ -8,6 +8,27 @@ categories: cv
 ---
 
 
+**[Manifold Mixup: Better Representations by Interpolating Hidden States<ICML19>](https://arxiv.org/pdf/1806.05236.pdf)**
+
+
+
+**[Hide and Seek]()**
+<!--
+
+https://zhuanlan.zhihu.com/p/
+
+-->
+**[Cutout]()**
+
+**[CutMix]()**
+
+**[GridMask]()**
+
+
+
+
+
+
 
 
 

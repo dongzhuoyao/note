@@ -17,6 +17,8 @@ check [Meta-Learning in Neural Networks: A Survey](https://arxiv.org/pdf/2004.05
 
 **[One-Shot Generalization in Deep Generative Model](https://arxiv.org/pdf/1603.05106.pdf)**
 
+**[DeepEMD: Few-Shot Image Classification with Differentiable Earth Mover's Distance and Structured Classifiers,CVPR20,oral](https://arxiv.org/abs/2003.06777)**
+
 ## imbalanced classification
 
 ## Long-tailed recognition
