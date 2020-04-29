@@ -35,9 +35,24 @@ $$
 **[Coupling Flow]()**
 
 
+**[RealNVP]()**
+
+**[Glow](https://arxiv.org/pdf/1807.03039.pdf)**
+
+
+![](/imgs/glow.png)
+
+ActNorm is similar to BN, without mean and standard deviation. only learn the scale and bias with size $$C\times 1\times 1$$
+
+An additive coupling layer proposed before is a special case with s = 1 and a log-determinant of
+0 in affine coupling layers.
+
 **[Inverse Autoregressive Flow (IAF)](https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow)**
 
 
+**[RevNets]()**
+
+**[iRevNets]()**
 
 **[A Disentangling Invertible Interpretation Network for Explaining Latent Representations,Arxiv2004](https://arxiv.org/pdf/2004.13166.pdf)**
  
