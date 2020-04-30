@@ -8,6 +8,10 @@ categories: ml
 ---
 
 
+**[Designing Network Design Spaces,CVPR20](https://arxiv.org/pdf/2003.13678.pdf)**
+
+[zhihu](https://www.zhihu.com/question/384255803)
+
 **[FBNetV2: Differentiable Neural Architecture Search for Spatial and Channel Dimensions,CVPR20](https://arxiv.org/pdf/2004.05565.pdf)**
 
 

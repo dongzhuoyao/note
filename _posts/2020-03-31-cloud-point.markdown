@@ -8,6 +8,10 @@ share: False
 categories: cv
 ---
 
+## Point cloud classification
+
+
+
 ## Point Sampling
 
 [Learning to Sample,CVPR19](https://arxiv.org/pdf/1812.01659.pdf)

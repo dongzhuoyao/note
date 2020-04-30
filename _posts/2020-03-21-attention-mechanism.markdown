@@ -145,6 +145,9 @@ Can be seen as a combination of ResNext and SKNet.
 ![](/imgs/resnest.png)
 
 
+**[Improving Convolutional Networks with Self-Calibrated Convolutions,CVPR20](https://github.com/backseason/SCNet)**
+
+
 
 **[ECA-Net,CVPR20](https://arxiv.org/abs/1910.03151)**
 
