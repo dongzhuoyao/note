@@ -8,7 +8,7 @@ share: False
 categories: ml
 ---
 
-**related materials**
+## related materials
 
 check [Normalizing Flows for Probabilistic Modeling and Inference](https://arxiv.org/pdf/1912.02762.pdf)
 
@@ -16,6 +16,12 @@ check [Normalizing Flows for Probabilistic Modeling and Inference](https://arxiv
 
 [Invertible Models and Normalizing Flows: a retrospective (ICLR 2020 keynote slides)](https://docs.google.com/presentation/d/15RMCzCRwuKKv6fIwvGjwig2WnnP_5yzQGzcpJbq7zws/edit#slide=id.g8428c68825_0_0)
 
+
+## Pre history: distribution estimation
+
+[NADE:Neural Autoregressive Distribution Estimation,JMLR2000](https://arxiv.org/pdf/1605.02226.pdf)
+
+## Recent Advance
 
 **[Planar and Radial Flows]()**
 
@@ -36,9 +42,29 @@ $$
 g(x) = x + \frac{\beta}{\alpha + ||x-x_{0}||}(x-x_{0})
 $$
 
-**[Coupling Flow]()**
 
 **[NICE: NON-LINEAR INDEPENDENT COMPONENTS ESTIMATION,ICLRW15](https://arxiv.org/abs/1410.8516)**
+
+core idea of coupling layer(actually also proposed a genneral coupling layer, while they use additive coupling layer for simplicity.):
+
+$$
+y_{1} =x_{1}\\
+y_{2} = x_{2} + m(x_{1})
+$$
+
+m can be as complex as you need, I like this idea, why the fucking ICLR reject it? Also this paper is honest compared with common papers. show the simple intuition in the very beginning.
+
+> Examining the Jacobian, we observe that at least
+three coupling layers are necessary to allow all dimensions to influence one another. We generally use four.
+
+Prior distribution can be gaussian distribution or logistic distribution. Their prior distribution can be explicitly expressed in session3.4(EXCERCISE)
+
+Difference between VAE: Like the variational auto-encoders, the NICE model uses an encoder to avoid the difficulties of inference, but its encoding is deterministic. The log-likelihood is tractable and the training procedure does not require any sampling (apart from dequantizing the data).
+
+SCALING intuition: As each additive coupling layers has unit Jacobian determinant (i.e. is volume preserving), their composition will necessarily have unit Jacobian determinant too.(TODO)This allows the learner to give more weight (i.e. model more variation) on some dimensions and less in others. similar to attention mechanism recently. 
+
+The INPAINTING application is interesting, a super simple projected gradient ascent is applied based on the pre-trained combination probability between H and O. 
+
 
 
 **[Density estimation using Real NVP,ICLR17](https://arxiv.org/abs/1605.08803)**
