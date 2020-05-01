@@ -77,6 +77,32 @@ Contributions: affine coupling layer, masked convolution, multi-scale architectu
 
 Training a normalization flow does not in theory requires a discriminator network as in GANs, or approximate inference as in variational autoencoders. If the function is bijective, it can be trained through maximum likelihood using the change of variable formula. This formula has been discussed in several papers including the maximum likelihood formulation of independent components analysis (ICA) [4, 28], gaussianization [14, 11] and deep density models [5, 50, 17, 3]. 
 
+dive deeper into related works. TODO.
+
+
+**[Pixel Recurrent Neural Networks,ICML16](https://arxiv.org/pdf/1601.06759.pdf)**
+
+> Furthermore, in contrast to previous approaches that model the pixels as continuous values (e.g., Theis & Bethge (2015); Gregor et al.(2014)), we model the pixels as discrete values using a multinomial distribution implemented with a simple softmax layer.   Each channel variable xi,∗ simply takes one of 256 distinct values.
+
+We have four types of networks: the PixelRNN based on Row LSTM, the one based on Diagonal BiLSTM, the fully convolutional one and the MultiScale one.
+
+Have a detailed discussion about dequantizing the image data.
+> In the literature it is currently best practice to add realvalued noise to the pixel values to dequantize the data when using density functions (Uria et al., 2013). When uniform noise is added (with values in the interval [0, 1]), then the log-likelihoods of continuous and discrete models are directly comparable (Theis et al., 2015). 
+
+Evaluation details: For MNIST we report the negative log-likelihood in nats as it is common practice in literature. For CIFAR-10 and ImageNet we report negative log-likelihoods in bits per dimension. The total discrete log-likelihood is normalized by the dimensionality of the images (e.g., 32 × 32 × 3 = 3072 for CIFAR-10). These numbers are interpretable as the number of bits that a compression scheme based on this model would need to compress every RGB color value (van den Oord & Schrauwen, 2014b; Theis et al., 2015); in practice there is also a small overhead due to arithmetic coding.
+
+
+
+**[PixelCNN:Conditional Image Generation with PixelCNN Decoders](https://arxiv.org/pdf/1606.05328.pdf)**
+
+
+**[(IAF)Improved Variational Inference with Inverse Autoregressive Flow,NIPS16](https://arxiv.org/abs/1606.04934)**
+
+[NeuIPS review](https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow)
+
+Preliminary: PixelCNN and PixelRNN
+
+>  The paper are able to exploit the recent advances in autoregressive models, particularly in making efficient inference through parallel computing. However, they avoid the cumbersome sampling/inversion procedure of autoregressive model, which is quite ingenious. 
 
 
 **[Glow](https://arxiv.org/pdf/1807.03039.pdf)**
@@ -91,7 +117,6 @@ An additive coupling layer proposed before is a special case with s = 1 and a lo
 
 
 
-**[Inverse Autoregressive Flow (IAF)](https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow)**
 
 
 **[RevNets]()**
