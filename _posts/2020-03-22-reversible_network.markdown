@@ -65,9 +65,18 @@ SCALING intuition: As each additive coupling layers has unit Jacobian determinan
 
 The INPAINTING application is interesting, a super simple projected gradient ascent is applied based on the pre-trained combination probability between H and O. 
 
+The change of variable formula for probability density functions is prominently used, check related works in this paper.
 
+The NICE criterion is very similar to the criterion of the variational auto-encoder. More specifically,
+as the transformation and its inverse can be seen as a perfect auto-encoder pair,... check related work.TODO
 
 **[Density estimation using Real NVP,ICLR17](https://arxiv.org/abs/1605.08803)**
+
+
+Contributions: affine coupling layer, masked convolution, multi-scale architecture(squeeze out), introduce moving-average batch normalization into this topic.
+
+Training a normalization flow does not in theory requires a discriminator network as in GANs, or approximate inference as in variational autoencoders. If the function is bijective, it can be trained through maximum likelihood using the change of variable formula. This formula has been discussed in several papers including the maximum likelihood formulation of independent components analysis (ICA) [4, 28], gaussianization [14, 11] and deep density models [5, 50, 17, 3]. 
+
 
 
 **[Glow](https://arxiv.org/pdf/1807.03039.pdf)**
