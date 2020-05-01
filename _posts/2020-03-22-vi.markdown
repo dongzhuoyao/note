@@ -1,0 +1,14 @@
+---
+layout: draft
+title: "Variational Inference"
+permalink: /vi
+date: 2020-03-22 14:49:0 +0000
+comments: False
+share: False
+categories: ml
+---
+
+[zhihu](https://www.zhihu.com/question/31032863/answer/315311293)
+
+
+
