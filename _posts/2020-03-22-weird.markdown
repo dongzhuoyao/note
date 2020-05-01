@@ -1,0 +1,13 @@
+---
+layout: draft
+title: "Weird"
+permalink: /weird
+date: 2020-03-22 14:49:0 +0000
+comments: False
+share: False
+categories: ml
+---
+
+
+**[Neural Additive Models:Interpretable Machine Learning with Neural Nets](https://arxiv.org/pdf/2004.13912.pdf)**
+
