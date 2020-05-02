@@ -17,6 +17,7 @@ $$
 if $$\phi$$ is a convex function, a simple example:  X~U(0,1) and $$\phi(x) = x^{2}$$.
 
 
+constant-volume transformation in probability?
 
 
 
