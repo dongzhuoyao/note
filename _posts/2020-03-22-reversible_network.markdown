@@ -19,7 +19,12 @@ check [Normalizing Flows for Probabilistic Modeling and Inference](https://arxiv
 
 ## Pre history: distribution estimation
 
-[NADE:Neural Autoregressive Distribution Estimation,JMLR2000](https://arxiv.org/pdf/1605.02226.pdf)
+
+**[Independent Component Analysis]()**
+
+**[Restricted Boltzmann Machines]()**
+
+**[NADE:Neural Autoregressive Distribution Estimation,JMLR2000](https://arxiv.org/pdf/1605.02226.pdf)**
 
 ## Recent Advance
 
