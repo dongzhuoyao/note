@@ -8,7 +8,7 @@ share: False
 categories: ml
 ---
 
-## related materials
+## Related materials
 
 check [Normalizing Flows for Probabilistic Modeling and Inference](https://arxiv.org/pdf/1912.02762.pdf)
 
@@ -100,28 +100,83 @@ Evaluation details: For MNIST we report the negative log-likelihood in nats as i
 
 [NeuIPS review](https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow)
 
-Preliminary: PixelCNN and PixelRNN
+Preliminary: PixelCNN , PixelRNN，MADE
 
 >  The paper are able to exploit the recent advances in autoregressive models, particularly in making efficient inference through parallel computing. However, they avoid the cumbersome sampling/inversion procedure of autoregressive model, which is quite ingenious. 
 
+![](/imgs/iaf.png)
+
+![](/imgs/iaf2.png)
+
+
+$$
+z = \sigma \odot z + (1-\sigma) \odot m
+$$
+is parallelized, this is the main difference betwenn autoregressive model.
+
+Perhaps the simplest special version of IAF is one with a simple step(T=1), and a linear autoregressive
+model. This transforms a Gaussian variable with diagonal covariance, to one with linear dependencies,
+i.e. a Gaussian distribution with full covariance. See appendix A for an explanation.
+
+We found that results improved when reversing the ordering of the variables after each step in the IAF
+chain.
+
+Why sampling speed is so high compared with PixelCNN?TODO
+
+Fig 5 in supp,TODO.
 
 **[Glow](https://arxiv.org/pdf/1807.03039.pdf)**
 
 
 ![](/imgs/glow.png)
 
+Summairzed four merits of flow-based generative models.
+
 ActNorm is similar to BN, without mean and standard deviation. only learn the scale and bias with size $$C\times 1\times 1$$
 
 An additive coupling layer proposed before is a special case with s = 1 and a log-determinant of
-0 in affine coupling layers.
+0 in affine coupling layers. Actually NICE also proposed a general coupling layer. So what's the difference between glow's coupling layer and the general coupling layer in NICE?
+
+invertable 1x1 convolution by LU decomposition, TODO.
 
 
 
 
 
-**[RevNets]()**
+**[RevNets:The Reversible Residual Network: Backpropagation Without Storing Activations](https://arxiv.org/pdf/1707.04585.pdf)**
 
-**[iRevNets]()**
+intuition: present the Reversible Residual Network (RevNet), a variant of ResNets
+where each layer’s activations can be reconstructed exactly from the next layer’s.
+Therefore, the activations for most layers need not be stored in memory during
+backpropagation.
+
+Note that unlike residual blocks, reversible blocks must have a stride of 1 because otherwise the layer
+discards information, and therefore cannot be reversible. Standard ResNet architectures typically
+have a handful of layers with a larger stride. If we define a RevNet architecture analogously, the
+activations must be stored explicitly for all non-reversible layers.
+
+Splitting is based on channel dimension.
+
+check footnote 2 in page 4, you can feel the searching is labor-consuming.
+
+![](/imgs/revnet.png)
+
+**[i-REVNET: DEEP INVERTIBLE NETWORKS,ICLR18](https://arxiv.org/pdf/1802.07088.pdf)**
+
+smart idea: It is widely believed that the success of deep convolutional networks is based on
+progressively discarding uninformative variability about the input with respect to
+the problem at hand. This is supported empirically by the difficulty of recovering
+images from their hidden representations, in most commonly used network architectures. In this paper we show via a one-to-one mapping that this loss of information is not a necessary condition to learn representations that generalize well on complicated problems, such as ImageNet.
+
+The design is similar to the Feistel cipher diagrams (Menezes et al., 1996) or a lifting scheme (Sweldens, 1998), which are invertible and efficient implementations of complex transforms like second generation wavelets.
+
+In this way, we avoid the non-invertible modules of a RevNet (e.g. max-pooling or strides) which
+are necessary to train them in a reasonable time and are designed to build invariance w.r.t. translation
+variability.
+
+The method part is too abstract to understand, need more time to figure it out, TODO.
+
+
 
 **[Do Deep Generative Models Know What They Don't Know?,ICLR19](https://arxiv.org/pdf/1810.09136.pdf)**
 
