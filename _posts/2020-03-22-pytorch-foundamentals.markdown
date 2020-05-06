@@ -157,6 +157,13 @@ concatenation can be operated between diverse dimensions. As here we only reorga
 
 **[https://colab.research.google.com/drive/10aVzydfnBYWJKXe5SCTxGx0t529kufRd](https://colab.research.google.com/drive/10aVzydfnBYWJKXe5SCTxGx0t529kufRd)**
 
+**Conv1d and nn.Linear**
+
+[https://stackoverflow.com/questions/55576314/conv1d-with-kernel-size-1-interpretation/56685503#56685503](https://stackoverflow.com/questions/55576314/conv1d-with-kernel-size-1-interpretation/56685503#56685503)
+
+**1x1 Conv2d and Linear**
+
+[Can Fully Connected Layers be Replaced by Convolutional Layers?](https://sebastianraschka.com/faq/docs/fc-to-conv.html)
 
 ## Reference
 

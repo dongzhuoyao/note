@@ -1,0 +1,15 @@
+---
+layout: draft
+title: "jurgen"
+permalink: /jurgen
+date: 2020-03-22 14:49:0 +0000
+comments: False
+share: False
+categories: ml
+---
+
+**[One Big Net For Everything](https://arxiv.org/pdf/1802.08864.pdf)**
+
+
+
+

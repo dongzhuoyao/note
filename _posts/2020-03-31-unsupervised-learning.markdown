@@ -20,7 +20,7 @@ check [zhihu discussion](https://www.zhihu.com/question/355779873)
 
 
 
-## Mutual Information
+## [Mutual Information](https://en.wikipedia.org/wiki/Mutual_information)
 
 I(X;Y)=0 if X and Y is unrelated. otherwise I(X;Y) is larger than zero.
 
@@ -95,6 +95,16 @@ Computing the non-parametric softmax above is cost prohibitive when the number o
 
 
 **[Contrastive Representation Distillation,ICLR20](https://hobbitlong.github.io/CRD/)**
+
+
+
+**[Invariant Information Clustering for Unsupervised Image Classification and Segmentation,ICCV19](https://arxiv.org/pdf/1807.06653.pdf)**
+
+ train an image classifier or segmenter without any labelled data.
+
+ You have to know the class number $$C$$ in advance.
+
+ ![](/imgs/iic.png)
 
 
 

@@ -9,11 +9,73 @@ categories: cv
 tags:   [ First Tag, Second Tag,    Third Tag ]
 ---
 <!--
-todo: https://zhuanlan.zhihu.com/p/33345791
+todo: 
 -->
 
+[https://zhuanlan.zhihu.com/p/33345791](https://zhuanlan.zhihu.com/p/33345791)
+
+[https://zhuanlan.zhihu.com/p/106662375](https://zhuanlan.zhihu.com/p/106662375)
+
+[https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
+
+
+
+**[Non-local block,CVPR18](https://arxiv.org/abs/1711.07971)**
+
+- Why rescale with $$\frac{1}{\sqrt{512}}$$
+- Why Layer Norm
+
+Relation between FC layer and non-local block 
+
+
+Relation between self-attention and non-local block.
+
+Consider 1D-nonlocal, FC layer can be seen as a matrix multiplication
+
+
+Relation between gram matrix and non-local block.
+
+check [https://arxiv.org/pdf/1701.01036.pdf](https://arxiv.org/pdf/1701.01036.pdf)
+
+
+**[Analyzing Multi-Head Self-Attention:
+Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned,ACL19](https://arxiv.org/pdf/1905.09418.pdf)**
+
+Most of the heads can be removed by the stocchastic gates.
+
+Gumbel sofmax,TODO
+
+
+**[See More, Know More: Unsupervised Video Object Segmentation With Co-Attention Siamese Networks,CVPR19](http://openaccess.thecvf.com/content_CVPR_2019/papers/Lu_See_More_Know_More_Unsupervised_Video_Object_Segmentation_With_Co-Attention_CVPR_2019_paper.pdf)**
+
+![](/imgs/co-attention.png)
+
+**[Cross Attention Network for Few-shot Classification,NeuIPS19](https://papers.nips.cc/paper/8655-cross-attention-network-for-few-shot-classification.pdf)**
+
+[Review](shttp://papers.nips.cc/paper/8655-cross-attention-network-for-few-shot-classification)
+
+uses a meta-learner to generate a kernel which is used to fuse the relations to get the final attention
+map. 
+
+![](/imgs/cross-attention1.png)
+![](/imgs/cross-attention2.png)
+
+**[Effective Approaches to Attention-based Neural Machine Translation,EMNLP15](https://arxiv.org/pdf/1508.04025.pdf)**
+
+
+Global vs. Local Attention
+
+**[Show, Attend and Tell: Neural Image Caption Generation with Visual Attention,ICML15]()**
+
+introduce the hard and soft attention.
+
+**[SENet,CVPR18](https://arxiv.org/abs/1709.01507)**
 
 ## Variants
+
+**[Multi Head Attention,NeuIPS17](http://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf)**
+
+Concatenated the result of $$softmax(\frac{QK^{T}}{\sqrt{n}} V)$$ and send them into a linear layer to remap back to original shape.s
 
 **[A2-nets-double-attention-networks,NIPS18](https://papers.nips.cc/paper/7318-a2-nets-double-attention-networks.pdf)**
 
@@ -170,10 +232,6 @@ Can be seen as a combination of ResNext and SKNet.
 
 ![](/imgs/BAM.png)
 
-
-**[Non-local block,CVPR18](https://arxiv.org/abs/1711.07971)**
-
-**[SENet,CVPR18](https://arxiv.org/abs/1709.01507)**
 
 
 ## Applications

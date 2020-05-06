@@ -8,6 +8,10 @@ share: False
 categories: ml
 ---
 
+[https://zhuanlan.zhihu.com/p/73426787](https://zhuanlan.zhihu.com/p/73426787)
+
+
+
 ## Related materials
 
 check [Normalizing Flows for Probabilistic Modeling and Inference](https://arxiv.org/pdf/1912.02762.pdf)
