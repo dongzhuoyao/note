@@ -246,3 +246,13 @@ copy non-local block into GAN.
 
 Group Activity Recognition: use non-local block to fuse optical flow, pose, RGB. check Fig 2.
 
+## Gate Mechanism
+
+**RNN**
+
+
+**LSTM**
+
+[https://en.wikipedia.org/wiki/Long_short-term_memory](https://en.wikipedia.org/wiki/Long_short-term_memory)
+
+intuition: tanh (to push the values to be between −1 and 1) and multiply it by the output of the sigmoid( to push the values to be between 0 and 1), so that we only output the parts we decided to.s

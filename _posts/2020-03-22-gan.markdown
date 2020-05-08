@@ -9,6 +9,9 @@ categories: cv
 
 [UCB20, CS294-158 Deep Unsupervised Learning Lecture 5 & 6](https://drive.google.com/file/d/1qCVpu2zFz1uEe3QcNHGlaT1Rs2u8HrCc/view)
 
+
+[Mimicry: A PyTorch GAN library that reproduces research results for popular GANs.](https://github.com/kwotsin/mimicry)
+
 #### [CNN-generated images are surprisingly easy to spot... for now,CVPR20](https://arxiv.org/pdf/1912.11035.pdf)
 
 classifiers trained to detect CNN-generated images can exhibit a surprising amount of generalization ability across datasets, architectures, and tasks.

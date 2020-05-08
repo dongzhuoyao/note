@@ -271,13 +271,13 @@ metric learning and that leveraging advances in that domain might lead to furthe
 
 [NIPS proceeding link](http://papers.nips.cc/paper/8568-putting-an-end-to-end-to-end-gradient-isolated-learning-of-representations)
 
-[code](https://github.com/loeweX/Greedy_InfoMax)
+[code](https://github.com/loeweX/Greedy_InfoMax/blob/8f91dc27fcc6edf1f5b9f005a9f5566bb796dce2/GreedyInfoMax/vision/models/InfoNCE_Loss.py#L9)
 
 
 
-Gradient is isolated between modules, but still need gradient in modules.
+Gradient is isolated between modules, but still need gradient in modules. Each module will generate a CPC loss.
 
-Each module will generate a CPC loss.
+For vision task context feature c is replaced by z for simplicity.
 
 
 

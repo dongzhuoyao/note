@@ -153,6 +153,9 @@ CAM
 Check the survey [here](https://arxiv.org/pdf/2001.05566.pdf).
 
 
+
+**[CascadePSP: Toward Class-Agnostic and Very High-Resolution Segmentation via Global and Local Refinement,CVPR20](https://github.com/hkchengrex/CascadePSP)**
+
 **[CFNet:Co-occurrent Features in Semantic Segmentation,CVPR19](http://openaccess.thecvf.com/content_CVPR_2019/papers/Zhang_Co-Occurrent_Features_in_Semantic_Segmentation_CVPR_2019_paper.pdf)**
 
 
@@ -322,7 +325,8 @@ motivated by BN back propogation.
 check code for understading: [https://github.com/HaoMood/bilinear-cnn/blob/master/src/bilinear_cnn_all.py#L71](https://github.com/HaoMood/bilinear-cnn/blob/master/src/bilinear_cnn_all.py#L71)
 
 
-**[](http://openaccess.thecvf.com/content_ICCV_2017/papers/Li_Factorized_Bilinear_Models_ICCV_2017_paper.pdf)**
+**[Factorized Bilinear Models for Image Recognition](http://openaccess.thecvf.com/content_ICCV_2017/papers/Li_Factorized_Bilinear_Models_ICCV_2017_paper.pdf)**
+
 Although the bilinear pooling is capable of capturing pairwise interactions, it also introduces a quadratic
 number of parameters in weight matrices $$W^{R}_{j}$$ leading to
 huge computational cost and the risk of overfitting.
@@ -331,11 +335,11 @@ $$
 y = b + w^{T}x +x^{T}F^{T}Fx
 $$
 
-where $$R \in \mathbb{R}^{k \times n}$$
+where $$F \in \mathbb{R}^{k \times n}$$
 
 The key idea of our DropFactor is to randomly drop the bilinear paths corresponding to k factors during the training.
 
-performs nearly the same with bilinear pooling in fine-grained classification task. therefore the author mainly focus on the experimental of traditional classifcation task. check last subsession.
+performs nearly the same with bilinear pooling in fine-grained classification task. therefore the author mainly focus on the experiment of traditional classifcation task. check last subsession.
 
 
 
@@ -359,4 +363,11 @@ check implementation [here](https://github.com/Andrew-Qibin/SPNet/blob/master/mo
 By adopting a set of parallel pooling operations with a unique kernel size at each pyramid level, the network is able to capture largerange context. It has been shown promising on several scene parsing benchmarks.its ability to exploit contextual information is limited since only square kernel shapes are applied. Moreover, the spatial pyramid pooling is only modularized on top of the backbone network thus rendering it is not flexible or directly applicable in the network building block for feature learning. 
 
 
-- 
+## Conv
+
+**[Dynamic Region-Aware Convolution,Arxiv2003](https://arxiv.org/pdf/2003.12243.pdf)**
+
+[https://zhuanlan.zhihu.com/p/136998353](https://zhuanlan.zhihu.com/p/136998353)
+
+
+
