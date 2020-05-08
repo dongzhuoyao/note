@@ -251,8 +251,16 @@ Group Activity Recognition: use non-local block to fuse optical flow, pose, RGB.
 **RNN**
 
 
+[https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
+
+
+
 **LSTM**
 
 [https://en.wikipedia.org/wiki/Long_short-term_memory](https://en.wikipedia.org/wiki/Long_short-term_memory)
+
+[https://colah.github.io/posts/2015-08-Understanding-LSTMs/](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+
+Gates are a way to optionally let information through. They are composed out of a sigmoid neural net layer and a pointwise multiplication operation. The sigmoid layer outputs numbers between zero and one, describing how much of each component should be let through. A value of zero means “let nothing through,” while a value of one means “let everything through!” An LSTM has three of these gates, to protect and control the cell state.
 
 intuition: tanh (to push the values to be between −1 and 1) and multiply it by the output of the sigmoid( to push the values to be between 0 and 1), so that we only output the parts we decided to.s
