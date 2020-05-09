@@ -11,3 +11,11 @@ categories: ml
 
 **[Neural Additive Models:Interpretable Machine Learning with Neural Nets](https://arxiv.org/pdf/2004.13912.pdf)**
 
+
+**From DeepCluser**
+
+> For example, a multilayer
+perceptron classifier on top of the last convolutional layer of a random AlexNet
+achieves 12% in accuracy on ImageNet while the chance is at 0.1% [26]. The
+good performance of random convnets is intimately tied to their convolutional
+structure which gives a strong prior on the input signal.

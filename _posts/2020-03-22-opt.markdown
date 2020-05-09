@@ -10,3 +10,9 @@ categories: ml
 
 
 [https://zhuanlan.zhihu.com/p/47453144](https://zhuanlan.zhihu.com/p/47453144)
+
+
+
+**[Adaptive Learning of the Optimal Mini-Batch Size of SGD,Arxiv2005](https://arxiv.org/pdf/2005.01097.pdf)**
+
+Adaptively change the batch size

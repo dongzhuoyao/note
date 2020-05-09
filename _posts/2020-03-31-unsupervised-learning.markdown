@@ -32,6 +32,11 @@ Intuitively, mutual information measures the information that X and Y share: It 
 
 TO CONTINUE
 
+Normalized Mutual Information (NMI):
+
+$$
+NMI(A;B) = \frac{I(A;B)}{\sqrt{H(A)H(B)}}
+$$
 
 
 
@@ -96,15 +101,6 @@ Computing the non-parametric softmax above is cost prohibitive when the number o
 
 **[Contrastive Representation Distillation,ICLR20](https://hobbitlong.github.io/CRD/)**
 
-
-
-**[Invariant Information Clustering for Unsupervised Image Classification and Segmentation,ICCV19](https://arxiv.org/pdf/1807.06653.pdf)**
-
- train an image classifier or segmenter without any labelled data.
-
- You have to know the class number $$C$$ in advance.
-
- ![](/imgs/iic.png)
 
 
 
@@ -285,6 +281,68 @@ For vision task context feature c is replaced by z for simplicity.
 
 
 How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from [CVPR20](https://arxiv.org/abs/2003.14323)
+
+
+
+
+
+**[Invariant Information Clustering for Unsupervised Image Classification and Segmentation,ICCV19](https://arxiv.org/pdf/1807.06653.pdf)**
+
+ train an image classifier or segmenter without any labelled data.
+
+ You have to know the class number $$C$$ in advance.
+
+>   for data augmentation, we repeat images within each batch r times; this
+means that multiple image pairs within a batch contain the
+same original image, each paired with a different transformation, which encourages greater distillation since there
+are more examples of which visual details to ignore (section 3.1)
+
+> Multi-head, similar to multi-head transformer: For increased robustness,
+each head is duplicated h = 5 times with a different random
+initialisation, and we call these concrete instantiations subheads. Each sub-head takes features from b and outputs a probability distribution for each batch element over the relevant number of clusters.
+
+> For IIC, the main and auxiliary heads are trained by maximising eq. (3) in alternate epochs.
+
+ ![](/imgs/iic.png)
+
+
+
+**[Deep Clustering for Unsupervised Learning of Visual Features,ECCV18](https://arxiv.org/pdf/1807.05520.pdf)**
+
+> Background: Despite the primeval success of clustering approaches in
+image classification, very few works [21,22] have been proposed to adapt them to
+the end-to-end training of convnets, and never at scale. An issue is that clustering
+methods have been primarily designed for linear models on top of fixed features,
+and they scarcely work if the features have to be learned simultaneously. For
+example, learning a convnet with k-means would lead to a trivial solution where
+the features are zeroed, and the clusters are collapsed into a single entity.
+
+> Note that running k-means takes
+a third of the time because a forward pass on the full dataset is needed. One
+could reassign the clusters every n epochs, but we found out that our setup on
+ImageNet (updating the clustering every epoch) was nearly optimal.
+
+![](/imgs/deepcluster.png)
+
+C is dxk matrix, denoting the cenntriod of k centers with dimenstion d. even though K-means is non-parametric clustering. C can be implicitly obtained when convergent.
+
+Two tricky ways to avoid trival solutions.
+
+
+Interesting analysis in the experimental part.
+
+
+
+**[Unsupervised Pre-Training of Image Features on Non-Curated Data,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Caron_Unsupervised_Pre-Training_of_Image_Features_on_Non-Curated_Data_ICCV_2019_paper.pdf)**
+
+same author of deepcluster.
+
+based on non-curated dataset YFCC100M.
+
+
+
+
+
 
 **[Self-Supervised Learning of Video-Induced Visual Invariances,CVPR20](https://arxiv.org/pdf/1912.02783.pdf)**
 

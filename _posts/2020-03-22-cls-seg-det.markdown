@@ -302,6 +302,22 @@ motivated by BN back propogation.
 **[Riemannian approach to batch normalization,NIPS](https://arxiv.org/pdf/1709.09603.pdf)**
 
 
+
+**[Training BatchNorm and Only BatchNorm:
+On the Expressive Power of Random Features in CNNs,Arxiv2003](https://arxiv.org/pdf/2003.00152.pdf)**
+
+Check the expressive power of coefficient annd bias in BN. 
+
+> To study this
+question, we investigate the performance achieved
+when training only these parameters and freezing
+all others at their random initializations. We find
+that doing so leads to surprisingly high performance. For example, a sufficiently deep ResNet
+reaches 83% accuracy on CIFAR-10 in this configuration. 
+
+
+
+
 ## Upsampling 
 
 [Understanding Convolution for Semantic Segmentation,WACV18](https://arxiv.org/abs/1702.08502)

@@ -102,6 +102,10 @@ inplace=True means that it will modify the input directly, without allocating an
 
 ## different backward function in pytorch
 
+A useful tool to create visualizations of PyTorch execution graphs and traces: [pytorchviz](https://github.com/szagoruyko/pytorchviz)
+
+
+
 **torch.nn.functional.soft_max**
 
 this is a mapping function from $$B \times C$$ to $$B \times C$$, the derivation is splittable along all dimensions, therefore we can simply consider the scalar case,

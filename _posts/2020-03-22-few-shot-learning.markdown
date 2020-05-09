@@ -168,6 +168,8 @@ Edge Detection Network,Arxiv](https://arxiv.org/pdf/2003.08235.pdf)
 
 **[TAEN: Temporal Aware Embedding Network for Few-Shot Action Recognition,Arxiv2004](https://arxiv.org/pdf/2004.10141.pdf)**
 
+**[Weakly-Supervised Video Re-Localization with Multiscale Attention Model,AAAI20](http://vllab.cs.nctu.edu.tw/images/paper/aaai-huang20.pdf)**
+
 
 #### Footnotes
 * footnotes will be placed here. This line is necessary

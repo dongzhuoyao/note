@@ -50,9 +50,14 @@ Gumbel sofmax,TODO
 
 ![](/imgs/co-attention.png)
 
+[code](https://github.com/carrierlxk/COSNet/blob/master/deeplab/siamese_model_conf.py#L264)
+
+
 **[Cross Attention Network for Few-shot Classification,NeuIPS19](https://papers.nips.cc/paper/8655-cross-attention-network-for-few-shot-classification.pdf)**
 
 [Review](shttp://papers.nips.cc/paper/8655-cross-attention-network-for-few-shot-classification)
+
+[code](https://github.com/blue-blue272/fewshot-CAN/blob/master/torchFewShot/models/cam.py#L30)
 
 uses a meta-learner to generate a kernel which is used to fuse the relations to get the final attention
 map. 
