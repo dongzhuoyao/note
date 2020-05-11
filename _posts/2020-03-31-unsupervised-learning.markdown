@@ -201,7 +201,10 @@ TODO
 Preliminary: InfoNCE paper.
 
 
-A contrastive loss function, called InfoNCE, is considered in this paper. Contrastive loss functions can also be based on other forms , such as margin-based losses and variants of NCE losses.
+A contrastive loss function, called InfoNCE, is considered in this paper. Contrastive loss functions can also be based on other forms , such as margin-based losses and variants of NCE losses. Difference between infoNCE: 1) W in C_{t}W x is inogred here by directly dot product. 
+
+[labels = zeros(N)](https://github.com/facebookresearch/moco/issues/24): nn.CrossEntropyLoss((N),Nx(K+1)), positive sample is always first, therefore labels is all zero.
+
 
 
 Relationship with previous works: Compared to another similar idea of memory bank (Wu et al, 2018) which stores representations of all the data points in the database and samples a random set of keys as negative examples, a queue-based dictionary in MoCo enables us to reuse representations of immediate preceding mini-batches of data.
@@ -265,11 +268,17 @@ metric learning and that leveraging advances in that domain might lead to furthe
 
 **[Greedy InfoMax:Putting An End to End-to-End:Gradient-Isolated Learning of Representations,NIPS19](https://arxiv.org/pdf/1905.11786.pdf)**
 
+without end-to-end backpropagation != without backpropagation
+
+
 [NIPS proceeding link](http://papers.nips.cc/paper/8568-putting-an-end-to-end-to-end-gradient-isolated-learning-of-representations)
+
+[NeuIPS talk](https://slideslive.com/38923276/putting-an-end-to-endtoend-gradientisolated-learning-of-representations)
 
 [code](https://github.com/loeweX/Greedy_InfoMax/blob/8f91dc27fcc6edf1f5b9f005a9f5566bb796dce2/GreedyInfoMax/vision/models/InfoNCE_Loss.py#L9)
 
 
+[multiple-losses(multiple optimizers) backward](https://github.com/loeweX/Greedy_InfoMax/blob/8f91dc27fcc6edf1f5b9f005a9f5566bb796dce2/GreedyInfoMax/vision/models/load_vision_model.py#L18)
 
 Gradient is isolated between modules, but still need gradient in modules. Each module will generate a CPC loss.
 
@@ -289,6 +298,8 @@ How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from
 **[Invariant Information Clustering for Unsupervised Image Classification and Segmentation,ICCV19](https://arxiv.org/pdf/1807.06653.pdf)**
 
  train an image classifier or segmenter without any labelled data.
+
+[code](https://github.com/xu-ji/IIC)
 
  You have to know the class number $$C$$ in advance.
 

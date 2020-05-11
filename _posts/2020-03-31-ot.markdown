@@ -1,0 +1,59 @@
+---
+layout: draft
+title: "Optimal Transport"
+permalink: /ot
+date: 2020-03-31 14:49:0 +0000
+comments: False
+share: False
+categories: cv
+---
+
+[PPT: Optimal Transport for Machine Learning](http://imagine.enpc.fr/~langloip/data/OptimalTransport.pdf)
+
+
+**EMD(Earth Moving Distance)**
+
+![](/imgs/emd.png)
+
+pic from [this paper](https://arxiv.org/pdf/2003.06777.pdf)
+
+You need to know the cost per unit c, and the supply amount s and demand amount d in advance.
+
+**EMD in cloud point** starts from [this paper](http://openaccess.thecvf.com/content_cvpr_2017/papers/Fan_A_Point_Set_CVPR_2017_paper.pdf)
+
+What is c,s,d in Cloud Point? it seems that supply and demand is not a must in this optimal transport problem formulation, check powerpoint [here](http://imagine.enpc.fr/~langloip/data/OptimalTransport.pdf).
+
+It's quite similart to chamfer distance. While chamfer distance is not a bijection, EMD is a bijection.
+
+a auction algorithm-based o(n) approximation solution implementation of OT can be found in [this paper](http://cseweb.ucsd.edu/~mil070/projects/AAAI2020/paper.pdf).
+
+
+
+## Applications 
+
+
+Cloud Point metrics. check Haoqiang Fan,CVPR
+
+
+Deep metric learning: [Learning with Batch-wise Optimal Transport Loss for 3D Shape Recognition,CVPR19](http://openaccess.thecvf.com/content_CVPR_2019/papers/Xu_Learning_With_Batch-Wise_Optimal_Transport_Loss_for_3D_Shape_Recognition_CVPR_2019_paper.pdf)
+
+> show how to learn an importance-driven distance metric
+via optimal transport programming from batches of samples.It can automatically emphasize hard examples and
+lead to significant improvements in convergence. We propose a new batch-wise optimal transport loss and combine
+it in an end-to-end deep metric learning manner. We use it
+to learn the distance metric and deep feature representation
+jointly for recognition. Empirical results on visual retrieval
+and classification tasks with six benchmark datasets, i.e.,
+MNIST, CIFAR10, SHREC13, SHREC14, ModelNet10, and
+ModelNet40, demonstrate the superiority of the proposed
+method. It can accelerate the convergence rate significantly
+while achieving a state-of-the-art recognition performance.
+For example, in 3D shape recognition experiments, we show
+that our method can achieve better recognition performance
+within only 5 epochs than what can be obtained by mainstream 3D shape recognition approaches after 200 epochs.
+
+>  It can be viewed as an n-pairs extension version of the contrastive loss or triplet loss.
+
+
+Few-shot learning: [DeepEMD: Differentiable Earth Mover's Distance for Few-Shot Learning,CVPR20](https://arxiv.org/abs/2003.06777v3)
+

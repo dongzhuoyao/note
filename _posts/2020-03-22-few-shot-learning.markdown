@@ -19,6 +19,13 @@ check [Meta-Learning in Neural Networks: A Survey](https://arxiv.org/pdf/2004.05
 
 **[DeepEMD: Few-Shot Image Classification with Differentiable Earth Mover's Distance and Structured Classifiers,CVPR20,oral](https://arxiv.org/abs/2003.06777)**
 
+need to setup the formulation of cost c, supply s and demand d in advance. c is decided in cosine similary distance between patch features. s and d is setup by cross-reference mechanism(session4.4 )
+
+Intuition of setuping s and d: Intuitively, the node with a larger weight plays a more important role in the comparison of two sets, while a node with a very small weight can hardly influence the overall distance no matter which nodes it matches with.
+
+
+
+
 ## imbalanced classification
 
 ## Long-tailed recognition
@@ -99,6 +106,19 @@ the novelty of the open world.
 
 ## Few-shot segmentation
 
+
+**[CRNet: Cross-Reference Networks for Few-Shot Segmentation,CVPR20](https://arxiv.org/pdf/2003.10658.pdf)**
+
+The motivation is interesting, k-pairs  can be utilized as k2 times. 
+
+The design of cross-reference includes a elementwise multiplication of two sigmoids. the intuition behind is , only the common features in the two branches will have a high activation in
+the fused importance vector. Finally, we use the fused vector to weight the input feature maps to generate reinforced feature representations.
+
+The condition module is quite simple by upsampling+concatenation along channel dimension.
+
+Also the thought of refinement is also worthy of learning.
+
+
 **[Self-Supervised Tuning for Few-Shot Segmentation,Arxiv2004](https://arxiv.org/pdf/2004.05538.pdf)**
 
 **[Pyramid Graph Networks with Connection Attentions for Region-Based
@@ -112,7 +132,7 @@ Attentive Few-Shot Learning,CVPR19](https://arxiv.org/pdf/1903.02351.pdf)**
 
 Check Fig 2.
 
-[PANet: Few-Shot Image Semantic Segmentation with Prototype Alignment,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_PANet_Few-Shot_Image_Semantic_Segmentation_With_Prototype_Alignment_ICCV_2019_paper.pdf):
+**[PANet: Few-Shot Image Semantic Segmentation with Prototype Alignment,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_PANet_Few-Shot_Image_Semantic_Segmentation_With_Prototype_Alignment_ICCV_2019_paper.pdf)**
 
 Masked Average Pooling + Cosine similarity, obtain final segmentation result.
 

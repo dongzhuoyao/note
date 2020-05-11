@@ -9,6 +9,8 @@ categories: ml
 ---
 
 
+[Dimitri P. Bertsekas - Optimization Society Prize](https://www.youtube.com/watch?v=T-fSmSqzcqE)
+
 [https://zhuanlan.zhihu.com/p/47453144](https://zhuanlan.zhihu.com/p/47453144)
 
 

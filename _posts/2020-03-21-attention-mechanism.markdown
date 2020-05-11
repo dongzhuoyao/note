@@ -45,6 +45,12 @@ Most of the heads can be removed by the stocchastic gates.
 
 Gumbel sofmax,TODO
 
+**[SYNTHESIZER:Rethinking Self-Attention in Transformer Models,Arxiv2005](https://arxiv.org/pdf/2005.00743.pdf)**
+
+Replace $$Q(x)K(x)^{T}$$ as direction function F(x) mapping from d to l.
+
+
+
 
 **[See More, Know More: Unsupervised Video Object Segmentation With Co-Attention Siamese Networks,CVPR19](http://openaccess.thecvf.com/content_CVPR_2019/papers/Lu_See_More_Know_More_Unsupervised_Video_Object_Segmentation_With_Co-Attention_CVPR_2019_paper.pdf)**
 
@@ -57,10 +63,15 @@ Gumbel sofmax,TODO
 
 [Review](shttp://papers.nips.cc/paper/8655-cross-attention-network-for-few-shot-classification)
 
-[code](https://github.com/blue-blue272/fewshot-CAN/blob/master/torchFewShot/models/cam.py#L30)
+[code](https://github.com/dongzhuoyao/fewshot-CAN/blob/master/torchFewShot/models/cam.py)
 
-uses a meta-learner to generate a kernel which is used to fuse the relations to get the final attention
-map. 
+
+For the fusion layer, the input is WH x H x W. It seems that they try to attend second attention, between WH x WH via 2D convolution. And this module can also be injected in Non-local Block. Overall, you can see the shadow of non-local block in this paper. Some differences I feel are:
+
+- multi-pairs images 
+- fusion layer to **further** reason the difference between WHxWH, except the torch.matmul(WHxC,CxWH) in Nonlocal. After all operations, a softmax is appended to finalize the whole attention mechanism.
+- You can even see a residual connection after the fusion layer, which is also observsed in non-local block!
+- For non-local block, it's not bidirectional, while the author's network is bidirectional. They can influence each other because the correlation layer generates two mutual-transposed matrix via torch.matmul(WHxC,CxWH).
 
 ![](/imgs/cross-attention1.png)
 ![](/imgs/cross-attention2.png)

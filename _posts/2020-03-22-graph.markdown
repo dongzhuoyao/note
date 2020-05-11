@@ -1,0 +1,11 @@
+---
+layout: draft
+title: "Graph"
+permalink: /crypto
+date: 2020-03-22 14:49:0 +0000
+comments: False
+share: False
+categories: ml
+---
+
+[GNN talk](https://www.youtube.com/watch?v=JWswItMRvg4&feature=youtu.be)
