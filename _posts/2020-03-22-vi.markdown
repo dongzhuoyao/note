@@ -12,3 +12,6 @@ categories: ml
 
 
 
+**[On Adversarial Mixup Resynthesis,NeuIPS19](https://papers.nips.cc/paper/8686-on-adversarial-mixup-resynthesis.pdf)**
+
+Mixup+VAE

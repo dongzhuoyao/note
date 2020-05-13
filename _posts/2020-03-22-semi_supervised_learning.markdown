@@ -24,9 +24,9 @@ $$
 
 (1). Hybrid model decompose
 $$
-p_{\theta} (x_{i}, y_{i})
+p_{\theta} (x, y)
 $$  to  $$
-p_{\theta}(x_{i})*p_{\theta}(y_{i}|x_{i})
+p_{\theta}(x)*p_{\theta}(y|x)
 $$
 
  This paper  use Generalized Linear Models(GLM) to model 
@@ -35,9 +35,9 @@ $$
  $$, P(x) is modeled by Normalization Flow.
 
 (2). $$
-p(x_{i})
+p(x)
 $$ is modeled by normalization flow, $$
-p(x_{i}|y_{i})
+p(y|x)
 $$ is modeled by conditional normalization flow(novelty lies in).
 
 

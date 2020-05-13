@@ -197,6 +197,9 @@ The method part is too abstract to understand, need more time to figure it out, 
 
 **[Hybrid Models with Deep and Invertible Features,ICML19](https://arxiv.org/pdf/1902.02767.pdf)**
 
+> We are unaware of any work that uses normalizing flows as the generative component of a hybrid model. The most related work is the class conditional variant of Glow (Kingma& Dhariwal, 2018, Appendix D).
+
+How is Eq (3),(10) come from?
 
 **[Invert to Learn to Invert Patrick,NIPS19](https://arxiv.org/abs/1911.10914)**
 
