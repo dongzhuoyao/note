@@ -7,6 +7,12 @@ comments: False
 share: False
 categories: cv
 ---
+
+
+**[A Metric Learning Reality Check,Arxiv2003](https://arxiv.org/pdf/2003.08505.pdf)**
+
+Important paper.
+
 <!--
 
 https://www.zhihu.com/question/382802283/answer/1118867880
@@ -33,21 +39,6 @@ https://www.zhihu.com/question/67589242
 **[Hyperbolic Image Embeddings](https://arxiv.org/pdf/1904.02239.pdf)**
 
 Useful for image classification, retrieval, few-shot learning
-
-**EMD(Earth Moving Distance)**
-
-![](/imgs/emd.png)
-
-pic from [this paper](https://arxiv.org/pdf/2003.06777.pdf)
-
-You need to know the cost per unit c, and the supply amount s and demand amount d in advance.
-
-**EMD in cloud point** starts from [this paper](http://openaccess.thecvf.com/content_cvpr_2017/papers/Fan_A_Point_Set_CVPR_2017_paper.pdf)
-
-What is c,s,d in Cloud Point? it seems that supply and demand is not a must in this optimal transport problem formulation, check powerpoint [here](http://imagine.enpc.fr/~langloip/data/OptimalTransport.pdf).
-
-It's quite similart to chamfer distance. While chamfer distance is not a bijection, EMD is a bijection.
-
 
 
 

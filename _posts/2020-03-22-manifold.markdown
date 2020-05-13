@@ -1,0 +1,17 @@
+---
+layout: draft
+title: "Manifold"
+permalink: /manifold
+date: 2020-03-22 14:49:0 +0000
+comments: False
+share: False
+categories: ml
+---
+
+
+**[Riemannian approach to batch normalization,NeuIPS17](https://arxiv.org/pdf/1709.09603.pdf)**
+
+A brief summary about Riemannian manifold check session2.2 
+
+**[Searching for Actions on the Hyperbole,CVPR20](https://isis-data.science.uva.nl/cgmsnoek/pub/long-hyperbole-cvpr2020.pdf)**
+

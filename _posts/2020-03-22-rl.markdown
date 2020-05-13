@@ -1,0 +1,13 @@
+---
+layout: draft
+title: "RL"
+permalink: /rl
+date: 2020-03-22 14:49:0 +0000
+comments: False
+share: False
+categories: ml
+---
+
+**[Plannable Approximations to MDP Homomorphisms: Equivariance under Actions,AAMAS2020](https://arxiv.org/pdf/2002.11963.pdf)**
+
+[talk](https://underline.io/lecture/228-plannable-approximations-to-mdp-homomorphisms-equivariance-under-actions)
