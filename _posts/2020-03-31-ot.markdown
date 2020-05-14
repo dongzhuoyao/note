@@ -11,6 +11,10 @@ categories: cv
 [PPT: Optimal Transport for Machine Learning](http://imagine.enpc.fr/~langloip/data/OptimalTransport.pdf)
 
 
+**[Wasserstein metric](https://en.wikipedia.org/wiki/Wasserstein_metric)**
+
+
+
 **EMD(Earth Moving Distance)**
 
 ![](/imgs/emd.png)

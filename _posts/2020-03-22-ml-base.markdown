@@ -23,6 +23,9 @@ constant-volume transformation in probability?
 
 **[Natural exponential family](https://en.wikipedia.org/wiki/Natural_exponential_family)**
 
+**[Exponential family](https://en.wikipedia.org/wiki/Exponential_family)**
+
+
 **[Generalized linear model](https://en.wikipedia.org/wiki/Generalized_linear_model)**
 
 [Introduction to Generalized Linear Models](https://statmath.wu.ac.at/courses/heather_turner/glmCourse_001.pdf)
@@ -32,5 +35,33 @@ constant-volume transformation in probability?
 A conjugate prior is an algebraic convenience, giving a closed-form expression for the posterior; otherwise numerical integration may be necessary. Further, conjugate priors may give intuition, by more transparently showing how a likelihood function updates a prior distribution.All members of the exponential family have conjugate priors.
 
 
+**[Stationary process](https://en.wikipedia.org/wiki/Stationary_process#wide-sense_stationarity)**
 
+For many applications strict-sense stationarity is too restrictive. Other forms of stationarity such as wide-sense stationarity or N-th order stationarity are then employed.
+
+
+**[Gaussian Process](https://en.wikipedia.org/wiki/Gaussian_process)**
+
+[zh](https://www.zhihu.com/question/46631426/answer/122929183)
+[https://zhuanlan.zhihu.com/p/31203558](https://zhuanlan.zhihu.com/p/31203558)
+
+**[Independent component analysis](https://en.wikipedia.org/wiki/Independent_component_analysis)**
+
+mixing function f, mapping latent(source) variable to observed data.
+
+check [https://arxiv.org/pdf/1805.08651.pdf](https://arxiv.org/pdf/1805.08651.pdf)
+
+Proving the identifiability of linear ICA (Comon, 1994) was a
+great advance on the classical theory of factor analysis, where an orthogonal factor rotation could not be identified.
+
+**[Sylvester's determinantal identity](https://en.wikipedia.org/wiki/Sylvester%27s_determinant_identity)**
+
+**[Maximum Mean Discrepancy]()**
+
+[ppt](http://alex.smola.org/teaching/iconip2006/iconip_3.pdf)
+[application](https://arxiv.org/pdf/1701.01036.pdf)
+
+## Common citations
+
+- [Universal approximation capacity](Universal approximation theorem): [Multilayer Feedforward Networks are Universal Approximators ](http://cognitivemedium.com/magic_paper/assets/Hornik.pdf)
 

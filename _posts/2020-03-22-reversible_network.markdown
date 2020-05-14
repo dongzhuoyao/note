@@ -185,6 +185,67 @@ variability.
 
 The method part is too abstract to understand, need more time to figure it out, TODO.
 
+**[Your classifier is secretly an energy based model and you should treat it like one,ICLR20,oral](https://openreview.net/forum?id=Hkxzx0NtDB)**
+
+> This paper advocates the use of energy based models (EBMs) to help realize the potential of generative models on downstream discriminative problems.
+
+**[Variational autoencoders and nonlinear ICA: A unifying framework,AISTAT20](https://arxiv.org/abs/1907.04809)**
+
+Preliminary work: [Nonlinear ICA Using Auxiliary Variables,AISTAT19](https://arxiv.org/pdf/1805.08651.pdf)
+
+check conclusion part.
+
+> The framework of variational autoencoders allows us to efficiently learn deep latent-variable
+models, such that the model’s marginal distribution over observed variables fits the data.
+Often, we’re interested in going a step further,
+and want to approximate the true joint distribution over observed and latent variables,
+including the true prior p(z) and posterior p(z|x) distributions over latent variables. This is known
+to be generally impossible due to unidentifiability of the model.
+
+The VAE model actually learns a full generative model
+$$p_{\theta}(x,z) = p_{\theta}(x|z)p_{\theta}(z)
+$$ 
+and an inference model $$q_{\theta}(z|x)$$ that approximates its posterior $$p_{\theta}(z|x)$$ The problem is
+that we generally have no guarantees about what these
+learned distributions actually are: all we know is that
+the marginal distribution over x is meaningful (Eq. 3).
+The rest of the learned distributions are, generally,
+quite meaningless.
+
+> Almost no literature exists on achieving this goal. A
+pocket of the VAE literature works towards the related
+goal of disentanglement, but offers no proofs or theoretic guarantees of identifiability of the model or its latent variables.
+
+
+The prior on the latent variables pθ(z|u) is assumed
+to be conditionally factorial, where each element of
+zi ∈ z has a univariate exponential family distribution
+given conditioning variable u. To this end, in
+practice we choose the prior pθ(z|u) to be a Gaussian
+location-scale family, which is widely used with VAE.
+
+
+
+
+
+**[Disentanglement by Nonlinear ICA with General Incompressible-flow Networks (GIN),ICLR20](https://openreview.net/forum?id=rygeHgSFDH)**
+
+repeat
+
+**[Flow Contrastive Estimation of Energy-Based Models,Arxiv1912](https://arxiv.org/pdf/1912.00589.pdf)**
+
+**[ICE-BeeM: Identifiable Conditional Energy-Based Deep Models,Arxiv2002](https://arxiv.org/pdf/2002.11537.pdf)**
+
+**[Analyzing Inverse Problems with Invertible Neural Networks,ICLR19](https://openreview.net/forum?id=rJed6j0cKX)**
+
+
+
+
+**[Sylvester Normalizing Flows for Variational Inference,UAI18](https://arxiv.org/abs/1803.05649)**
+
+
+**[BayesFlow: Learning complex stochastic models with invertible neural networks,Arxiv2003](https://arxiv.org/abs/2003.06281)**
+
 
 
 **[Do Deep Generative Models Know What They Don't Know?,ICLR19](https://arxiv.org/pdf/1810.09136.pdf)**
@@ -205,5 +266,6 @@ How is Eq (3),(10) come from?
 
 **[A Disentangling Invertible Interpretation Network for Explaining Latent Representations,Arxiv2004](https://arxiv.org/pdf/2004.13166.pdf)**
  
+**[IIR,Arxiv2005](https://arxiv.org/abs/2005.05650)**
 
-
+**[Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation,Arxiv2003](https://arxiv.org/pdf/1308.3432.pdf)**

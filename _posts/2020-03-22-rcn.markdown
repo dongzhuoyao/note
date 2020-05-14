@@ -1,0 +1,14 @@
+---
+layout: draft
+title: "RNN"
+permalink: /rnn
+date: 2020-03-22 14:49:0 +0000
+comments: False
+share: False
+categories: ml
+---
+
+
+**[Ordered Neurons: Integrating Tree Structures into Recurrent Neural Networks,ICLR20](https://arxiv.org/abs/1810.09536)**
+
+ICLR19 best paper 
