@@ -1,7 +1,7 @@
 ---
 layout: draft
-title: "Reversible network"
-permalink: /reversible_network
+title: "Inversible network"
+permalink: /inversible_network
 date: 2020-03-22 14:49:0 +0000
 comments: False
 share: False
