@@ -23,6 +23,8 @@ check [Normalizing Flows for Probabilistic Modeling and Inference](https://arxiv
 
 ## Pre history: distribution estimation
 
+**[Gaussianization](https://papers.nips.cc/paper/1856-gaussianization.pdf)**
+brief read
 
 **[Independent Component Analysis]()**
 
@@ -89,6 +91,11 @@ Training a normalization flow does not in theory requires a discriminator networ
 dive deeper into related works. TODO.
 
 
+**[NADE:Neural Autoregressive Distribution Estimation,JMLR2000](https://arxiv.org/pdf/1605.02226.pdf)**
+
+
+**[RNADE](https://arxiv.org/pdf/1306.0186.pdf)**
+
 **[Pixel Recurrent Neural Networks,ICML16](https://arxiv.org/pdf/1601.06759.pdf)**
 
 > Furthermore, in contrast to previous approaches that model the pixels as continuous values (e.g., Theis & Bethge (2015); Gregor et al.(2014)), we model the pixels as discrete values using a multinomial distribution implemented with a simple softmax layer.   Each channel variable xi,∗ simply takes one of 256 distinct values.
@@ -133,6 +140,31 @@ chain.
 Why sampling speed is so high compared with PixelCNN?TODO
 
 Fig 5 in supp,TODO.
+
+**[MADE:Masked Autoencoder for Distribution Estimation,ICML15](https://arxiv.org/abs/1502.03509)**
+
+![](/imgs/made.png)
+
+**[MAF: Masked Autoregressive Flow for Density Estimation,NeuIPS17](https://arxiv.org/abs/1705.07057)**
+
+Based on MADE
+
+
+Difference between previous methods:
+
+>  An early example is Gaussianization [4], which is based on successive application of independent component analysis. Enforcing invertibility with nonsingular weight matrices has been proposed [3, 29], however in such approaches calculating the determinant of the Jacobian scales cubicly with data dimensionality in general. **Planar/radial flows [27] and Inverse Autoregressive Flow (IAF) [16] are models whose Jacobian is tractable by design. However, they were developed primarily for variational inference and are not well-suited for density estimation, as they can only efficiently calculate the density of their own samples and not of externally provided datapoints.** The Non-linear Independent Components Estimator (NICE) [5] and its successor Real NVP [6] have a tractable Jacobian and are also suitable for density estimation.
+
+Check session for detailed "Relationship with Inverse Autoregressive Flow".
+
+> The advantage of Real NVP compared to MAF and IAF is that it
+can both generate data and estimate densities with one forward pass only, whereas MAF would need
+D passes to generate data and IAF would need D passes to estimate densities.
+
+why?
+
+Have a detail comparison beteen MADE,IAF,MAF
+
+
 
 **[Glow](https://arxiv.org/pdf/1807.03039.pdf)**
 
@@ -184,6 +216,9 @@ are necessary to train them in a reasonable time and are designed to build invar
 variability.
 
 The method part is too abstract to understand, need more time to figure it out, TODO.
+
+
+
 
 **[Your classifier is secretly an energy based model and you should treat it like one,ICLR20,oral](https://openreview.net/forum?id=Hkxzx0NtDB)**
 
@@ -269,3 +304,82 @@ How is Eq (3),(10) come from?
 **[IIR,Arxiv2005](https://arxiv.org/abs/2005.05650)**
 
 **[Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation,Arxiv2003](https://arxiv.org/pdf/1308.3432.pdf)**
+
+
+## Summary
+
+
+**Prior choice summary**
+
+The essential problem is how to obtain p(z) if you know the value of z, a necesary prior is you need the distribution type of z!
+
+
+In Glow, they mentioned if x is discrete data, the log-likelihood objective is simply as:
+
+$$
+L(D) = \frac{1}{N} \sum_{i=1}^{N} -logp_{\theta}(x^{(i)})
+$$
+
+If x is  a continuous data(narual images are in this case, therefore we need dequantization. check PixelRNN):
+
+$$
+L(D) = \frac{1}{N} \sum_{i=1}^{N} - logp_{\theta}(\tilde{x}^{(i)}) + c
+$$
+
+In realNVP, they set p(x) to be an isotropic unit norm Gaussian.
+
+In NICE, the prior distribution p(x) can be gaussian distribution:
+
+$$
+log(p(x)) = -\frac{1}{2} (x^{2} + log(2\pi))
+$$
+
+or logistic distribution:
+
+$$
+log(p(x)) = -log(1+exp(x)) - log(1+exp(-x))
+ $$
+
+ They tend to use the logistic distribution as it tends to provide a better behaved gradient.
+
+
+**Pixel processing summary**
+
+In realNVP, they mentioned this:
+> In order to reduce the impact of boundary effects(the boundary effects here can be seen in Figure 6 of PixelRNN.), we instead model the density of logit(α+(1−α)
+x/256 ), where α is picked here as .05.
+
+In PixelRNN, they also discussed quite a lot about the continous or discrete variable we should see the pixel as. They see them as a discrete variable and model them with a softmax layer(see Figure 6).
+But previous models are trained with continuous variables, here they show how they compare with previous works:
+> All our models are trained and evaluated on the loglikelihood loss function coming from a discrete distribution. **Although natural image data is usually modeled with
+continuous distributions using density functions**, we can compare our results with previous art in the following way. In the literature it is currently best practice to add realvalued noise to the pixel values to dequantize the data when using density functions (Uria et al., 2013). When uniform noise is added (with values in the interval [0, 1]), then the log-likelihoods of continuous and discrete models are directly comparable (Theis et al., 2015). In our case, we can use the values from the discrete distribution as a piecewiseuniform continuous function  that has a constant value for every interval [i, i + 1], i = 1, 2, . . . 256. This corresponding distribution will have the same log-likelihood (on data with added noise) as the original discrete distribution (on discrete data).
+
+
+In MAF:
+
+> For both MNIST and CIFAR-10, we use the same preprocessing as by Dinh et al. [6]. We dequantize
+pixel values by adding uniform noise, and then rescale them to [0, 1]. We transform the rescaled pixel
+values into logit space by x 7→ logit(λ + (1 − 2λ)x), where λ= 10−6
+for MNIST and λ= 0.05 for CIFAR-10, and perform density estimation in that space. In the case of CIFAR-10, we also augment the train set with horizontal flips of all train examples (as also done by Dinh et al. [6]).
+
+RNADE:
+
+> Pixels in this dataset can take a finite number of brightness values ranging from 0 to 255. Modeling
+discretized data using a real-valued distribution can lead to arbitrarily high density values, by locating narrow high density spike on each of the possible discrete values. In order to avoid this ‘cheating’ solution, we added noise uniformly distributed between 0 and 1 to the value of each pixel. We then divided by 256, making each pixel take a value in the range [0, 1].
+
+**Evaluation metrics summary**
+
+for bits-per-dimension check page12 of MAF.
+
+if your goal is density estimation(Glow, MAF,MADE,RealNVP,Sylvester):
+
+- minimize NLL(in nats)
+  
+If your goal is vairiational inference, you can evaluate on ELBO, and NLL. To obtain NLL, you need importance sampling.
+
+
+> Sylvester flow: In order to obtain estimates for the negative log likelihood we used importance sampling (as proposed in (Rezende et al., 2014)).Unless otherwise stated, 5000 importance samples were used.
+
+
+
+
