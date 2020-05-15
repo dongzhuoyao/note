@@ -64,6 +64,11 @@ great advance on the classical theory of factor analysis, where an orthogonal fa
 **[NAT](https://en.wikipedia.org/wiki/Nat_(unit))**
 
 
+**[Empirical risk minimization](https://en.wikipedia.org/wiki/Empirical_risk_minimization)**
+
+in mixup.
+
+[Principles of Risk Minimization for Learning Theory,NIPS](http://papers.nips.cc/paper/506-principles-of-risk-minimization-for-learning-theory.pdf)
 
 ## Common citations
 

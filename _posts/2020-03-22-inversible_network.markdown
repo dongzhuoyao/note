@@ -20,6 +20,8 @@ check [Normalizing Flows for Probabilistic Modeling and Inference](https://arxiv
 
 [Invertible Models and Normalizing Flows: a retrospective (ICLR 2020 keynote slides)](https://docs.google.com/presentation/d/15RMCzCRwuKKv6fIwvGjwig2WnnP_5yzQGzcpJbq7zws/edit#slide=id.g8428c68825_0_0)
 
+density estimation, variational inference, sample(generation) is essentially different and corelated.
+
 
 ## Pre history: distribution estimation
 
@@ -33,6 +35,97 @@ brief read
 **[NADE:Neural Autoregressive Distribution Estimation,JMLR2000](https://arxiv.org/pdf/1605.02226.pdf)**
 
 ## Recent Advance
+
+### Auto-regressive model
+
+
+**[NADE:Neural Autoregressive Distribution Estimation,JMLR2000](https://arxiv.org/pdf/1605.02226.pdf)**
+
+
+**[RNADE](https://arxiv.org/pdf/1306.0186.pdf)**
+
+**[Pixel Recurrent Neural Networks,ICML16](https://arxiv.org/pdf/1601.06759.pdf)**
+
+> Furthermore, in contrast to previous approaches that model the pixels as continuous values (e.g., Theis & Bethge (2015); Gregor et al.(2014)), we model the pixels as discrete values using a multinomial distribution implemented with a simple softmax layer.   Each channel variable xi,∗ simply takes one of 256 distinct values.
+
+We have four types of networks: the PixelRNN based on Row LSTM, the one based on Diagonal BiLSTM, the fully convolutional one and the MultiScale one.
+
+Have a detailed discussion about dequantizing the image data.
+> In the literature it is currently best practice to add realvalued noise to the pixel values to dequantize the data when using density functions (Uria et al., 2013). When uniform noise is added (with values in the interval [0, 1]), then the log-likelihoods of continuous and discrete models are directly comparable (Theis et al., 2015). 
+
+Evaluation details: For MNIST we report the negative log-likelihood in nats as it is common practice in literature. For CIFAR-10 and ImageNet we report negative log-likelihoods in bits per dimension. The total discrete log-likelihood is normalized by the dimensionality of the images (e.g., 32 × 32 × 3 = 3072 for CIFAR-10). These numbers are interpretable as the number of bits that a compression scheme based on this model would need to compress every RGB color value (van den Oord & Schrauwen, 2014b; Theis et al., 2015); in practice there is also a small overhead due to arithmetic coding.
+
+
+
+**[PixelCNN:Conditional Image Generation with PixelCNN Decoders](https://arxiv.org/pdf/1606.05328.pdf)**
+
+**[Image Transformer,ICML18](https://arxiv.org/pdf/1802.05751.pdf)**
+
+Temperature is important in generation, this point also inspires Glow:
+> Across all of the presented experiments, we use categorical
+sampling during decoding with a tempered softmax (Dahl
+et al., 2017). We adjust the concentration of the distribution
+we sample from with a temperature τ > 0 by which we
+divide the logits for the channel intensities.
+
+![](/imgs/image-transformer.png)
+
+**[(IAF)Improved Variational Inference with Inverse Autoregressive Flow,NIPS16](https://arxiv.org/abs/1606.04934)**
+
+[NeuIPS review](https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow)
+
+Preliminary: PixelCNN , PixelRNN，MADE
+
+>  The paper are able to exploit the recent advances in autoregressive models, particularly in making efficient inference through parallel computing. However, they avoid the cumbersome sampling/inversion procedure of autoregressive model, which is quite ingenious. 
+
+![](/imgs/iaf.png)
+
+![](/imgs/iaf2.png)
+
+
+$$
+z = \sigma \odot z + (1-\sigma) \odot m
+$$
+is parallelized, this is the main difference betwenn autoregressive model.
+
+Perhaps the simplest special version of IAF is one with a simple step(T=1), and a linear autoregressive
+model. This transforms a Gaussian variable with diagonal covariance, to one with linear dependencies,
+i.e. a Gaussian distribution with full covariance. See appendix A for an explanation.
+
+We found that results improved when reversing the ordering of the variables after each step in the IAF
+chain.
+
+Why sampling speed is so high compared with PixelCNN?TODO
+
+Fig 5 in supp,TODO.
+
+**[MADE:Masked Autoencoder for Distribution Estimation,ICML15](https://arxiv.org/abs/1502.03509)**
+
+![](/imgs/made.png)
+
+**[MAF: Masked Autoregressive Flow for Density Estimation,NeuIPS17](https://arxiv.org/abs/1705.07057)**
+
+Based on MADE
+
+
+Difference between previous methods:
+
+>  An early example is Gaussianization [4], which is based on successive application of independent component analysis. Enforcing invertibility with nonsingular weight matrices has been proposed [3, 29], however in such approaches calculating the determinant of the Jacobian scales cubicly with data dimensionality in general. **Planar/radial flows [27] and Inverse Autoregressive Flow (IAF) [16] are models whose Jacobian is tractable by design. However, they were developed primarily for variational inference and are not well-suited for density estimation, as they can only efficiently calculate the density of their own samples and not of externally provided datapoints.** The Non-linear Independent Components Estimator (NICE) [5] and its successor Real NVP [6] have a tractable Jacobian and are also suitable for density estimation.
+
+Check session for detailed "Relationship with Inverse Autoregressive Flow".
+
+> The advantage of Real NVP compared to MAF and IAF is that it
+can both generate data and estimate densities with one forward pass only, whereas MAF would need
+D passes to generate data and IAF would need D passes to estimate densities.
+
+why?
+
+Have a detail comparison beteen MADE,IAF,MAF
+
+
+
+
+### Normalization Flow
 
 **[Planar and Radial Flows]()**
 
@@ -90,97 +183,27 @@ Training a normalization flow does not in theory requires a discriminator networ
 
 dive deeper into related works. TODO.
 
+About the nature of maximum likelihood:
 
-**[NADE:Neural Autoregressive Distribution Estimation,JMLR2000](https://arxiv.org/pdf/1605.02226.pdf)**
-
-
-**[RNADE](https://arxiv.org/pdf/1306.0186.pdf)**
-
-**[Pixel Recurrent Neural Networks,ICML16](https://arxiv.org/pdf/1601.06759.pdf)**
-
-> Furthermore, in contrast to previous approaches that model the pixels as continuous values (e.g., Theis & Bethge (2015); Gregor et al.(2014)), we model the pixels as discrete values using a multinomial distribution implemented with a simple softmax layer.   Each channel variable xi,∗ simply takes one of 256 distinct values.
-
-We have four types of networks: the PixelRNN based on Row LSTM, the one based on Diagonal BiLSTM, the fully convolutional one and the MultiScale one.
-
-Have a detailed discussion about dequantizing the image data.
-> In the literature it is currently best practice to add realvalued noise to the pixel values to dequantize the data when using density functions (Uria et al., 2013). When uniform noise is added (with values in the interval [0, 1]), then the log-likelihoods of continuous and discrete models are directly comparable (Theis et al., 2015). 
-
-Evaluation details: For MNIST we report the negative log-likelihood in nats as it is common practice in literature. For CIFAR-10 and ImageNet we report negative log-likelihoods in bits per dimension. The total discrete log-likelihood is normalized by the dimensionality of the images (e.g., 32 × 32 × 3 = 3072 for CIFAR-10). These numbers are interpretable as the number of bits that a compression scheme based on this model would need to compress every RGB color value (van den Oord & Schrauwen, 2014b; Theis et al., 2015); in practice there is also a small overhead due to arithmetic coding.
+> As mentioned in [62, 22], maximum likelihood is a principle that values diversity over sample quality in a limited capacity setting.
 
 
 
-**[PixelCNN:Conditional Image Generation with PixelCNN Decoders](https://arxiv.org/pdf/1606.05328.pdf)**
-
-
-**[(IAF)Improved Variational Inference with Inverse Autoregressive Flow,NIPS16](https://arxiv.org/abs/1606.04934)**
-
-[NeuIPS review](https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow)
-
-Preliminary: PixelCNN , PixelRNN，MADE
-
->  The paper are able to exploit the recent advances in autoregressive models, particularly in making efficient inference through parallel computing. However, they avoid the cumbersome sampling/inversion procedure of autoregressive model, which is quite ingenious. 
-
-![](/imgs/iaf.png)
-
-![](/imgs/iaf2.png)
-
-
-$$
-z = \sigma \odot z + (1-\sigma) \odot m
-$$
-is parallelized, this is the main difference betwenn autoregressive model.
-
-Perhaps the simplest special version of IAF is one with a simple step(T=1), and a linear autoregressive
-model. This transforms a Gaussian variable with diagonal covariance, to one with linear dependencies,
-i.e. a Gaussian distribution with full covariance. See appendix A for an explanation.
-
-We found that results improved when reversing the ordering of the variables after each step in the IAF
-chain.
-
-Why sampling speed is so high compared with PixelCNN?TODO
-
-Fig 5 in supp,TODO.
-
-**[MADE:Masked Autoencoder for Distribution Estimation,ICML15](https://arxiv.org/abs/1502.03509)**
-
-![](/imgs/made.png)
-
-**[MAF: Masked Autoregressive Flow for Density Estimation,NeuIPS17](https://arxiv.org/abs/1705.07057)**
-
-Based on MADE
-
-
-Difference between previous methods:
-
->  An early example is Gaussianization [4], which is based on successive application of independent component analysis. Enforcing invertibility with nonsingular weight matrices has been proposed [3, 29], however in such approaches calculating the determinant of the Jacobian scales cubicly with data dimensionality in general. **Planar/radial flows [27] and Inverse Autoregressive Flow (IAF) [16] are models whose Jacobian is tractable by design. However, they were developed primarily for variational inference and are not well-suited for density estimation, as they can only efficiently calculate the density of their own samples and not of externally provided datapoints.** The Non-linear Independent Components Estimator (NICE) [5] and its successor Real NVP [6] have a tractable Jacobian and are also suitable for density estimation.
-
-Check session for detailed "Relationship with Inverse Autoregressive Flow".
-
-> The advantage of Real NVP compared to MAF and IAF is that it
-can both generate data and estimate densities with one forward pass only, whereas MAF would need
-D passes to generate data and IAF would need D passes to estimate densities.
-
-why?
-
-Have a detail comparison beteen MADE,IAF,MAF
-
-
-
-**[Glow](https://arxiv.org/pdf/1807.03039.pdf)**
+**[Glow: Generative Flow with Invertible 1x1 Convolutions](https://arxiv.org/pdf/1807.03039.pdf)**
 
 
 ![](/imgs/glow.png)
 
 Summairzed four merits of flow-based generative models.
 
-ActNorm is similar to BN, without mean and standard deviation. only learn the scale and bias with size $$C\times 1\times 1$$
+ActNorm is similar to BN, without mean and standard deviation. only learn the scale and bias with size $$C\times 1\times 1$$, interesting thing is you only know how to initialize until first batch of data arrives.
 
 An additive coupling layer proposed before is a special case with s = 1 and a log-determinant of
 0 in affine coupling layers. Actually NICE also proposed a general coupling layer. So what's the difference between glow's coupling layer and the general coupling layer in NICE?
 
 invertable 1x1 convolution by LU decomposition, TODO.
 
-
+Temperature T is vital in n likelihood-based generative models.
 
 
 
@@ -267,6 +290,12 @@ location-scale family, which is widely used with VAE.
 
 repeat
 
+**[Categorical Reparameterization with Gumbel-Softmax,ICLR17](https://arxiv.org/abs/1611.01144)**
+
+
+**[Gaussianization Flows,Arxiv2003](https://arxiv.org/pdf/2003.01941.pdf)**
+
+
 **[Flow Contrastive Estimation of Energy-Based Models,Arxiv1912](https://arxiv.org/pdf/1912.00589.pdf)**
 
 **[ICE-BeeM: Identifiable Conditional Energy-Based Deep Models,Arxiv2002](https://arxiv.org/pdf/2002.11537.pdf)**
@@ -305,14 +334,12 @@ How is Eq (3),(10) come from?
 
 **[Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation,Arxiv2003](https://arxiv.org/pdf/1308.3432.pdf)**
 
+**[Integer Discrete Flows and Lossless Compression,NeuIPS19](https://papers.nips.cc/paper/9383-integer-discrete-flows-and-lossless-compression)**
+
 
 ## Summary
 
-
-**Prior choice summary**
-
-The essential problem is how to obtain p(z) if you know the value of z, a necesary prior is you need the distribution type of z!
-
+**discrete or continuous**
 
 In Glow, they mentioned if x is discrete data, the log-likelihood objective is simply as:
 
@@ -324,7 +351,23 @@ If x is  a continuous data(narual images are in this case, therefore we need deq
 
 $$
 L(D) = \frac{1}{N} \sum_{i=1}^{N} - logp_{\theta}(\tilde{x}^{(i)}) + c
+$$In Glow, they mentioned if x is discrete data, the log-likelihood objective is simply as:
+
 $$
+L(D) = \frac{1}{N} \sum_{i=1}^{N} -logp_{\theta}(x^{(i)})
+$$
+
+If x is  a continuous data(narual images are in this case, therefore we need dequantization. check PixelRNN):
+
+$$
+L(D) = \frac{1}{N} \sum_{i=1}^{N} - logp_{\theta}(\tilde{x}^{(i)}) + c
+$$
+
+**Prior choice summary**
+
+The essential problem is how to obtain p(z) if you know the value of z, a necesary prior is you need the distribution type of z!
+
+
 
 In realNVP, they set p(x) to be an isotropic unit norm Gaussian.
 
@@ -341,6 +384,18 @@ log(p(x)) = -log(1+exp(x)) - log(1+exp(-x))
  $$
 
  They tend to use the logistic distribution as it tends to provide a better behaved gradient.
+
+
+How about Glow?
+
+In PixelRNN,they use discrete categorical distribution formulated by softmax.
+
+In Image-Transformer:
+
+> experiment with two settings of the distribution: a categorical distribution across
+each channel (van den Oord et al., 2016a) and a mixture of discretized logistics over three channels (Salimans et al.). **[the categorical distribution is a special case of the multinomial distribution, in that it gives the probabilities of potential outcomes of a single drawing rather than multiple drawings.]**
+
+In summary: the typical choice is gaussian, logistic distribution, 
 
 
 **Pixel processing summary**
@@ -362,7 +417,9 @@ pixel values by adding uniform noise, and then rescale them to [0, 1]. We transf
 values into logit space by x 7→ logit(λ + (1 − 2λ)x), where λ= 10−6
 for MNIST and λ= 0.05 for CIFAR-10, and perform density estimation in that space. In the case of CIFAR-10, we also augment the train set with horizontal flips of all train examples (as also done by Dinh et al. [6]).
 
-RNADE:
+In Image-Transformer, they didn't consider the difference between continuous and discrete data.
+
+In RNADE:
 
 > Pixels in this dataset can take a finite number of brightness values ranging from 0 to 255. Modeling
 discretized data using a real-valued distribution can lead to arbitrarily high density values, by locating narrow high density spike on each of the possible discrete values. In order to avoid this ‘cheating’ solution, we added noise uniformly distributed between 0 and 1 to the value of each pixel. We then divided by 256, making each pixel take a value in the range [0, 1].

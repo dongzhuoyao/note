@@ -10,3 +10,6 @@ categories: ml
 
 
 **[Scale-Equivariant Steerable Networks,ICLR20](https://openreview.net/forum?id=HJgpugrKPS)**
+
+**[HEXACONV,ICLR18](https://arxiv.org/pdf/1803.02108.pdf)**
+

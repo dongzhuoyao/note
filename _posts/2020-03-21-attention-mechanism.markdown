@@ -41,7 +41,7 @@ check [https://arxiv.org/pdf/1701.01036.pdf](https://arxiv.org/pdf/1701.01036.pd
 **[Analyzing Multi-Head Self-Attention:
 Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned,ACL19](https://arxiv.org/pdf/1905.09418.pdf)**
 
-Most of the heads can be removed by the stocchastic gates.
+Most of the heads can be removed by the stochastic gates.
 
 Gumbel sofmax,TODO
 

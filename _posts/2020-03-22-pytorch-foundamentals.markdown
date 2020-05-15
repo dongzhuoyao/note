@@ -169,6 +169,22 @@ concatenation can be operated between diverse dimensions. As here we only reorga
 
 [Can Fully Connected Layers be Replaced by Convolutional Layers?](https://sebastianraschka.com/faq/docs/fc-to-conv.html)
 
+**softmax implementation numerical stability**
+
+Imagine exp(1e20)+exp(1e10)
+```
+import numpy as np
+
+def softmax(x):
+    """Compute softmax values for each sets of scores in x."""
+    e_x = np.exp(x - np.max(x))
+    return e_x / e_x.sum()
+
+scores = [3.0, 1.0, 0.2]
+print(softmax(scores))
+
+```
+
 ## Reference
 
 - [colab](https://colab.research.google.com/drive/1US3uQNTWUse1-D_4oK5TlKBRfAbrZmxD)
