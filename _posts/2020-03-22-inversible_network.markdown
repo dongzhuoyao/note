@@ -122,6 +122,8 @@ why?
 
 Have a detail comparison beteen MADE,IAF,MAF
 
+**[Axial Attention in Multidimensional Transformers](https://openreview.net/pdf?id=H1e5GJBtDr)**
+
 
 
 
@@ -214,6 +216,10 @@ where each layer’s activations can be reconstructed exactly from the next laye
 Therefore, the activations for most layers need not be stored in memory during
 backpropagation.
 
+TODO: how to map the input to a categorial outpout(softmax)? need check code.
+
+TODO: how to do downsampling?
+
 Note that unlike residual blocks, reversible blocks must have a stride of 1 because otherwise the layer
 discards information, and therefore cannot be reversible. Standard ResNet architectures typically
 have a handful of layers with a larger stride. If we define a RevNet architecture analogously, the
@@ -221,7 +227,7 @@ activations must be stored explicitly for all non-reversible layers.
 
 Splitting is based on channel dimension.
 
-check footnote 2 in page 4, you can feel the searching is labor-consuming.
+check footnote 2 in page 4, you can feel the grid-searching is labor-consuming.
 
 ![](/imgs/revnet.png)
 
@@ -336,6 +342,9 @@ How is Eq (3),(10) come from?
 
 **[Integer Discrete Flows and Lossless Compression,NeuIPS19](https://papers.nips.cc/paper/9383-integer-discrete-flows-and-lossless-compression)**
 
+intuition the latent variable is discrete?
+
+**[Stochastic Beams and Where to Find Them: The Gumbel-Top-k Trick for Sampling Sequences Without Replacement,ICLR19,oral](https://arxiv.org/pdf/1903.06059.pdf)**
 
 ## Summary
 
@@ -395,7 +404,10 @@ In Image-Transformer:
 > experiment with two settings of the distribution: a categorical distribution across
 each channel (van den Oord et al., 2016a) and a mixture of discretized logistics over three channels (Salimans et al.). **[the categorical distribution is a special case of the multinomial distribution, in that it gives the probabilities of potential outcomes of a single drawing rather than multiple drawings.]**
 
-In summary: the typical choice is gaussian, logistic distribution, 
+
+As suggested by NICE, the prior distribution is factorial. we can simply multiply the prior distribution of every dimension(or pixel), then take logarithm, which is equavalent of sum up of log of each dimension's prior distribution. 
+
+In summary: the typical choice is gaussian, logistic distribution
 
 
 **Pixel processing summary**
@@ -436,6 +448,11 @@ If your goal is vairiational inference, you can evaluate on ELBO, and NLL. To ob
 
 
 > Sylvester flow: In order to obtain estimates for the negative log likelihood we used importance sampling (as proposed in (Rezende et al., 2014)).Unless otherwise stated, 5000 importance samples were used.
+
+
+## Coding
+
+toy example,TODO
 
 
 

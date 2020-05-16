@@ -26,11 +26,17 @@ check intro session.
 
 Preliminary: [World models](https://arxiv.org/pdf/1803.10122.pdf)
 
+**[Planning to Explore via Self-Supervised World Models](https://arxiv.org/pdf/2005.05960.pdf)**
+
+
 
 
 ## Jurgen
 
 **[One Big Net For Everything](https://arxiv.org/pdf/1802.08864.pdf)**
+
+
+## Zeyuan Allen-Zhu
 
 
 

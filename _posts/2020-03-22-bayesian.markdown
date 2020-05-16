@@ -1,0 +1,15 @@
+---
+layout: draft
+title: "Bayesian"
+permalink: /bayesian
+date: 2020-03-22 14:49:0 +0000
+comments: False
+share: False
+categories: ml
+---
+
+**[Bayesian Bits: Unifying Quantization and Pruning,Arxiv2005](https://arxiv.org/pdf/2005.07093.pdf)**
+
+
+
+

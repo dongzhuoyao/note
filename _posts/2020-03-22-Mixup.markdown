@@ -7,6 +7,10 @@ share: False
 categories: cv
 ---
 
+**[mixup: Beyond Empirical Risk Minimization,ICLR18](https://openreview.net/forum?id=r1Ddp1-Rb)**
+
+> We use mixup and ERM to train several state-of-the-art ImageNet-2012
+classification models, and report both top-1 and top-5 error rates in Table 1.
 
 **[Manifold Mixup: Better Representations by Interpolating Hidden States<ICML19>](https://arxiv.org/pdf/1806.05236.pdf)**
 
