@@ -101,7 +101,7 @@ Computing the non-parametric softmax above is cost prohibitive when the number o
 
 **[Contrastive Representation Distillation,ICLR20](https://hobbitlong.github.io/CRD/)**
 
-
+TODO
 
 
 **[CMC: Contrastive Multiview Coding](http://people.csail.mit.edu/yonglong/yonglong/cmc_icml_workshop.pdf)**

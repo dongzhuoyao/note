@@ -247,7 +247,12 @@ variability.
 The method part is too abstract to understand, need more time to figure it out, TODO.
 
 
+**[Set Flow: A Permutation Invariant Normalizing Flow,Arxiv1909](https://arxiv.org/pdf/1909.02775.pdf)**
 
+
+**[Multi-variate Probabilistic Time Series Forecasting via Conditioned Normalizing Flows,Arxiv2002](https://arxiv.org/pdf/2002.06103.pdf)**
+
+**[Graph Normalizing Flows,Arxiv1905](https://arxiv.org/pdf/1905.13177.pdf)**
 
 **[Your classifier is secretly an energy based model and you should treat it like one,ICLR20,oral](https://openreview.net/forum?id=Hkxzx0NtDB)**
 

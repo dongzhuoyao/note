@@ -43,7 +43,11 @@ Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned,ACL19](https://ar
 
 Most of the heads can be removed by the stochastic gates.
 
-Gumbel sofmax,TODO
+Gumbel sofmax
+
+**[Set Transformer: A Framework for Attention-based Permutation-Invariant Neural Networks,ICML19](https://arxiv.org/pdf/1810.00825.pdf)**
+
+**[Area Attention](https://arxiv.org/pdf/1810.10126.pdf)**
 
 **[SYNTHESIZER:Rethinking Self-Attention in Transformer Models,Arxiv2005](https://arxiv.org/pdf/2005.00743.pdf)**
 

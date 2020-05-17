@@ -14,7 +14,19 @@ categories: ml
 [https://zhuanlan.zhihu.com/p/47453144](https://zhuanlan.zhihu.com/p/47453144)
 
 
+## Deep learning Optimizers
 
 **[Adaptive Learning of the Optimal Mini-Batch Size of SGD,Arxiv2005](https://arxiv.org/pdf/2005.01097.pdf)**
 
 Adaptively change the batch size
+
+
+## ADMM
+
+**[Differentiable Linearized ADMM,ICML19](https://arxiv.org/abs/1905.06179)**
+
+## Dive into nn
+
+**[Gradient Descent Finds Global Minima of Deep Neural Networks,ICML19](https://arxiv.org/pdf/1811.03804.pdf)**
+
+
