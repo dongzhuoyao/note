@@ -7,6 +7,9 @@ share: False
 categories: cv
 ---
 
+
+**[Mixup Inference: Better Exploiting Mixup to Defend Adversarial Attacks,ICLR20](https://openreview.net/forum?id=ByxtC2VtPB)**
+
 **[mixup: Beyond Empirical Risk Minimization,ICLR18](https://openreview.net/forum?id=r1Ddp1-Rb)**
 
 > We use mixup and ERM to train several state-of-the-art ImageNet-2012

@@ -11,6 +11,7 @@ categories: ml
 [zhihu](https://www.zhihu.com/question/31032863/answer/315311293)
 
 
+**[InfoVAE: Balancing Learning and Inference in Variational Autoencoders,AAAI17](https://arxiv.org/pdf/1706.02262.pdf)**
 
 **[On Adversarial Mixup Resynthesis,NeuIPS19](https://papers.nips.cc/paper/8686-on-adversarial-mixup-resynthesis.pdf)**
 
