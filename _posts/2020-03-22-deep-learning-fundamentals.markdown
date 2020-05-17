@@ -127,6 +127,7 @@ for im2col matrix [NWH,KKC], the mean, variance size is [NWH]
 
 
 
+**[Four Things Everyone Should Know to Improve Batch Normalization,ICLR20](https://openreview.net/forum?id=HJx8HANFDH)**
 
 
 **[Towards Stabilizing Batch Statistics in Backward Propagation of Batch Normalization,ICLR20](https://openreview.net/forum?id=SkgGjRVKDS)**

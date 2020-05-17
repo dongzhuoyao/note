@@ -247,6 +247,16 @@ variability.
 The method part is too abstract to understand, need more time to figure it out, TODO.
 
 
+**[Latent Normalizing Flows for Many-to-Many Cross-Domain Mappings,ICLR20](https://openreview.net/forum?id=SJxE8erKDH)**
+
+
+**[Identifying through Flows for Recovering Latent Representations,ICLR20](https://openreview.net/forum?id=SklOUpEYvB)**
+
+
+**[Latent Normalizing Flows for Many-to-Many Cross-Domain Mappings,ICLR20](https://openreview.net/forum?id=SJxE8erKDH)**
+
+
+
 **[Set Flow: A Permutation Invariant Normalizing Flow,Arxiv1909](https://arxiv.org/pdf/1909.02775.pdf)**
 
 

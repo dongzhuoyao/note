@@ -103,6 +103,8 @@ Computing the non-parametric softmax above is cost prohibitive when the number o
 
 TODO
 
+**[Mutual Information Gradient Estimation for Representation Learning,ICLR20](https://openreview.net/forum?id=ByxaUgrFvH)**
+
 
 **[CMC: Contrastive Multiview Coding](http://people.csail.mit.edu/yonglong/yonglong/cmc_icml_workshop.pdf)**
 
