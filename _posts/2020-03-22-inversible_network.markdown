@@ -304,7 +304,11 @@ practice we choose the prior pθ(z|u) to be a Gaussian
 location-scale family, which is widely used with VAE.
 
 
+**[Flow++: Improving Flow-Based Generative Models with Variational Dequantization and Architecture Design,PMLR19](http://proceedings.mlr.press/v97/ho19a.html)**
 
+combine with self-attention 
+
+**[Neural Spline Flows,Arxiv1906](https://arxiv.org/pdf/1906.04032.pdf)**
 
 
 **[Disentanglement by Nonlinear ICA with General Incompressible-flow Networks (GIN),ICLR20](https://openreview.net/forum?id=rygeHgSFDH)**
@@ -316,6 +320,7 @@ repeat
 
 **[Gaussianization Flows,Arxiv2003](https://arxiv.org/pdf/2003.01941.pdf)**
 
+interesting.
 
 **[Flow Contrastive Estimation of Energy-Based Models,Arxiv1912](https://arxiv.org/pdf/1912.00589.pdf)**
 
@@ -336,6 +341,12 @@ repeat
 **[Do Deep Generative Models Know What They Don't Know?,ICLR19](https://arxiv.org/pdf/1810.09136.pdf)**
 
 **[FFJORD: Free-Form Continuous Dynamics for Scalable Reversible Generative Models,ICLR19](https://openreview.net/forum?id=rJxgknCcK7)**
+
+[colab](https://colab.research.google.com/drive/1NcrWx4b3IqHdHAbRGelsQ5i7txwmIwwt#scrollTo=3ZUrnHxpmdNB)
+
+TODO: how to get vector field in [toy_demo](https://imgur.com/a/Rtr3Mbq)
+
+
 
 **[PointFlow: 3D Point Cloud Generation with Continuous Normalizing Flows,ICCV19](https://arxiv.org/abs/1906.12320)**
 

@@ -12,6 +12,9 @@ categories: cv
 
 [Mimicry: A PyTorch GAN library that reproduces research results for popular GANs.](https://github.com/kwotsin/mimicry)
 
+
+**[SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient,AAAI17](https://arxiv.org/abs/1609.05473)**
+
 **[Understanding and Improving Interpolation in Autoencoders via an Adversarial Regularizer,ICLR19](https://openreview.net/forum?id=S1fQSiCcYm)**
 
 > In this paper, we propose a regularization procedure which encourages interpolated outputs to appear more realistic by fooling a critic network which has been trained to recover the mixing coefficient from interpolated data. 
