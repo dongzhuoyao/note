@@ -45,6 +45,13 @@ Most of the heads can be removed by the stochastic gates.
 
 Gumbel sofmax
 
+**[Normalized Attention Without Probability Cage,Arxiv2005](https://github.com/OliverRichter/normalized-attention)**
+
+[code](https://github.com/OliverRichter/normalized-attention)
+
+
+
+
 **[Set Transformer: A Framework for Attention-based Permutation-Invariant Neural Networks,ICML19](https://arxiv.org/pdf/1810.00825.pdf)**
 
 **[Area Attention](https://arxiv.org/pdf/1810.10126.pdf)**

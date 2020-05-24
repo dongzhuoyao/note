@@ -24,6 +24,10 @@ need to setup the formulation of cost c, supply s and demand d in advance. c is 
 Intuition of setuping s and d: Intuitively, the node with a larger weight plays a more important role in the comparison of two sets, while a node with a very small weight can hardly influence the overall distance no matter which nodes it matches with.
 
 
+**[Adaptive Cross-Modal Few-shot Learning,NIPS19](https://arxiv.org/pdf/1902.07104.pdf)**
+
+new task
+
 
 
 ## imbalanced classification
@@ -143,10 +147,6 @@ Masked Average Pooling + Cosine similarity, obtain final segmentation result.
 - Check Fig 2, support feature, query feature, and objectness feature are congregated by adding operation.
 
 
-**[Attention-based Multi-Context Guiding for Few-Shot Semantic Segmentation,AAAI19](http://taohu.me/pdf/few-shot-seg.pdf)**
-
-## Few-shot detection
-
 **[Weakly Supervised Few-shot Object Segmentation using Co-Attention with Visual and Semantic Inputs,Arxiv20](https://arxiv.org/pdf/2001.09540.pdf)**
 
 only requiring image-level classification data for few-shot object segmentation. propose a novel multi-modal interaction module for few-shot object segmentation that utilizes a coattention mechanism using both visual and word embedding.
@@ -155,10 +155,14 @@ Class wording embedding is then spatially tiled and concatenated with the visual
 
 Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an extra $$C \times C$$ matrix in the very middle. Also, they consider two-directions by applying softmax along different dimensions. Check Fig 2.
 
+**[Attention-based Multi-Context Guiding for Few-Shot Semantic Segmentation,AAAI19](http://taohu.me/pdf/few-shot-seg.pdf)**
+
+## Few-shot detection
 
 
+[Meta-Learning to Detect Rare Objects,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Meta-Learning_to_Detect_Rare_Objects_ICCV_2019_paper.pdf)
 
-[Few-Shot Object Detection with Attention-RPN and Multi-Relation Detector,CVPR20](https://arxiv.org/abs/1908.01998https://arxiv.org/abs/1908.01998)
+[Few-Shot Object Detection with Attention-RPN and Multi-Relation Detector,CVPR20](https://arxiv.org/abs/1908.01998)
 
 [Context-Transformer: Tackling Object Confusion for Few-Shot Detection,AAAI20](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YangZ.2509.pdf)
 

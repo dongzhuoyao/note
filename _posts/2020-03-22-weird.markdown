@@ -12,6 +12,8 @@ categories: ml
 **[Neural Additive Models:Interpretable Machine Learning with Neural Nets](https://arxiv.org/pdf/2004.13912.pdf)**
 
 
+**[Understanding deep learning requires rethinking generalization,ICLR17](https://arxiv.org/abs/1611.03530**
+
 **From DeepCluser**
 
 > For example, a multilayer

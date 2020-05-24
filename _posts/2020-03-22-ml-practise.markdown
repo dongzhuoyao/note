@@ -14,13 +14,5 @@ Be care of the definition of conditional entropy
 
 
 
-**EMD**
-
-![](/imgs/emd.png)
-
-pic from [this paper](https://arxiv.org/pdf/2003.06777.pdf)
-
-You need to know the cost per unit c, and the supply amount s and demand amount d in advance.
-
 
 

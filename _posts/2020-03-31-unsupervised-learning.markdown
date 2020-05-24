@@ -296,6 +296,11 @@ How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from
 
 
 
+**[What Makes for Good Views for Contrastive Learning?Arxiv2005](https://arxiv.org/pdf/2005.10243.pdf)**
+
+**[Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere,Arxiv2005](https://arxiv.org/pdf/2005.10242.pdf)**
+
+
 
 **[Invariant Information Clustering for Unsupervised Image Classification and Segmentation,ICCV19](https://arxiv.org/pdf/1807.06653.pdf)**
 
@@ -344,6 +349,10 @@ Two tricky ways to avoid trival solutions.
 
 Interesting analysis in the experimental part.
 
+
+**[ClusterFit: Improving Generalization of Visual Representations,Arxiv1912](https://arxiv.org/abs/1912.03330)**
+
+**[Online Deep Clustering for Unsupervised Representation Learning,CVPR20]()**
 
 
 **[Unsupervised Pre-Training of Image Features on Non-Curated Data,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Caron_Unsupervised_Pre-Training_of_Image_Features_on_Non-Curated_Data_ICCV_2019_paper.pdf)**

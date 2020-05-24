@@ -14,6 +14,8 @@ categories: ml
 
 ## Related materials
 
+[ICML19 workshop accepted](https://invertibleworkshop.github.io/INNF_2019/accepted_papers/index.html)
+
 check [Normalizing Flows for Probabilistic Modeling and Inference](https://arxiv.org/pdf/1912.02762.pdf)
 
 [Normalizing Flows: An Introduction and Review of Current Methods](https://arxiv.org/pdf/1908.09257.pdf)
@@ -22,6 +24,7 @@ check [Normalizing Flows for Probabilistic Modeling and Inference](https://arxiv
 
 density estimation, variational inference, sample(generation) is essentially different and corelated.
 
+[Deep Image Prior](https://arxiv.org/abs/1711.10925)
 
 ## Pre history: distribution estimation
 
@@ -347,6 +350,15 @@ interesting.
 TODO: how to get vector field in [toy_demo](https://imgur.com/a/Rtr3Mbq)
 
 
+
+**[Structured Output Learning with Conditional Generative Flows,AAAI20](https://arxiv.org/pdf/1905.13288.pdf)**
+
+[poster](http://people.cs.vt.edu/~bhuang/papers/lu-icmlws-poster19.pdf)
+
+[ICML19 workshop version](https://invertibleworkshop.github.io/INNF_2019/accepted_papers/pdfs/INNF_2019_paper_14.pdf)
+
+
+direct, intuitive,done. based on binary segmentation task.
 
 **[PointFlow: 3D Point Cloud Generation with Continuous Normalizing Flows,ICCV19](https://arxiv.org/abs/1906.12320)**
 

@@ -1,0 +1,13 @@
+---
+layout: draft
+title: "Bibix"
+permalink: /bibix
+date: 2020-03-22 14:49:0 +0000
+comments: False
+share: False
+categories: ml
+---
+
+
+**[Understanding deep learning requires rethinking generalization,ICLR17](https://arxiv.org/abs/1611.03530)**
+

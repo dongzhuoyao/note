@@ -254,3 +254,9 @@ Why caffee is BCWH and torch is BWHC?
 [zhihu discussion](https://www.zhihu.com/question/336558535)
 
 
+## Optimizer
+
+**[AdaX: Adaptive Gradient Descent with Exponential Long Term Memory,Arxiv2004](https://arxiv.org/pdf/2004.09740.pdf)**
+
+**[AdaBound: Adaptive Gradient Methods with Dynamic Bound of Learning Rate,ICLR19](https://openreview.net/forum?id=Bkg3g2R9FX)**
+

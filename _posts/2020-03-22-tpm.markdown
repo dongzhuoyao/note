@@ -1,0 +1,17 @@
+---
+layout: draft
+title: "Tractable Probalistic Models"
+permalink: /tpm
+date: 2020-03-22 14:49:0 +0000
+comments: False
+share: False
+categories: ml
+---
+
+
+**[SPFlow](https://github.com/SPFlow/SPFlow)**
+
+
+**[Random Sum-Product Networks: A Simple and Effective Approach to Probabilistic Deep Learning,UAI19](http://auai.org/uai2019/proceedings/papers/124.pdf)**
+
+**[Fast and Accurate Density Estimation with Extremely Randomized Cutset Networks,ECML17](http://ecmlpkdd2017.ijs.si/papers/paperID529.pdf)**

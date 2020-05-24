@@ -9,6 +9,10 @@ categories: ml
 ---
 
 
+**[Independently Recurrent Neural Network (IndRNN): Building A Longer and Deeper RNN,CVPR18](https://arxiv.org/abs/1803.04831)**
+
+[https://www.zhihu.com/question/269309035](https://www.zhihu.com/question/269309035)
+
 **[Ordered Neurons: Integrating Tree Structures into Recurrent Neural Networks,ICLR20](https://arxiv.org/abs/1810.09536)**
 
 ICLR19 best paper 

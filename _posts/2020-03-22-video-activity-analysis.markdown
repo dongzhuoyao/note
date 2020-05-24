@@ -9,6 +9,8 @@ categories: cv
 
 ## Acctivity classification
 
+**[TAM: Temporal Adaptive Module for Video Recognition,Arxiv2005](https://arxiv.org/pdf/2005.06803.pdf)**
+
 **[TEA: Temporal Excitation and Aggregation for Action Recognition,CVPR20](https://arxiv.org/pdf/2004.01398.pdf)**
 
 - the FLOPs of 3D CNN methods is much larger than 2D CNN methods. The superiority of our TEA on Something-Something is quite impressive. Check Table 2.
@@ -22,6 +24,8 @@ categories: cv
 dataset: Kinetics-400, Something-Something, Epic-Kitchen. 8GPU.
 
 ## Spatial-tempotal localization
+
+**[FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding,CVPR20oral](https://sdolivia.github.io/FineGym/)**
 
 **[Actions as Moving Points(MOC-detector)](https://arxiv.org/pdf/2001.04608.pdf)**
 
