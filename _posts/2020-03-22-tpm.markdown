@@ -8,6 +8,10 @@ share: False
 categories: ml
 ---
 
+[talks, interesting](http://web.cs.ucla.edu/~aver/talks.html)
+
+[must read](http://web.cs.ucla.edu/~aver/slides/mpi-pl-pio-talk.pdf)
+
 
 **[SPFlow](https://github.com/SPFlow/SPFlow)**
 

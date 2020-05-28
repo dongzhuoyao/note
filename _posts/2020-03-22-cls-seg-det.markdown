@@ -14,6 +14,8 @@ For main progress check [Survey 2019](https://link.springer.com/content/pdf/10.1
 
 #### Mainstream progress
 
+**[End-to-End Object Detection with Transformers,Arxiv2005](https://arxiv.org/pdf/2005.12872.pdf)**
+
 **[EfficientDet: Scalable and Efficient Object Detection,CVPR20](https://arxiv.org/pdf/1911.09070.pdf)**
 
 **[Dynamic R-CNN: Towards High Quality Object Detection via Dynamic Training,Arxiv2004](https://arxiv.org/pdf/2004.06002.pdf)**
@@ -97,6 +99,11 @@ check [related work part](https://arxiv.org/pdf/1904.06493.pdf),
 
 
 ## Classification
+
+
+**[ImageNet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness,ICLR19,oral](https://openreview.net/forum?id=Bygh9j09KX)**
+
+[zh](https://zhuanlan.zhihu.com/p/61116317)
 
 
 **[Spatially Attentive Output Layer for Image Classification,CVPR20](https://arxiv.org/pdf/2004.07570.pdf)**

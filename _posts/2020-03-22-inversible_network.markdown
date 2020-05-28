@@ -62,46 +62,6 @@ Evaluation details: For MNIST we report the negative log-likelihood in nats as i
 
 **[PixelCNN:Conditional Image Generation with PixelCNN Decoders](https://arxiv.org/pdf/1606.05328.pdf)**
 
-**[Image Transformer,ICML18](https://arxiv.org/pdf/1802.05751.pdf)**
-
-Temperature is important in generation, this point also inspires Glow:
-> Across all of the presented experiments, we use categorical
-sampling during decoding with a tempered softmax (Dahl
-et al., 2017). We adjust the concentration of the distribution
-we sample from with a temperature τ > 0 by which we
-divide the logits for the channel intensities.
-
-![](/imgs/image-transformer.png)
-
-**[(IAF)Improved Variational Inference with Inverse Autoregressive Flow,NIPS16](https://arxiv.org/abs/1606.04934)**
-
-[NeuIPS review](https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow)
-
-Preliminary: PixelCNN , PixelRNN，MADE
-
->  The paper are able to exploit the recent advances in autoregressive models, particularly in making efficient inference through parallel computing. However, they avoid the cumbersome sampling/inversion procedure of autoregressive model, which is quite ingenious. 
-
-![](/imgs/iaf.png)
-
-![](/imgs/iaf2.png)
-
-
-$$
-z = \sigma \odot z + (1-\sigma) \odot m
-$$
-is parallelized, this is the main difference betwenn autoregressive model.
-
-Perhaps the simplest special version of IAF is one with a simple step(T=1), and a linear autoregressive
-model. This transforms a Gaussian variable with diagonal covariance, to one with linear dependencies,
-i.e. a Gaussian distribution with full covariance. See appendix A for an explanation.
-
-We found that results improved when reversing the ordering of the variables after each step in the IAF
-chain.
-
-Why sampling speed is so high compared with PixelCNN?TODO
-
-Fig 5 in supp,TODO.
-
 **[MADE:Masked Autoencoder for Distribution Estimation,ICML15](https://arxiv.org/abs/1502.03509)**
 
 ![](/imgs/made.png)
@@ -124,6 +84,51 @@ D passes to generate data and IAF would need D passes to estimate densities.
 why?
 
 Have a detail comparison beteen MADE,IAF,MAF
+
+
+
+
+**[(IAF)Improved Variational Inference with Inverse Autoregressive Flow,NIPS16](https://arxiv.org/abs/1606.04934)**
+
+[NeuIPS review](https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow)
+
+Preliminary: PixelCNN , PixelRNN，MADE
+
+>  The paper are able to exploit the recent advances in autoregressive models, particularly in making efficient inference through parallel computing. However, they avoid the cumbersome sampling/inversion procedure of autoregressive model, which is quite ingenious. 
+
+![](/imgs/iaf.png)
+
+![](/imgs/iaf2.png)
+
+
+$$
+z = \sigma \odot z + (1-\sigma) \odot m
+$$
+is parallelized, this is the main difference between autoregressive model.
+
+Perhaps the simplest special version of IAF is one with a simple step(T=1), and a linear autoregressive
+model. This transforms a Gaussian variable with diagonal covariance, to one with linear dependencies,
+i.e. a Gaussian distribution with full covariance. See appendix A for an explanation.
+
+We found that results improved when reversing the ordering of the variables after each step in the IAF
+chain.
+
+Why sampling speed is so high compared with PixelCNN?TODO
+
+Fig 5 in supp,TODO.
+
+**[Image Transformer,ICML18](https://arxiv.org/pdf/1802.05751.pdf)**
+
+Temperature is important in generation, this point also inspires Glow:
+> Across all of the presented experiments, we use categorical
+sampling during decoding with a tempered softmax (Dahl
+et al., 2017). We adjust the concentration of the distribution
+we sample from with a temperature τ > 0 by which we
+divide the logits for the channel intensities.
+
+![](/imgs/image-transformer.png)
+
+**[Block Neural Autoregressive Flow,UAI19](http://auai.org/uai2019/proceedings/papers/511.pdf)**
 
 **[Axial Attention in Multidimensional Transformers](https://openreview.net/pdf?id=H1e5GJBtDr)**
 
@@ -219,9 +224,13 @@ where each layer’s activations can be reconstructed exactly from the next laye
 Therefore, the activations for most layers need not be stored in memory during
 backpropagation.
 
+i-revnet's comment:
+
+> RevNets illustrate how to build invertible ResNet-type blocks that avoid storing intermediate activations necessary for the backward pass. However, RevNets still employ multiple non-invertible operators like max-pooling and downsampling operators as part of the network. As such, RevNets are not invertible by construction. In this paper, we show how to build an invertible type of RevNet architecture that performs competitively with RevNets on Imagenet, which we call i-RevNet for invertible RevNet.
+
 TODO: how to map the input to a categorial outpout(softmax)? need check code.
 
-TODO: how to do downsampling?
+how to do downsampling? spatial pooling as traditional methods.
 
 Note that unlike residual blocks, reversible blocks must have a stride of 1 because otherwise the layer
 discards information, and therefore cannot be reversible. Standard ResNet architectures typically
@@ -236,6 +245,8 @@ check footnote 2 in page 4, you can feel the grid-searching is labor-consuming.
 
 **[i-REVNET: DEEP INVERTIBLE NETWORKS,ICLR18](https://arxiv.org/pdf/1802.07088.pdf)**
 
+![](/imgs/irevnet.png)
+
 smart idea: It is widely believed that the success of deep convolutional networks is based on
 progressively discarding uninformative variability about the input with respect to
 the problem at hand. This is supported empirically by the difficulty of recovering
@@ -247,7 +258,34 @@ In this way, we avoid the non-invertible modules of a RevNet (e.g. max-pooling o
 are necessary to train them in a reasonable time and are designed to build invariance w.r.t. translation
 variability.
 
-The method part is too abstract to understand, need more time to figure it out, TODO.
+Downsampling is motivated by sub-pixel convolution layer, check Fig2, quite easy for understanding. kind of "pixel shuffle".
+
+
+coefficients=#params....
+
+why the parameter of injective version(a)  is much larger than bijective version(b)? because for (a) the channel number with depth increasing is: 48, 192, 768 and 3072. For (b) is 24, 96, 384, 1536.
+
+
+"ANALYSIS OF THE INVERSE", experimental parts:
+- This indicates Φ linearizes the space locally in a considerably smaller space in comparison
+to the original input dimensions, because the original dimension maybe 10^{8}. still need to do here.
+- "progressive linear separation and contraction" is inspired by [Building a Regular Decision Boundary with Deep Networks,CVPR17](https://arxiv.org/pdf/1703.01775.pdf).
+
+
+
+
+
+mutual information is preserved because of invertibility:
+> In this paper, the authors propose deep architecture that preserves mutual information between the input and the hidden representation and show that the loss of information can only occur at the final layer.
+
+A important double: Why is such a model desirable?  
+> The core question we answer is if the success of deep convolutional networks is based on progressively discarding uninformative variability, which is a wide standing believe in the CV and ML community. We show this does not have to be the case, which has been acknowledged as "important", "interesting" and "thought-provoking" by all reviewers. Thus, the invertibility property is desirable for understanding the success of deep learning better and shed light on some of the necessities for it to work well.
+From a practical point of view, invertible models are useful for feature visualization [1,2,3] and possibly useful to overcome difficulties in upsampling/decoding pixel-wise tasks that are still quite challenging [4]. Further, lossless models might be a good candidate for transfer learning. 
+
+
+> Section 5 shows that even when using either an SVM or a Nearest Neighbor classifier on n extracted features from a layer in the network, both classifiers progressively improve with deeper layers. When the d first principal components are used to summarize the n extracted features, the SVM and NN classifier performs better when d is bigger. This shows that the deeper the network gets, the more linearly separable and contracted the learned representations are.
+
+> In the conclusion, the authors state the following: “The absence of loss of information is surprising, given the wide believe, that discarding information is essential for learning representations that generalize well to unseen data”. Indeed, the authors have succeed in showing that this is not necessarily the case. However, the loss of information might be necessary to generalize well on unseen data and at the same time minimize the parameter budget for a given classification task.
 
 
 **[Latent Normalizing Flows for Many-to-Many Cross-Domain Mappings,ICLR20](https://openreview.net/forum?id=SJxE8erKDH)**

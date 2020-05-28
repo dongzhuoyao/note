@@ -162,10 +162,18 @@ reaches 83% accuracy on CIFAR-10 in this configuration.
 
 ## Upsampling 
 
+
+**[Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network,CVPR16](https://arxiv.org/abs/1609.05158)**
+
+![](/imgs/subpixelconv.png)
+
+Also used in i-revnet.
+
+
 [Understanding Convolution for Semantic Segmentation,WACV18](https://arxiv.org/abs/1702.08502)
 
 
-
+Similar to aforementioned sub-pixel convolution.
 
 
 

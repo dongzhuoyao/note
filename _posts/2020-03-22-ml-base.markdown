@@ -19,6 +19,10 @@ if $$\phi$$ is a convex function, a simple example:  X~U(0,1) and $$\phi(x) = x^
 
 constant-volume transformation in probability?
 
+**[SVM]()**
+
+used in i-revnet.
+
 **[Exponential dispersion model](https://en.wikipedia.org/wiki/Exponential_dispersion_model)**
 
 **[Natural exponential family](https://en.wikipedia.org/wiki/Natural_exponential_family)**
@@ -73,4 +77,11 @@ in mixup.
 ## Common citations
 
 - [Universal approximation capacity](Universal approximation theorem): [Multilayer Feedforward Networks are Universal Approximators ](http://cognitivemedium.com/magic_paper/assets/Hornik.pdf)
+
+
+## Commoan analysis
+
+**Histogram of sugular value**
+
+https://arxiv.org/pdf/1704.08847.pdf
 
