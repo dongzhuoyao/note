@@ -288,8 +288,8 @@ From a practical point of view, invertible models are useful for feature visuali
 > In the conclusion, the authors state the following: “The absence of loss of information is surprising, given the wide believe, that discarding information is essential for learning representations that generalize well to unseen data”. Indeed, the authors have succeed in showing that this is not necessarily the case. However, the loss of information might be necessary to generalize well on unseen data and at the same time minimize the parameter budget for a given classification task.
 
 
-**[Latent Normalizing Flows for Many-to-Many Cross-Domain Mappings,ICLR20](https://openreview.net/forum?id=SJxE8erKDH)**
 
+**[Benchmarking Invertible Architectures on Inverse Problems](https://hci.iwr.uni-heidelberg.de/vislearn/HTML/people/jakob_kruse/publications/innf19/innf19kruse.pdf)**
 
 **[Identifying through Flows for Recovering Latent Representations,ICLR20](https://openreview.net/forum?id=SklOUpEYvB)**
 
@@ -307,7 +307,11 @@ From a practical point of view, invertible models are useful for feature visuali
 
 **[Your classifier is secretly an energy based model and you should treat it like one,ICLR20,oral](https://openreview.net/forum?id=Hkxzx0NtDB)**
 
+[talk](https://iclr.cc/virtual_2020/poster_Hkxzx0NtDB.html)
+
 > This paper advocates the use of energy based models (EBMs) to help realize the potential of generative models on downstream discriminative problems.
+
+
 
 **[Variational autoencoders and nonlinear ICA: A unifying framework,AISTAT20](https://arxiv.org/abs/1907.04809)**
 
@@ -408,7 +412,16 @@ direct, intuitive,done. based on binary segmentation task.
 
 How is Eq (3),(10) come from?
 
-**[Invert to Learn to Invert Patrick,NIPS19](https://arxiv.org/abs/1911.10914)**
+**[Invert to Learn to Invert,NIPS19](https://arxiv.org/abs/1911.10914)**
+
+Solve invert problem iteratively, based on previous works [RIM](Recurrent Inference Machines
+for Solving Inverse Problems).
+
+motivation from normalization flow,apply reversible layer into RIM.
+
+Based on fastMRI task.
+
+
 
 **[A Disentangling Invertible Interpretation Network for Explaining Latent Representations,Arxiv2004](https://arxiv.org/pdf/2004.13166.pdf)**
  

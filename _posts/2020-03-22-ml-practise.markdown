@@ -12,6 +12,12 @@ categories: ml
 
 Be care of the definition of conditional entropy
 
+**eigen value, eigen vector**
+
+**ELBO**
+
+
+
 
 
 

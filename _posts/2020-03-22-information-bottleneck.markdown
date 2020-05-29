@@ -9,5 +9,7 @@ categories: ml
 ---
 
 
+**[Deep Learning and the Information Bottleneck Principle](https://arxiv.org/pdf/1503.02406.pdf)**
 
 
+**[Opening the black box of Deep Neural Networks via Information,Arxiv1703](https://arxiv.org/pdf/1703.00810.pdf)**

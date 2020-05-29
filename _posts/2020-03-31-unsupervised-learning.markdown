@@ -258,6 +258,8 @@ check suppimentary, find a detailed comparison with previous methods.
 ![](imgs/simclr.png)
 
 
+**[On Mutual Information in Contrastive Learning for Visual Representations,Arxiv2005](https://arxiv.org/pdf/2005.13149.pdf)**
+
 **[On Mutual Information Maximization for Representation Learning,ICLR20](https://openreview.net/forum?id=rkxoh24FPH)**
 
 check concolusions.
@@ -292,6 +294,7 @@ For vision task context feature c is replaced by z for simplicity.
 
 
 How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from [CVPR20](https://arxiv.org/abs/2003.14323)
+
 
 
 

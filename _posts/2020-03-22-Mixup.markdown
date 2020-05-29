@@ -7,6 +7,11 @@ share: False
 categories: cv
 ---
 
+**[InstaBoost: Boosting Instance Segmentation via Probability Map Guided Copy-Pasting,ICCV19](https://arxiv.org/pdf/1908.07801.pdf)**
+
+jittering guided by appearance consistency map
+
+![](/imgs/instaboost.png)
 
 **[Mixup Inference: Better Exploiting Mixup to Defend Adversarial Attacks,ICLR20](https://openreview.net/forum?id=ByxtC2VtPB)**
 
