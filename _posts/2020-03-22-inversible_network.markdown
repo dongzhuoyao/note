@@ -373,6 +373,45 @@ interesting.
 
 **[Analyzing Inverse Problems with Invertible Neural Networks,ICLR19](https://openreview.net/forum?id=rJed6j0cKX)**
 
+[code](https://github.com/VLL-HD/analyzing_inverse_problems)
+
+
+intuition: 
+>  INNs circumvent a fundamental difficulty
+of learning inverse problems: Defining a sensible supervised loss for direct posterior learning is
+problematic since it requires prior knowledge about that posterior’s behavior, constituting a
+kind of hen-end-egg problem. If the loss does not match the possibly complicated (e.g. multimodal) shape of the posterior, learning will converge to incorrect or misleading solutions.
+
+Related-work part is quite intriguing.
+
+A few minor changes:
+> if the dimension D is small, but a complex transformation has to be learned, we find it advantageous
+to pad both the in- and output of the network with an equal number of zeros. This does not
+change the intrinsic dimensions of in- and output, but enables the network’s interior layers
+to embed the data into a larger representation space in a more flexible manner. Secondly,
+we insert permutation layers between reversible blocks, which shuffle the elements of the
+subsequent layer’s input in a randomized, but fixed, way. This causes the splits u = [u1, u2]
+to vary between layers and enhances interaction among the individual variables. Kingma
+and Dhariwal (2018) use a similar architecture with learned permutations
+
+> As a side effect, our results confirm the findings of others that the restriction to coupling layers
+does not noticeably reduce the expressive power of the network.
+
+> In the appendix, Sec. 1, we prove that Lx is guaranteed to be zero when the
+forward losses Ly and Lz have converged to zero. Thus, incorporating Lx does not alter the
+optimum, but improves convergence in 
+
+Two toy datasets is interesting.
+
+How is 8-gaussian toy dataset used?
+
+Lx,MMD; Ly=MCE,Lz=MMD
+
+How MMD is implemented?
+
+suppp need more reading.
+
+baseline need more in-depth reading.
 
 
 
@@ -434,6 +473,11 @@ Based on fastMRI task.
 intuition the latent variable is discrete?
 
 **[Stochastic Beams and Where to Find Them: The Gumbel-Top-k Trick for Sampling Sequences Without Replacement,ICLR19,oral](https://arxiv.org/pdf/1903.06059.pdf)**
+
+
+## invertible interpretability
+
+[Inverting Visual Representations with Convolutional Networks,CVPR16](https://arxiv.org/pdf/1506.02753.pdf)
 
 ## Summary
 

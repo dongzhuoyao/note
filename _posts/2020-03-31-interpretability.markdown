@@ -13,4 +13,9 @@ categories: cv
 
 advancing state-of-the-art for interpretable methods by ∼14% on ImageNet to 75.30% top-1 accuracy.
 
-TODO
+**[Understanding Deep Networks via Extremal Perturbations and Smooth Masks,ICCV19](http://ruthcfong.github.io/files/fong19_extremal_poster.pdf)**
+
+[tutorial: Understanding Deep Neural Networks](https://www.youtube.com/watch?v=YrlWq0oFZ50&list=WL&index=2&t=1301s)
+
+**[Deep Image Prior](https://dmitryulyanov.github.io/deep_image_prior)**
+

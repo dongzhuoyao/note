@@ -74,6 +74,22 @@ in mixup.
 
 [Principles of Risk Minimization for Learning Theory,NIPS](http://papers.nips.cc/paper/506-principles-of-risk-minimization-for-learning-theory.pdf)
 
+**[Rejection Sampling](https://en.wikipedia.org/wiki/Rejection_sampling)**
+
+https://arxiv.org/pdf/1808.04730.pdf
+
+https://hci.iwr.uni-heidelberg.de/vislearn/HTML/people/jakob_kruse/publications/innf19/innf19kruse.pdf
+
+
+**[approximate Bayesian computation(ABC)]**
+
+used for obtain the true posterior in [https://arxiv.org/pdf/1808.04730.pdf](https://arxiv.org/pdf/1808.04730.pdf).
+
+
+**[Mean-field Approximation](http://bjlkeng.github.io/posts/variational-bayes-and-the-mean-field-approximation/)**
+
+
+
 ## Common citations
 
 - [Universal approximation capacity](Universal approximation theorem): [Multilayer Feedforward Networks are Universal Approximators ](http://cognitivemedium.com/magic_paper/assets/Hornik.pdf)
