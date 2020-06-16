@@ -37,6 +37,13 @@ Relation between gram matrix and non-local block.
 
 check [https://arxiv.org/pdf/1701.01036.pdf](https://arxiv.org/pdf/1701.01036.pdf)
 
+**[Dynamic Graph Message Passing Networks,CVPR20oral](https://arxiv.org/pdf/1908.06955.pdf)**
+
+Average sampling with different rates(scales), then do random walking to propogate the information.
+
+[ICLR version, rejected](https://openreview.net/forum?id=BJgcxxSKvr)
+
+
 
 **[Analyzing Multi-Head Self-Attention:
 Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned,ACL19](https://arxiv.org/pdf/1905.09418.pdf)**

@@ -99,6 +99,12 @@ and CutMix regularizers introduced above with a novel mask generation method, gi
 regularization methods that we dub CowOut and CowMix due to the Friesian cow -like texture of
 the masks.
 
+## Semi-supervised detection
+
+**[Consistency-based Semi-supervised Learning for Object Detection,NeuIPS19](https://papers.nips.cc/paper/9259-consistency-based-semi-supervised-learning-for-object-detection)**
+
+
+**[A Simple Semi-Supervised Learning Framework for Object Detection,Arxiv2005](https://arxiv.org/pdf/2005.04757.pdf)**
 
 
 #### Footnotes

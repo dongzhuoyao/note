@@ -297,11 +297,25 @@ How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from
 
 
 
+**[Supervised Contrastive Learning,Arxiv2004](https://arxiv.org/pdf/2004.11362.pdf)**
 
+![](/imgs/scl.png)
 
 **[What Makes for Good Views for Contrastive Learning?Arxiv2005](https://arxiv.org/pdf/2005.10243.pdf)**
 
+> In this paper, we use empirical analysis to beer understand the importance of view selection, and argue that we should reduce the mutual information (MI) between views while keeping task-relevant information intact.
+
+Interesting experiment design about moving-mnist to validate the hypothesis.
+
+
+
 **[Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere,Arxiv2005](https://arxiv.org/pdf/2005.10242.pdf)**
+
+Figure 5(Figure 5: 2048-dim of predictions from unsupervised pre-trained ResNet-50 on
+ImageNet-1K val set.) and the motivation of flatten?
+
+
+**[Rethinking Image Mixture for Unsupervised Visual Representation Learning,Arxiv2003](https://arxiv.org/pdf/2003.05438.pdf)**
 
 
 
@@ -353,7 +367,11 @@ Two tricky ways to avoid trival solutions.
 Interesting analysis in the experimental part.
 
 
-**[ClusterFit: Improving Generalization of Visual Representations,Arxiv1912](https://arxiv.org/abs/1912.03330)**
+**[ClusterFit: Improving Generalization of Visual Representations,CVPR20](https://arxiv.org/abs/1912.03330)**
+
+**[Self-Supervised Learning of Pretext-Invariant Representations,CVPR20](https://arxiv.org/pdf/1912.01991.pdf)**
+
+
 
 **[Learning To Classify Images Without Labels](https://arxiv.org/pdf/2005.12320.pdf)**
 

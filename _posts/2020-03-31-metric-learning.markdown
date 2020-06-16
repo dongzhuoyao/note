@@ -21,6 +21,14 @@ https://zhuanlan.zhihu.com/p/136522363
 
 -->
 
+**[Reducing Class Collapse in Metric Learning with Easy Positive Sampling](https://arxiv.org/pdf/2006.05162.pdf)**
+
+- theoretically prove and empirically show that under reasonable
+noise assumptions, prevalent embedding losses in metric learning, e.g., triplet loss,
+tend to project all samples of a class with various modes onto a single point in
+the embedding space, resulting in class collapse that usually renders the space illsorted for classification or retrieval.
+
+
 **[Cross-Batch Memory for Embedding Learning,CVPR20,oral](https://arxiv.org/pdf/1912.06798.pdf)**
 
 <!--

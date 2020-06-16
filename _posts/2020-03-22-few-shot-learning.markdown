@@ -162,11 +162,18 @@ Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an
 ## Few-shot detection
 
 
-[Meta-Learning to Detect Rare Objects,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Meta-Learning_to_Detect_Rare_Objects_ICCV_2019_paper.pdf)
+**[Meta r-cnn: Towards general solver for instance-level low-shot learning,ICCV19](https://yanxp.github.io/metarcnn.html)**
 
-[Few-Shot Object Detection with Attention-RPN and Multi-Relation Detector,CVPR20](https://arxiv.org/abs/1908.01998)
 
-[Context-Transformer: Tackling Object Confusion for Few-Shot Detection,AAAI20](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YangZ.2509.pdf)
+[code](https://github.com/yanxp/MetaR-CNN)
+
+**[Meta-Learning to Detect Rare Objects,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Meta-Learning_to_Detect_Rare_Objects_ICCV_2019_paper.pdf)**
+
+**[Few-Shot Object Detection with Attention-RPN and Multi-Relation Detector,CVPR20](https://arxiv.org/abs/1908.01998)**
+
+**[Context-Transformer: Tackling Object Confusion for Few-Shot Detection,AAAI20](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YangZ.2509.pdf)**
+
+**[Weakly-supervised Any-shot Object Detection](https://arxiv.org/pdf/2006.07502.pdf)**
 
 ## Few-shot instance segmentation
 

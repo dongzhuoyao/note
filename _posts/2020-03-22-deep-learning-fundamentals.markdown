@@ -175,6 +175,8 @@ Also used in i-revnet.
 
 Similar to aforementioned sub-pixel convolution.
 
+<!-- [Split-Merge Pooling](https://arxiv.org/pdf/2006.07742.pdf) -->
+
 
 
 
