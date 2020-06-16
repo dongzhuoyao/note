@@ -44,7 +44,68 @@ $$ is modeled by conditional normalization flow(novelty lies in).
 Testing:
 $$p(y|x) = p(x,y)/p(x)$$
 
-#### Semi-supervised image classification
+## Semi-supervised image classification
+
+Summmary from FixMatch:
+
+![](/imgs/fixmatch-compare.png)
+
+
+
+
+**[Realistic Evaluation of Deep Semi-Supervised Learning Algorithms,NeuIPS18](https://arxiv.org/pdf/1804.09170.pdf)**
+
+
+**[FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence,Arxiv2001](https://arxiv.org/pdf/2001.07685.pdf)**
+
+![](/imgs/fixmatch.png)
+
+- weak-augmentation-> only flip-and-shift data augmentation.
+- stron-augmentation-> Inspired
+by UDA [45] and ReMixMatch [2], we leverage CutOut
+[13], CTAugment [2], and RandAugment [10] for strong
+augmentation, which all produce heavily distorted versions
+of a given image.
+- Why thresholding?Inspired
+by UDA [45] and ReMixMatch [2], we leverage CutOut
+[13], CTAugment [2], and RandAugment [10] for strong
+augmentation, which all produce heavily distorted versions
+of a given image.
+- basic experimental choices that are
+often ignored or not reported when new SSL methods are
+proposed **(such as the optimizer or learning rate schedule)**
+because we found that they can have an outsized impact on
+performance.
+- weak,weak doesn't work; weak,strong works.
+- The loss is composed of supervised loss and unsupervised loss. the weight of unsupervised loss should increase gradually by annealing.
+- Detail matters, weight decay regularization is particularly important.
+- SGD is better than Adam. Table 5.
+- use a cosine learning rate decay,Table 6.
+- In summary, we observe that swapping pseudo-labeling for
+sharpening and thresholding would introduce a new hyperparameter while achieving no better performance.
+- Of the aforementioned work, FixMatch bears the closest
+resemblance to two recent algorithms: Unsupervised Data
+Augmentation (UDA) [45] and ReMixMatch [2].
+- .............  We find that to obtain strong results, especially in
+the limited-label regime, certain design choices are often
+underemphasized – most importantly, weight decay and the
+choice of optimizer. The importance of these factors means
+that even when controlling for model architecture as is recommended in [31], the same technique can not always be
+directly compared across different implementations.
+
+
+**[Semisupervised knowledge transfer for deep learning from private training data.ICLR17 best paper]()**
+
+relate SSL and differential privacy
+
+
+**[MixMatch: A Holistic Approach to Semi-Supervised Learning,NeuIPS19](https://arxiv.org/pdf/1905.02249.pdf)**
+
+![](/imgs/mixmatch.png)
+
+- Table 4 is full of information.
+- The relation of privacy-preserving is also interesting.
+
 
 **[Temporal Ensembling for Semi-Supervised Learning,ICLR17](https://arxiv.org/pdf/1610.02242.pdf)**
 
