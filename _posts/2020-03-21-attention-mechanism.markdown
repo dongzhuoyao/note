@@ -37,6 +37,19 @@ Relation between gram matrix and non-local block.
 
 check [https://arxiv.org/pdf/1701.01036.pdf](https://arxiv.org/pdf/1701.01036.pdf)
 
+
+**[Exploring Self-attention for Image Recognition,CVPR20](https://hszhao.github.io/papers/cvpr20_san.pdf)**
+
+
+- A replacement of Convolution block.
+- These architectures – SAN10,
+SAN15, and SAN19 – are in rough correspondence with
+ResNet26, ResNet38, and ResNet50.
+- Position encoding is important, see Table 8.
+- Robustness of zero-shot generalization to rotated images, adverserial attack is vital to get in.
+- A story-telling paper, without comparison with resnext, Sknet. without comparison with combination of conv-block(low-level) and self-attention block(high-level) like non-local paper. 
+  
+
 **[Dynamic Graph Message Passing Networks,CVPR20oral](https://arxiv.org/pdf/1908.06955.pdf)**
 
 Average sampling with different rates(scales), then do random walking to propogate the information.

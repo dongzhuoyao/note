@@ -8,6 +8,15 @@ share: False
 categories: cv
 ---
 
+[https://github.com/nicolas-chaulet/torch-points3d](https://github.com/nicolas-chaulet/torch-points3d)
+
+
+
+## Point Cloud Augmentation
+
+**[PointAugment: an Auto-Augmentation Framework
+for Point Cloud Classification,CVPR20,oral](https://arxiv.org/pdf/2002.10876.pdf)**
+
 ## Point cloud classification
 
 **[PointNet++]()**

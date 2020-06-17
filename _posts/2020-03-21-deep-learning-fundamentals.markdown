@@ -9,6 +9,9 @@ categories: cv
 ---
 
 
+## Augmentation
+
+**[AutoAugment: Learning Augmentation Strategies from Data,CVPR19](https://arxiv.org/abs/1805.09501)**
 
 
 
