@@ -151,6 +151,8 @@ et al., 2018) describes a class of semi-supervised learning algorithms that have
 implement. The key idea is to encourage the network to give consistent predictions for unlabeled
 inputs that are perturbed in various ways.
 
+**[Semi-Supervised Semantic Segmentation with Cross-Consistency Training,CVPR20](http://openaccess.thecvf.com/content_CVPR_2020/papers/Ouali_Semi-Supervised_Semantic_Segmentation_With_Cross-Consistency_Training_CVPR_2020_paper.pdf)**
+
 
 
 **[Adversarial Learning for Semi-Supervised Semantic Segmentation,BMVC18](https://arxiv.org/pdf/1802.07934.pdf)**

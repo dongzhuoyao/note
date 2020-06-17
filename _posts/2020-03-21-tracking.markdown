@@ -1,0 +1,12 @@
+---
+layout: draft
+title: "Tracking"
+permalink: /tracking
+date: 2020-03-21 14:49:0 +0000
+comments: False
+share: False
+categories: cv
+---
+
+**[High-Performance Long-Term Tracking with Meta-Updater,CVPR20](https://arxiv.org/pdf/2004.00305.pdf)**
+
