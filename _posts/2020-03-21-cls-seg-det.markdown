@@ -40,7 +40,10 @@ Need a careful check for practical tricks in det task.
 
 #### Anchor-free
 
-  **[CenterNet](https://arxiv.org/pdf/1904.07850.pdf)**
+**[FCOS: A Simple and Strong Anchor-free Object Detector](https://arxiv.org/pdf/2006.09214.pdf)**
+
+
+**[CenterNet](https://arxiv.org/pdf/1904.07850.pdf)**
   
   
   no anchor any more; we only have one positive “anchor” per object, and hence do not need NonMaximum Suppression (NMS);a larger output resolution (output stride of 4) compared to traditional object detectors(output stride of 16). We use a single network to predict

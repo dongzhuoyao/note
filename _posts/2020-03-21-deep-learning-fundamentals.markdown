@@ -264,9 +264,37 @@ Why caffee is BCWH and torch is BWHC?
 [zhihu discussion](https://www.zhihu.com/question/336558535)
 
 
+## Back-propogation
+
+**[ReSprop: Reuse Sparsified Backpropagation,CVPR20oral](http://openaccess.thecvf.com/content_CVPR_2020/papers/Goli_ReSprop_Reuse_Sparsified_Backpropagation_CVPR_2020_paper.pdf)**
+
+
+- The analysis of Figure 2 is interesting, by using "o hyperdimensional computing
+theory [25], two independent isotropic vectors picked randomly from a high dimensional space d, are approximately orthogonal." and "empirial 37 degree".
+- learning rate warm up is important(we are using 5 to 8 epochs of whole training (90-200
+epochs) for the warm up phase), especially when larger RS(reuse strategy).  check Table3.
+- Impact of batch size: ReSprop and W-ReSprop algorithms achieve higher accuracy for larger batch sizes.
+- also can handle distributed-GPU training, if your batch size is larger as 128, check Table 7.
+- Adaptive thresholding: halve or double by some strategy. **chose the initialization value of 10−7
+for all the layers in all the experiments, based on the output gradient’s distribution on the ResNet-18, 34 and 50 on CIFAR datasets**
+- citation: Amdahl's law to theoretically analysis
+
+
+**[meProp: Sparsified Back Propagation for Accelerated Deep Learning,ICML17](http://proceedings.mlr.press/v70/sun17c/sun17c.pdf)**
+
+with the background of Resprop, it's easy to understand: meProp only select top-k(by magnitude) by setting others as zero. Check intersting Table 1 in ReSprop(CVPR20).
+
+**[Dynamic Sparse Graph for Efficient Deep Learning,ICLR19](https://openreview.net/forum?id=H1goBoR9F7)**
+
+too complex
+
+
+
 ## Optimizer
 
 **[AdaX: Adaptive Gradient Descent with Exponential Long Term Memory,Arxiv2004](https://arxiv.org/pdf/2004.09740.pdf)**
 
 **[AdaBound: Adaptive Gradient Methods with Dynamic Bound of Learning Rate,ICLR19](https://openreview.net/forum?id=Bkg3g2R9FX)**
+
+
 

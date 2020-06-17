@@ -56,6 +56,15 @@ Summmary from FixMatch:
 **[Realistic Evaluation of Deep Semi-Supervised Learning Algorithms,NeuIPS18](https://arxiv.org/pdf/1804.09170.pdf)**
 
 
+**[Building One-Shot Semi-supervised (BOSS) Learning up to Fully Supervised Performance,Arxiv2006](https://arxiv.org/pdf/2006.09363.pdf)**
+
+motivated by barely-supervised learniing in FixMatch.
+
+A combination of fixmatch, self-training, etc.
+
+
+
+
 **[FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence,Arxiv2001](https://arxiv.org/pdf/2001.07685.pdf)**
 
 ![](/imgs/fixmatch.png)

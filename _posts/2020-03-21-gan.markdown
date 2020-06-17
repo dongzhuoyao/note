@@ -12,6 +12,10 @@ categories: cv
 
 [Mimicry: A PyTorch GAN library that reproduces research results for popular GANs.](https://github.com/kwotsin/mimicry)
 
+**[MixNMatch: Multifactor Disentanglement and Encoding for Conditional Image Generation,CVPR20](https://arxiv.org/pdf/1911.11758.pdf)**
+
+better on flow model?
+
 
 **[SEAN: Image Synthesis with Semantic Region-Adaptive Normalization,CVPR20,oral](https://arxiv.org/pdf/1911.12861.pdf)**
 
