@@ -297,6 +297,21 @@ How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from
 
 
 
+
+**[Unsupervised Learning of Visual Features by Contrasting Cluster Assignments,Arxiv2006](https://arxiv.org/pdf/2006.09882.pdf)**
+
+![](/imgs/swav.png)
+
+- image x, feature z, code q, prototype c.  zc=q
+- $$ q \in K \times B $$
+- $$tr(Q^{T} C^{T} Q )$$, BxK, KxC, CxB, Q is calculated by softmax(with temperature) rowly? columnly?, feature z is prejected to the unit sphere by L2 normalization; prototype C is updated by gradient descent(Equation 2). As code q is code needed in cross entroy(equation 2), therefore, we need design a method to update q(better online)
+- The online updating of Q is heavily borrowed from [SELF-LABELLING VIA SIMULTANEOUS CLUSTERING
+AND REPRESENTATION LEARNING,ICLR20](https://arxiv.org/pdf/1911.05371.pdf).
+- We distribute the batches over 64 V100 16Gb GPUs, resulting in each GPU treating 64 instances.To help the very beginning of the optimization, we freeze the prototypes
+during the first epoch of training.
+- Check more details in the supp. learning rate warm up,
+
+
 **[Supervised Contrastive Learning,Arxiv2004](https://arxiv.org/pdf/2004.11362.pdf)**
 
 ![](/imgs/scl.png)
