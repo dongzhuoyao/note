@@ -153,7 +153,9 @@ inputs that are perturbed in various ways.
 
 **[Semi-Supervised Semantic Segmentation with Cross-Consistency Training,CVPR20](http://openaccess.thecvf.com/content_CVPR_2020/papers/Ouali_Semi-Supervised_Semantic_Segmentation_With_Cross-Consistency_Training_CVPR_2020_paper.pdf)**
 
-
+- pertubation function is important
+- Semi-Supervised Domain Adaptation, and combintation with image-level labels is a bonus
+  
 
 **[Adversarial Learning for Semi-Supervised Semantic Segmentation,BMVC18](https://arxiv.org/pdf/1802.07934.pdf)**
 
