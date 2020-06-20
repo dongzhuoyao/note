@@ -398,10 +398,19 @@ Two tricky ways to avoid trival solutions.
 Interesting analysis in the experimental part.
 
 
+**[S4L: Self-Supervised Semi-Supervised Learning,ICCV19](https://arxiv.org/pdf/1905.03670.pdf)**
+
+- S4L-Rotation: a four-class cross-entropy loss
+- S4L-examplar: similar to contrastive learning.
+
 **[ClusterFit: Improving Generalization of Visual Representations,CVPR20](https://arxiv.org/abs/1912.03330)**
 
 **[Self-Supervised Learning of Pretext-Invariant Representations,CVPR20](https://arxiv.org/pdf/1912.01991.pdf)**
 
+Only consider jigsaw. In this work, we adopt
+the existing Jigsaw pretext task in a way that encourages
+the image representations to be invariant to the image patch
+perturbation. 
 
 
 **[Learning To Classify Images Without Labels](https://arxiv.org/pdf/2005.12320.pdf)**
