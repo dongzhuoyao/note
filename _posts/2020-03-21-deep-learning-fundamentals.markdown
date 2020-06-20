@@ -15,6 +15,10 @@ categories: cv
 
 
 
+## Learning rate
+
+**[LARS:Large Batch Training of Convolutional Networks,Arxiv1708](https://arxiv.org/abs/1708.03888)**
+
 ##  Normalization 
 
 check related work in [ICLR20](https://arxiv.org/pdf/2001.06838.pdf).

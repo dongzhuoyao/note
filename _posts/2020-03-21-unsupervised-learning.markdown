@@ -296,7 +296,23 @@ For vision task context feature c is replaced by z for simplicity.
 How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from [CVPR20](https://arxiv.org/abs/2003.14323)
 
 
+**[BYOL:Bootstrap Your Own Latent A New Approach to Self-Supervised Learning,Arxiv2006](https://arxiv.org/pdf/2006.07733.pdf)**
 
+> **without using negative pair**
+> This experimental finding is the core
+motivation for BYOL: from a given representation, referred to as target, we can train a new, potentially enhanced
+representation, referred to as online, by predicting the target representation. From there, we can expect to build a
+sequence of representations of increasing quality by iterating this procedure, using subsequent online networks as
+new target networks for further training.
+- result is worse than Contrasting Cluster Assignments.
+
+![](/imgs/byol.png)
+
+
+
+**[PCL: Prototypical Contrastive Learning of Unsupervised Representations,Arxiv2005](https://arxiv.org/pdf/2005.04966.pdf)**
+
+result is worse than https://arxiv.org/pdf/2006.09882.pdf
 
 **[Unsupervised Learning of Visual Features by Contrasting Cluster Assignments,Arxiv2006](https://arxiv.org/pdf/2006.09882.pdf)**
 
