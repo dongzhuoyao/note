@@ -314,6 +314,13 @@ new target networks for further training.
 
 result is worse than https://arxiv.org/pdf/2006.09882.pdf
 
+**[A critical analysis of self-supervision, or what we can learn from a single image,ICLR20](https://openreview.net/forum?id=B1esx6EYvr)**
+
+We evaluate self-supervised feature learning methods and find that with sufficient data augmentation early layers can be learned using just one image.  This is informative about self-supervision and the role of augmentations.
+
+
+
+
 **[Unsupervised Learning of Visual Features by Contrasting Cluster Assignments,Arxiv2006](https://arxiv.org/pdf/2006.09882.pdf)**
 
 ![](/imgs/swav.png)
@@ -321,8 +328,7 @@ result is worse than https://arxiv.org/pdf/2006.09882.pdf
 - image x, feature z, code q, prototype c.  zc=q
 - $$ q \in K \times B $$
 - $$tr(Q^{T} C^{T} Q )$$, BxK, KxC, CxB, Q is calculated by softmax(with temperature) rowly? columnly?, feature z is prejected to the unit sphere by L2 normalization; prototype C is updated by gradient descent(Equation 2). As code q is code needed in cross entroy(equation 2), therefore, we need design a method to update q(better online)
-- The online updating of Q is heavily borrowed from [SELF-LABELLING VIA SIMULTANEOUS CLUSTERING
-AND REPRESENTATION LEARNING,ICLR20](https://arxiv.org/pdf/1911.05371.pdf).
+- The online updating of Q is heavily borrowed from [Self-labelling via simultaneous clustering and representation learning,ICLR20](https://openreview.net/forum?id=Hyx-jyBFPr).
 - We distribute the batches over 64 V100 16Gb GPUs, resulting in each GPU treating 64 instances.To help the very beginning of the optimization, we freeze the prototypes
 during the first epoch of training.
 - Check more details in the supp. learning rate warm up,
@@ -373,6 +379,28 @@ initialisation, and we call these concrete instantiations subheads. Each sub-hea
 
 
 
+**[Sela:Self-labelling via simultaneous clustering and representation learning,ICLR20](https://openreview.net/forum?id=Hyx-jyBFPr)**
+
+
+[code](https://github.com/yukimasano/self-label)
+
+[blog](http://www.robots.ox.ac.uk/~vgg/blog/self-labelling-via-simultaneous-clustering-and-representation-learning.html)
+
+- Extension based on deep clustering.
+- However, in the fully unsupervised case, it leads to a degenerate solution: eq. (1) is trivially minimized by assigning all data points to a single (arbitrary) label.
+- Why Equation (5)?
+- Why can be related to OT?
+- Then, we compare our results to the state of the art in self-supervised
+representation learning, where we find that our method is the best among clustering-based techniques
+and overall state-of-the-art or at least highly competitive in many benchmarks.  
+- Following Xu Ji,2008, adopt a multi-head setting, similar to multi-task learninng. check 3.5
+- Step 1 amounts to standard CE training, which we run for a fixed number
+of epochs. Step 2 can be interleaved at any point in the optimization; to amortize its cost, we run it **at most once per epoch, and usually less**, with a schedule described and validated below.
+- Experimental analysis is interesting.
+- By virtue of the method, the resulting self-labels can be used to quickly learn features for
+new architectures using simple cross-entropy training.
+
+
 **[Deep Clustering for Unsupervised Learning of Visual Features,ECCV18](https://arxiv.org/pdf/1807.05520.pdf)**
 
 > Background: Despite the primeval success of clustering approaches in
@@ -402,6 +430,8 @@ Interesting analysis in the experimental part.
 
 - S4L-Rotation: a four-class cross-entropy loss
 - S4L-examplar: similar to contrastive learning.
+- baseline setting, virual adverersial training, conditional entropy mminimization(EntMin), Pseudo-label.
+- Pseudo-label is very similar to self-training, while authentic self-traning utilizes the augmentation!
 
 **[ClusterFit: Improving Generalization of Visual Representations,CVPR20](https://arxiv.org/abs/1912.03330)**
 

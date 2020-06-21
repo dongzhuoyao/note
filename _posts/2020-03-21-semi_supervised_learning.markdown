@@ -144,6 +144,17 @@ Three different noises $$\upeta$$ are considered: The model architecture is a 13
 
 ## Semi-supervised semantic segmentation
 
+**[Virtual Adversarial Training:
+A Regularization Method for Supervised and
+Semi-Supervised Learning,PAMI17](https://arxiv.org/pdf/1704.03976.pdf)**
+
+- interesting and simple idea, high citation.
+  
+![](/imgs/vat.png)
+
+sceenshot from [S4L: Self-Supervised Semi-Supervised Learning,ICCV19](https://arxiv.org/pdf/1905.03670.pdf)
+
+
 **Consistency regularization**
 
 Consistency regularization (Sajjadi et al., 2016b; Laine & Aila, 2017; Miyato et al., 2017; Oliver
