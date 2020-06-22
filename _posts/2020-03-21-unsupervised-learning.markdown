@@ -338,11 +338,16 @@ during the first epoch of training.
 
 ![](/imgs/scl.png)
 
-**[What Makes for Good Views for Contrastive Learning?Arxiv2005](https://arxiv.org/pdf/2005.10243.pdf)**
+- relation between triplet loss
+- Analysis on ImageNet-C.
+- batch size 8192 for ResNet-50 and batch size 2048 for ResNet-200;The LARS optimizer;RMSProp optimizer works best for training the linear classifier. 
 
-> In this paper, we use empirical analysis to beer understand the importance of view selection, and argue that we should reduce the mutual information (MI) between views while keeping task-relevant information intact.
+**[InfoMin: What Makes for Good Views for Contrastive Learning?Arxiv2005](https://arxiv.org/pdf/2005.10243.pdf)**
 
-Interesting experiment design about moving-mnist to validate the hypothesis.
+[project](https://hobbitlong.github.io/InfoMin/)
+
+- In this paper, we use empirical analysis to beer understand the importance of view selection, and argue that we should reduce the mutual information (MI) between views while keeping task-relevant information intact.
+- Interesting experiment design about moving-mnist to validate the hypothesis.
 
 
 
@@ -380,6 +385,7 @@ initialisation, and we call these concrete instantiations subheads. Each sub-hea
 
 
 **[Sela:Self-labelling via simultaneous clustering and representation learning,ICLR20](https://openreview.net/forum?id=Hyx-jyBFPr)**
+
 
 
 [code](https://github.com/yukimasano/self-label)
@@ -435,7 +441,7 @@ Interesting analysis in the experimental part.
 
 **[ClusterFit: Improving Generalization of Visual Representations,CVPR20](https://arxiv.org/abs/1912.03330)**
 
-**[Self-Supervised Learning of Pretext-Invariant Representations,CVPR20](https://arxiv.org/pdf/1912.01991.pdf)**
+**[PIRL: Self-Supervised Learning of Pretext-Invariant Representations,CVPR20](https://arxiv.org/pdf/1912.01991.pdf)**
 
 Only consider jigsaw. In this work, we adopt
 the existing Jigsaw pretext task in a way that encourages
