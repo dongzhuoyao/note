@@ -247,15 +247,28 @@ MoCo v1/2 is also useful in CURL which finds MoCo "is extremely useful in Deep R
 
 **[SimCLR:A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709)**
 
+from Mocov2:
+> SimCLR [2] improves the end-to-end
+variant of instance discrimination in three aspects: (i) a substantially larger batch (4k or 8k) that can provide more negative samples; (ii) replacing the output fc projection head
+[16] with an MLP head; (iii) stronger data augmentation.
 
 check [zhihu](https://www.zhihu.com/question/372064916)
 
 With 128 TPU v3 cores, it takes ∼1.5 hours to train our ResNet-50 with a batch size of 4096 for 100 epochs.
 
-
-check suppimentary, find a detailed comparison with previous methods.
+check supplimentary, find a detailed comparison with previous methods.
 
 ![](imgs/simclr.png)
+
+**[SimCLR2: Big Self-Supervised Models are Strong Semi-Supervised Learners](https://arxiv.org/abs/2006.10029)**
+
+
+- 128 Cloud TPUs, with a batch size of 4096.
+- The proposed semi-supervised
+learning algorithm can be summarized in three steps: unsupervised pretraining of
+a big ResNet model using SimCLRv2 (a modification of SimCLR [1]), supervised
+fine-tuning on a few labeled examples, and distillation with unlabeled examples
+for refining and transferring the task-specific knowledge.
 
 
 **[On Mutual Information in Contrastive Learning for Visual Representations,Arxiv2005](https://arxiv.org/pdf/2005.13149.pdf)**
