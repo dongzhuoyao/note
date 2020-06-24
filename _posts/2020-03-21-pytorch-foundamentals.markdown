@@ -153,6 +153,7 @@ check [here](https://arxiv.org/pdf/2003.05176.pdf)
 
 concatenation can be operated between diverse dimensions. As here we only reorganize the tensor and don't change the value, all gradients are just the reverse-organsed(with value unchanged).
 
+**how gradient bp when using torch.no_grad() in the middle of network?**
 
 **torch.mean**
 

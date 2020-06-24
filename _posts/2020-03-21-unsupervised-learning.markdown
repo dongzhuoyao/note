@@ -16,6 +16,9 @@ https://loewex.github.io/GreedyInfoMax.html
 
 -->
 
+[Self-supervised Visual Feature Learning with
+Deep Neural Networks: A Survey,PAMI20](https://arxiv.org/pdf/1902.06162.pdf)
+
 check [zhihu discussion](https://www.zhihu.com/question/355779873)
 
 
@@ -240,6 +243,8 @@ MoCo v1/2 is also useful in CURL which finds MoCo "is extremely useful in Deep R
 
 <div class="fb-post" data-href="https://www.facebook.com/hekaiming/posts/10158594924257150" data-show-text="true" data-width=""><blockquote cite="https://developers.facebook.com/hekaiming/posts/10158594924257150" class="fb-xfbml-parse-ignore"><p>Happen to see this nice video introducing MoCo v1/v2! It also covers Berkeley&#039;s recent work on CURL which finds MoCo &quot;is extremely useful in Deep RL&quot; (quote Aravind Srinivas, CURL author).</p>Posted by <a href="#" role="button">Kaiming He</a> on&nbsp;<a href="https://developers.facebook.com/hekaiming/posts/10158594924257150">Wednesday, April 15, 2020</a></blockquote></div>
 
+**[Negative Margin Matters: Understanding
+Margin in Few-shot Classification,Arxiv2003](https://arxiv.org/pdf/2003.12060.pdf)**
 
 **[MoCoV2]()**
 
@@ -254,9 +259,9 @@ variant of instance discrimination in three aspects: (i) a substantially larger 
 
 check [zhihu](https://www.zhihu.com/question/372064916)
 
-With 128 TPU v3 cores, it takes ∼1.5 hours to train our ResNet-50 with a batch size of 4096 for 100 epochs.
-
-check supplimentary, find a detailed comparison with previous methods.
+- With 128 TPU v3 cores, it takes ∼1.5 hours to train our ResNet-50 with a batch size of 4096 for 100 epochs.
+- the combination of random crop and color distortion is **crucial** to achieve a good performance
+- check supplimentary, find a detailed comparison with previous methods.
 
 ![](imgs/simclr.png)
 
@@ -334,19 +339,6 @@ We evaluate self-supervised feature learning methods and find that with sufficie
 
 
 
-**[Unsupervised Learning of Visual Features by Contrasting Cluster Assignments,Arxiv2006](https://arxiv.org/pdf/2006.09882.pdf)**
-
-![](/imgs/swav.png)
-
-- image x, feature z, code q, prototype c.  zc=q
-- $$ q \in K \times B $$
-- $$tr(Q^{T} C^{T} Q )$$, BxK, KxC, CxB, Q is calculated by softmax(with temperature) rowly? columnly?, feature z is prejected to the unit sphere by L2 normalization; prototype C is updated by gradient descent(Equation 2). As code q is code needed in cross entroy(equation 2), therefore, we need design a method to update q(better online)
-- The online updating of Q is heavily borrowed from [Self-labelling via simultaneous clustering and representation learning,ICLR20](https://openreview.net/forum?id=Hyx-jyBFPr).
-- We distribute the batches over 64 V100 16Gb GPUs, resulting in each GPU treating 64 instances.To help the very beginning of the optimization, we freeze the prototypes
-during the first epoch of training.
-- Check more details in the supp. learning rate warm up,
-
-
 **[Supervised Contrastive Learning,Arxiv2004](https://arxiv.org/pdf/2004.11362.pdf)**
 
 ![](/imgs/scl.png)
@@ -397,6 +389,27 @@ initialisation, and we call these concrete instantiations subheads. Each sub-hea
 
 
 
+
+**[SwAV: Unsupervised Learning of Visual Features by Contrasting Cluster Assignments,Arxiv2006](https://arxiv.org/pdf/2006.09882.pdf)**
+
+![](/imgs/swav.png)
+
+- Swapped prediction problem. It seems that method can also work without swapping, it's great if the author can ablate this.
+- Check supp for pseudo-code.
+- in Moco,SimCLR, ConSup, the negative sample is the image feature of another image. In clustering-based method, the negative sample is the typical feature of other cluster centers( a representative feature of other **all** negatives).
+- Note that SwAV is the first self-supervised method to surpass ImageNet supervised features on these datasets, see Table 2.
+- Also, Q is not binary(0 and 1 in Sela.ICLR20), Eq 2 is is soft cross-entropy(similar to label smoothing in mixup paper).
+- image x, feature z, codebook q, prototype c.  zq=c. B: batch size. K cluster size. C feature dimension from convnet.
+- $$ z \in C\times B, q \in K \times B , c \in C \times K$$
+- $$tr(Q^{T} C^{T} Z)$$, BxK, KxC, CxB, Q is calculated by softmax(with temperature) rowly? columnly?, feature z is prejected to the unit sphere by L2 normalization; prototype C is updated by gradient descent(Equation 2). As code q is code needed in cross entroy(equation 2), therefore, we need design a method to update q(better online)
+- The online updating of Q is heavily borrowed from [Self-labelling via simultaneous clustering and representation learning,ICLR20](https://openreview.net/forum?id=Hyx-jyBFPr).
+- multi-crop(large crop and small crop) is crucial, check Figure 3. As noted in prior works [10, 42], comparing random crops of an image plays a central role by capturing information in terms of relations between parts of a scene or an object.
+-  Interestingly, multi-crop seems to benefit more clustering-based methods than contrastive methods. We note that multi-crop does not improve the supervised model. see Fig 3.
+-  Supervised pretraining is too easy to saturate as model complexity increase. For SwAV, it can still take advantage of it. check Fig 4.
+- We distribute the batches over 64 V100 16Gb GPUs, resulting in each GPU treating 64 instances.To help the very beginning of the optimization, we freeze the prototypes during the first epoch of training.Check more details in the supp. learning rate warm up,
+  
+
+
 **[Sela:Self-labelling via simultaneous clustering and representation learning,ICLR20](https://openreview.net/forum?id=Hyx-jyBFPr)**
 
 
@@ -405,10 +418,15 @@ initialisation, and we call these concrete instantiations subheads. Each sub-hea
 
 [blog](http://www.robots.ox.ac.uk/~vgg/blog/self-labelling-via-simultaneous-clustering-and-representation-learning.html)
 
+https://colab.research.google.com/drive/1F-FpHTVqurHN7OHIEb5Xld9T0Iv_RLDP
+
+
 - Extension based on deep clustering.
 - However, in the fully unsupervised case, it leads to a degenerate solution: eq. (1) is trivially minimized by assigning all data points to a single (arbitrary) label.
-- Why Equation (5)?
+- Why Equation (5),Frobenius dot-product. mapping <kxN,kxN> to 1-dim. similar to inner product.
+- optimization deduction, from Eq 7 to Eq 8?
 - Why can be related to OT?
+- P is log probability, after that, send them into sink-horn.
 - Then, we compare our results to the state of the art in self-supervised
 representation learning, where we find that our method is the best among clustering-based techniques
 and overall state-of-the-art or at least highly competitive in many benchmarks.  
@@ -419,6 +437,10 @@ of epochs. Step 2 can be interleaved at any point in the optimization; to amorti
 - By virtue of the method, the resulting self-labels can be used to quickly learn features for
 new architectures using simple cross-entropy training.
 
+
+**[Power Iteration Clustering,ICML10](http://www.cs.cmu.edu/~frank/papers/icml2010-pic-final.pdf)**
+
+![](/imgs/pic.png)
 
 **[Deep Clustering for Unsupervised Learning of Visual Features,ECCV18](https://arxiv.org/pdf/1807.05520.pdf)**
 
@@ -439,7 +461,8 @@ ImageNet (updating the clustering every epoch) was nearly optimal.
 
 C is dxk matrix, denoting the cenntriod of k centers with dimenstion d. even though K-means is non-parametric clustering. C can be implicitly obtained when convergent.
 
-Two tricky ways to avoid trival solutions.
+Two stage optimization like ADMM. 1). clustering the features to produce pesudo-label y;2). update the parameters of the convnet by predicting these pseudo-labels. This type of alternating procedure
+is prone to trivial solutions. Two tricky ways are introduced to avoid trival solutions.
 
 
 Interesting analysis in the experimental part.
