@@ -155,6 +155,8 @@ concatenation can be operated between diverse dimensions. As here we only reorga
 
 **how gradient bp when using torch.no_grad() in the middle of network?**
 
+https://arxiv.org/pdf/2006.09882.pdf
+
 **torch.mean**
 
 

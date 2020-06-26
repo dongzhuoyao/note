@@ -406,7 +406,7 @@ initialisation, and we call these concrete instantiations subheads. Each sub-hea
 - multi-crop(large crop and small crop) is crucial, check Figure 3. As noted in prior works [10, 42], comparing random crops of an image plays a central role by capturing information in terms of relations between parts of a scene or an object.
 -  Interestingly, multi-crop seems to benefit more clustering-based methods than contrastive methods. We note that multi-crop does not improve the supervised model. see Fig 3.
 -  Supervised pretraining is too easy to saturate as model complexity increase. For SwAV, it can still take advantage of it. check Fig 4.
-- We distribute the batches over 64 V100 16Gb GPUs, resulting in each GPU treating 64 instances.To help the very beginning of the optimization, we freeze the prototypes during the first epoch of training.Check more details in the supp. learning rate warm up,
+- We distribute the batches over 64 V100 16Gb GPUs, resulting in each GPU treating 64 instances.To help the very beginning of the optimization, we freeze the prototypes during the first epoch of training.Check more details in the supp. learning rate warm up. freeze prototype update in first epoch;
   
 
 
