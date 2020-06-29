@@ -12,6 +12,14 @@ categories: cv
 [code](https://github.com/DefangChen/OKDDip)
 
 
+**[Born-Again Neural Networks,ICML18](https://arxiv.org/pdf/1805.04770.pdf)**
+
+ We study KD from a new perspective:
+rather than compressing models, we train students parameterized identically to their teachers. Surprisingly, these Born-Again Networks(BANs), outperform their teachers significantly,
+both on computer vision and language modeling tasks.
+
+check application in [Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?](https://arxiv.org/pdf/2003.11539.pdf)
+
 
 ## Self-Training
 

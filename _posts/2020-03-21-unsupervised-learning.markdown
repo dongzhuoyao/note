@@ -104,7 +104,10 @@ Computing the non-parametric softmax above is cost prohibitive when the number o
 
 **[Contrastive Representation Distillation,ICLR20](https://hobbitlong.github.io/CRD/)**
 
-TODO
+Drop-in replacement for Knowledge Distillation, with state of the art performance
+
+[code](https://github.com/HobbitLong/RepDistiller)
+
 
 **[Mutual Information Gradient Estimation for Representation Learning,ICLR20](https://openreview.net/forum?id=ByxaUgrFvH)**
 

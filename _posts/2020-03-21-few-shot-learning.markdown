@@ -36,6 +36,8 @@ new task
 
 **[Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?,Arxiv2003](https://arxiv.org/pdf/2003.11539.pdf)**
 
+[code](https://github.com/WangYueFt/rfs/)
+
 
 - miniImageNet, tieredImageNet, CIFAR-FS, and FC100, Meta-Dataset
 
