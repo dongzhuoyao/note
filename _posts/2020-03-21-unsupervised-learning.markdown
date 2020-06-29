@@ -259,6 +259,7 @@ variant of instance discrimination in three aspects: (i) a substantially larger 
 
 check [zhihu](https://www.zhihu.com/question/372064916)
 
+- about cosine similarity: https://github.com/google-research/simclr/issues/38
 - With 128 TPU v3 cores, it takes ∼1.5 hours to train our ResNet-50 with a batch size of 4096 for 100 epochs.
 - the combination of random crop and color distortion is **crucial** to achieve a good performance
 - check supplimentary, find a detailed comparison with previous methods.
@@ -274,6 +275,9 @@ learning algorithm can be summarized in three steps: unsupervised pretraining of
 a big ResNet model using SimCLRv2 (a modification of SimCLR [1]), supervised
 fine-tuning on a few labeled examples, and distillation with unlabeled examples
 for refining and transferring the task-specific knowledge.
+
+
+**[Unsupervised Learning by Predicting Noise](https://arxiv.org/abs/1704.05310)**
 
 
 **[On Mutual Information in Contrastive Learning for Visual Representations,Arxiv2005](https://arxiv.org/pdf/2005.13149.pdf)**
@@ -441,6 +445,16 @@ new architectures using simple cross-entropy training.
 **[Power Iteration Clustering,ICML10](http://www.cs.cmu.edu/~frank/papers/icml2010-pic-final.pdf)**
 
 ![](/imgs/pic.png)
+
+**[AND: Unsupervised Deep Learning by Neighbourhood Discovery,ICML19](https://arxiv.org/pdf/1904.11567.pdf)**
+
+[code](https://github.com/Raymond-sci/AND)
+
+- Without an extra classifier learning post-process involved,
+kNN reflects directly the discriminative capability of the
+learned feature representations.
+- Dataset: CIFAR,SVHN,ImageNet,CUB200,Dogs.
+
 
 **[Deep Clustering for Unsupervised Learning of Visual Features,ECCV18](https://arxiv.org/pdf/1807.05520.pdf)**
 

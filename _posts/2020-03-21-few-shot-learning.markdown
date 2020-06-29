@@ -30,6 +30,45 @@ new task
 
 **[A New Meta-Baseline for Few-Shot Learning,Arxiv2003](https://arxiv.org/abs/2003.04390)**
 
+[code](https://github.com/cyvius96/few-shot-meta-baseline)
+
+![](/imgs/fsl2003.png)
+
+**[Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?,Arxiv2003](https://arxiv.org/pdf/2003.11539.pdf)**
+
+
+- miniImageNet, tieredImageNet, CIFAR-FS, and FC100, Meta-Dataset
+
+**[Self-Supervised Learning For Few-Shot Image Classification,Arxiv1911](https://arxiv.org/pdf/1911.06045.pdf)**
+
+[code](https://github.com/phecy/SSL-FEW-SHOT)
+
+
+Mini80-SSL is self-supervised trained from 48,000
+images (80 classes training and validation ) without labels. Mini80-
+SL is supervised training using same AmdimNet by cross entropy
+loss with labels. Image900-SSL is SSL trained from all images from
+ImageNet1K except MiniImageNet. For CUB dataset, CUB150-
+SSL is trained by SSL from 150 classes (training and validation).
+CUB150-SL is the supervised trained model. Image1K-SSL is SSL
+trained from all images from ImageNet1K without label
+
+
+
+**[A Baseline for Few-Shot Image Classification,ICLR20](https://openreview.net/forum?id=rylXBkrYDS)**
+
+When **fine-tuned transductively**, this outperforms
+the current state-of-the-art on standard datasets such as Mini-ImageNet, TieredImageNet, CIFAR-FS and FC-100 with the same hyper-parameters.
+
+- Dataset: ImageNet-21k, also in meta-dataset.
+- The proposed approach includes a standard cross-entropy loss on the labeled support samples and a Shannon entropy loss on the unlabeled query samples.
+
+
+**[Meta-Dataset: A Dataset of Datasets for Learning to Learn from Few Examples,ICLR20](https://openreview.net/forum?id=rkgAGAVKPr)**
+
+[iclr forum](https://openreview.net/forum?id=rkgAGAVKPr)
+
+[code only tf](https://github.com/google-research/meta-dataset)
 
 
 ## imbalanced classification
