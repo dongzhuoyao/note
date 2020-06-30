@@ -133,14 +133,10 @@ check [zhihu](https://www.zhihu.com/question/372070853/answer/1082980270), mainl
 
 define Open Long-Tailed Recognition (OLTR) as learning from such naturally distributed data and optimizing the classification accuracy over a balanced test set which include head, tail, and open classes.
 
-The work fills the void in practical
-benchmarks for imbalanced classification, few-shot learning, and open-set recognition, enabling future research that
-is directly transferable to real-world applications.
+The work fills the void in practical benchmarks for imbalanced classification, few-shot learning, and open-set recognition, enabling future research that is directly transferable to real-world applications.
 
- develop an integrated OLTR algorithm that maps
-an image to a feature space such that visual concepts can
-easily relate to each other based on a learned metric that respects the closed-world classification while acknowledging
-the novelty of the open world.
+ develop an integrated OLTR algorithm that maps an image to a feature space such that visual concepts can easily relate to each other based on a learned metric that respects the closed-world classification while acknowledging the novelty of the open world.
+
 
 **[Class-Balanced Loss Based on Effective Number of Samples,CVPR19](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8953804&tag=1)**
 

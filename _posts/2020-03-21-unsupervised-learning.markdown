@@ -19,6 +19,8 @@ https://loewex.github.io/GreedyInfoMax.html
 [Self-supervised Visual Feature Learning with
 Deep Neural Networks: A Survey,PAMI20](https://arxiv.org/pdf/1902.06162.pdf)
 
+[A Survey on Semi-, Self- and Unsupervised Learning in Image Classification,Arxiv2002](https://arxiv.org/pdf/2002.08721.pdf)
+
 check [zhihu discussion](https://www.zhihu.com/question/355779873)
 
 
@@ -322,6 +324,9 @@ How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from
 
 
 **[BYOL:Bootstrap Your Own Latent A New Approach to Self-Supervised Learning,Arxiv2006](https://arxiv.org/pdf/2006.07733.pdf)**
+
+[code](https://github.com/lucidrains/byol-pytorch)
+
 
 > **without using negative pair**
 > This experimental finding is the core
