@@ -553,6 +553,10 @@ video supervison use binary order prediction(forward or backward).
 https://zhuanlan.zhihu.com/p/125506819
 -->
 
+## Application
+
+Landmarks: [Unsupervised Discovery of Object Landmarks via Contrastive Learning](https://arxiv.org/pdf/2006.14787.pdf)
+
 
 
 
