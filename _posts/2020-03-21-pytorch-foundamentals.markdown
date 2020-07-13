@@ -99,6 +99,11 @@ When we write a atomic operation, we need a backward function to realize autogra
 
 inplace=True means that it will modify the input directly, without allocating any additional output(extra node/vertex in  computation graph). It can sometimes slightly decrease the memory usage, but may not always be a valid operation (because the original input is destroyed). However, if you don’t see an error, it means that your use case is valid.
 
+## DDP
+
+### Difference about whether using DistributedSampler in DDP
+
+[https://www.codenong.com/cs106162971/](https://www.codenong.com/cs106162971/)
 
 ## different backward function in pytorch
 

@@ -73,6 +73,45 @@ the current state-of-the-art on standard datasets such as Mini-ImageNet, TieredI
 [code only tf](https://github.com/google-research/meta-dataset)
 
 
+**[MetaOptNet:Meta-Learning with Differentiable Convex Optimization,CVPR19oral](http://openaccess.thecvf.com/content_CVPR_2019/papers/Lee_Meta-Learning_With_Differentiable_Convex_Optimization_CVPR_2019_paper.pdf)**
+
+
+[code](https://github.com/kjunelee/MetaOptNet)
+
+**[Wandering Within a World: Online Contextualized Few-Shot Learning,Arxiv2007](https://arxiv.org/abs/2007.04546)**
+
+**[Are Few-Shot Learning Benchmarks too Simple ?Arxiv1902](https://openreview.net/forum?id=SygeY1SYvr)**
+
+intuition: When no labels are available, few-shot classification is more naturally formulated as a clustering problem.
+
+- Among other things such as variable numbers of ways and shots, a key difficulty of the Meta-Dataset is
+that class semantics vary across episodes, since episodes are generated from a randomly selected
+dataset.
+
+**[Hybrid Attention-Based Prototypical Networks for Noisy Few-Shot Relation Classification,AAAI19](https://gaotianyu1350.github.io/assets/aaai2019_hatt_paper.pdf)**
+
+noisy few-shot learning.
+
+
+**[Edge-Labeling Graph Neural Network for Few-shot Learning,CVPR19](https://arxiv.org/pdf/1905.01436.pdf)**
+
+node-labeling vs edge-labeling: The previous graph neural network (GNN) approaches in
+few-shot learning have been based on the node-labeling
+framework, which implicitly models the intra-cluster similarity and the inter-cluster dissimilarity. In contrast, the proposed EGNN learns to predict the edge-labels rather
+than the node-labels on the graph that enables the evolution
+of an explicit clustering by iteratively updating the edgelabels with direct exploitation of both intra-cluster similarity and the inter-cluster dissimilarity. 
+
+too many parameters, as shown in EPNet.
+
+**[EPNet: Embedding Propagation: Smoother Manifold for Few-Shot Classification,ECCV20](https://arxiv.org/pdf/2003.04151.pdf)**
+
+224 is much worse than 84.
+
+see session 2.1, simple Laplacian tricks.
+
+experiment design of semi-supervised few-shot learning.
+
+
 ## imbalanced classification
 
 ## Long-tailed recognition

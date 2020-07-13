@@ -355,6 +355,7 @@ We evaluate self-supervised feature learning methods and find that with sufficie
 
 ![](/imgs/scl.png)
 
+- This of course comes at the cost of requiring large batch sizes to allow for the inclusion of many positives and negatives, some of which will be hard in expectation as training proceeds. batch size 8192 for ResNet-50 and batch size 2048 for ResNet-200;
 - relation between triplet loss
 - Analysis on ImageNet-C.
 - batch size 8192 for ResNet-50 and batch size 2048 for ResNet-200;The LARS optimizer;RMSProp optimizer works best for training the linear classifier. 
