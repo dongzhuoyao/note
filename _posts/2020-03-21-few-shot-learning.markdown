@@ -265,6 +265,16 @@ Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an
 **[TAEN: Temporal Aware Embedding Network for Few-Shot Action Recognition,Arxiv2004](https://arxiv.org/pdf/2004.10141.pdf)**
 
 
+**[Generalized Many-Way Few-Shot Video Classification,Arxiv2007](https://arxiv.org/pdf/2007.04755.pdf)**
+
+In this work, we point out that a spatiotemporal CNN trained on a large-scale video
+dataset saturates existing few-shot video classification benchmarks. Hence, we propose
+new more challenging experimental settings, namely generalized few-shot video classification (GFSV) and few-shot video classification with more ways than the classical
+5-way setting. We further improve spatiotemporal CNNs by leveraging the weaklylabeled videos from YFCC100M using weak-labels such as tags for text-supported and
+video-based retrieval. Our results show that generalized more-way few-shot video classification is challenging and we encourage future research in this setting
+
+
+
 
 ## Few-shot Edge Detection
 

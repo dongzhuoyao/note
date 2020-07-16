@@ -461,10 +461,13 @@ motivation from normalization flow,apply reversible layer into RIM.
 Based on fastMRI task.
 
 
+**[Invertible Zero-Shot Recognition Flows,ECCV20](https://arxiv.org/pdf/2007.04873.pdf)**
+
+
 
 **[A Disentangling Invertible Interpretation Network for Explaining Latent Representations,Arxiv2004](https://arxiv.org/pdf/2004.13166.pdf)**
  
-**[IIR,Arxiv2005](https://arxiv.org/abs/2005.05650)**
+**[IIR Invertible Image Rescaling,ECCV20,oral](https://arxiv.org/abs/2005.05650)**
 
 **[Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation,Arxiv2003](https://arxiv.org/pdf/1308.3432.pdf)**
 
