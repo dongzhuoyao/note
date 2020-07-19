@@ -350,6 +350,7 @@ We evaluate self-supervised feature learning methods and find that with sufficie
 
 
 
+
 **[Debiased Contrastive Learning,Arxiv2007](https://arxiv.org/pdf/2007.00224.pdf)**
 
 ![](/imgs/debiased.png)
@@ -453,6 +454,21 @@ of epochs. Step 2 can be interleaved at any point in the optimization; to amorti
 - By virtue of the method, the resulting self-labels can be used to quickly learn features for
 new architectures using simple cross-entropy training.
 
+**[Labelling unlabelled videos from scratch with multi-modal self-supervision,Arxiv2006](https://arxiv.org/pdf/2006.13662.pdf)**
+
+A large part of the current success of deep learning lies in the effectiveness of
+data – more precisely: labelled data. Yet, labelling a dataset with human annotation continues to carry high costs, especially for videos. While in the image
+domain, recent methods have allowed to generate meaningful (pseudo-) labels
+for unlabelled datasets without supervision, this development is missing for the
+video domain where learning feature representations is the current focus. In this
+work, we a) show that unsupervised labelling of a video dataset does not come
+for free from strong feature encoders and b) propose a novel clustering method
+that allows pseudo-labelling of a video dataset without any human annotations, by
+leveraging the natural correspondence between the audio and visual modalities.
+An extensive analysis shows that the resulting clusters have high semantic overlap
+to ground truth human labels. We further introduce the first benchmarking results
+on unsupervised labelling of common video datasets Kinetics, Kinetics-Sound,
+VGG-Sound and AVE.
 
 **[Power Iteration Clustering,ICML10](http://www.cs.cmu.edu/~frank/papers/icml2010-pic-final.pdf)**
 

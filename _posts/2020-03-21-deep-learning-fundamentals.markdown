@@ -305,3 +305,7 @@ too complex
 
 
 
+## Activation
+
+**[Implicit Neural Representations with Periodic Activation Functions](https://vsitzmann.github.io/siren/)**
+

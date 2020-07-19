@@ -34,12 +34,16 @@ new task
 
 ![](/imgs/fsl2003.png)
 
-**[Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?,Arxiv2003](https://arxiv.org/pdf/2003.11539.pdf)**
+**[RFS:Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?,Arxiv2003](https://arxiv.org/pdf/2003.11539.pdf)**
 
 [code](https://github.com/WangYueFt/rfs/)
 
 
 - miniImageNet, tieredImageNet, CIFAR-FS, and FC100, Meta-Dataset
+
+**[Improving Few-Shot Learning using Composite Rotation based Auxiliary Task,Arxiv2006](https://arxiv.org/pdf/2006.15919.pdf)**
+
+Based on RFS.
 
 **[Self-Supervised Learning For Few-Shot Image Classification,Arxiv1911](https://arxiv.org/pdf/1911.06045.pdf)**
 
@@ -56,6 +60,10 @@ CUB150-SL is the supervised trained model. Image1K-SSL is SSL
 trained from all images from ImageNet1K without label
 
 
+**[SimpleShot: Revisiting Nearest-Neighbor Classification for Few-Shot Learning,Arxiv1911](https://arxiv.org/pdf/1911.04623.pdf)**
+
+Meta-iNat dataset
+
 
 **[A Baseline for Few-Shot Image Classification,ICLR20](https://openreview.net/forum?id=rylXBkrYDS)**
 
@@ -65,6 +73,15 @@ the current state-of-the-art on standard datasets such as Mini-ImageNet, TieredI
 - Dataset: ImageNet-21k, also in meta-dataset.
 - The proposed approach includes a standard cross-entropy loss on the labeled support samples and a Shannon entropy loss on the unlabeled query samples.
 
+
+**[LaplacianShot: Laplacian Regularized Few Shot Learning,ICML20](https://github.com/imtiazziko/LaplacianShot)**
+
+The code is adapted from SimpleShot github.
+
+
+**[Few-Shot Class-Incremental Learning via Feature Space Composition,Arxiv2006](https://arxiv.org/pdf/2006.15524.pdf)**
+
+![](/imgs/fsl-il.png)
 
 **[Meta-Dataset: A Dataset of Datasets for Learning to Learn from Few Examples,ICLR20](https://openreview.net/forum?id=rkgAGAVKPr)**
 
@@ -110,6 +127,29 @@ too many parameters, as shown in EPNet.
 see session 2.1, simple Laplacian tricks.
 
 experiment design of semi-supervised few-shot learning.
+
+
+**[Cross Attention Network for Few-shot Classification,NeuIPS19](https://arxiv.org/pdf/1910.07677.pdf)**
+
+**[Meta-Transfer Learning for Few-Shot Learning,CVPR19](https://arxiv.org/pdf/1812.02391.pdf)**
+
+
+**[E3BM: An Ensemble of Epoch-wise Empirical Bayes for Few-shot Learning,ECCV20,poster](https://arxiv.org/pdf/1904.08479.pdf)**
+
+[code](https://github.com/yaoyao-liu/E3BM)
+
+![](/imgs/E3BM.png)
+
+**[Few-Shot Learning via Embedding Adaptation with Set-to-Set Functions,CVPR20](https://openaccess.thecvf.com/content_CVPR_2020/papers/Ye_Few-Shot_Learning_via_Embedding_Adaptation_With_Set-to-Set_Functions_CVPR_2020_paper.pdf)**
+
+**[Mnemonics Training: Multi-Class Incremental Learning without Forgetting,CVPR20,oral](https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_Mnemonics_Training_Multi-Class_Incremental_Learning_Without_Forgetting_CVPR_2020_paper.pdf)**
+
+**[Learning to Self-Train for Semi-Supervised Few-Shot Classification,NeuIPS19](https://arxiv.org/abs/1906.00562)**
+
+**[Meta-Learned Confidence for Few-shot Learning,Arxiv2002](https://arxiv.org/pdf/2002.12017.pdf)**
+
+do semi-supervised learning and compared with [Learning to Self-Train for Semi-Supervised Few-Shot Classification,NeuIPS19](https://arxiv.org/abs/1906.00562).
+
 
 
 ## imbalanced classification
