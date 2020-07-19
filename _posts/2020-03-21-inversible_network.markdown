@@ -355,6 +355,9 @@ combine with self-attention
 
 **[Neural Spline Flows,Arxiv1906](https://arxiv.org/pdf/1906.04032.pdf)**
 
+**[When and How Can Deep Generative Models be Inverted?,Arxiv2006](https://arxiv.org/pdf/2006.15555.pdf)**
+
+
 
 **[Disentanglement by Nonlinear ICA with General Incompressible-flow Networks (GIN),ICLR20](https://openreview.net/forum?id=rygeHgSFDH)**
 
