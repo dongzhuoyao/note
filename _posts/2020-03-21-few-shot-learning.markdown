@@ -291,6 +291,14 @@ Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an
 
 **[Weakly-supervised Any-shot Object Detection](https://arxiv.org/pdf/2006.07502.pdf)**
 
+**[Frustratingly Simple Few-Shot Object Detection,ICML20](https://arxiv.org/pdf/2003.06957.pdf)**
+
+[code](https://github.com/ucbdrive/few-shot-object-detection)
+
+new benchmarks on PASCAL VOC, COCO and LVIS.
+
+![](/imgs/frustrating-fsd.png)
+
 ## Few-shot instance segmentation
 
 [One-Shot Instance Segmentation,Arxiv](https://arxiv.org/pdf/1811.11507.pdf)
