@@ -10,7 +10,13 @@ categories: cv
 [UCB20, CS294-158 Deep Unsupervised Learning Lecture 5 & 6](https://drive.google.com/file/d/1qCVpu2zFz1uEe3QcNHGlaT1Rs2u8HrCc/view)
 
 
+
+
 [Mimicry: A PyTorch GAN library that reproduces research results for popular GANs.](https://github.com/kwotsin/mimicry)
+
+
+**[Contrastive Generative Adversarial Networks,Arxiv2006](https://arxiv.org/pdf/2006.12681.pdf)**
+
 
 **[MixNMatch: Multifactor Disentanglement and Encoding for Conditional Image Generation,CVPR20](https://arxiv.org/pdf/1911.11758.pdf)**
 

@@ -142,6 +142,7 @@ experiment design of semi-supervised few-shot learning.
 
 **[Few-Shot Learning via Embedding Adaptation with Set-to-Set Functions,CVPR20](https://openaccess.thecvf.com/content_CVPR_2020/papers/Ye_Few-Shot_Learning_via_Embedding_Adaptation_With_Set-to-Set_Functions_CVPR_2020_paper.pdf)**
 
+
 **[Mnemonics Training: Multi-Class Incremental Learning without Forgetting,CVPR20,oral](https://openaccess.thecvf.com/content_CVPR_2020/papers/Liu_Mnemonics_Training_Multi-Class_Incremental_Learning_Without_Forgetting_CVPR_2020_paper.pdf)**
 
 **[Learning to Self-Train for Semi-Supervised Few-Shot Classification,NeuIPS19](https://arxiv.org/abs/1906.00562)**
@@ -149,6 +150,16 @@ experiment design of semi-supervised few-shot learning.
 **[Meta-Learned Confidence for Few-shot Learning,Arxiv2002](https://arxiv.org/pdf/2002.12017.pdf)**
 
 do semi-supervised learning and compared with [Learning to Self-Train for Semi-Supervised Few-Shot Classification,NeuIPS19](https://arxiv.org/abs/1906.00562).
+
+
+**[Regression Networks for Meta-Learning Few-Shot Classification,ICML20,workshop](https://arxiv.org/pdf/1905.13613.pdf)**
+
+[code](https://github.com/ArnoutDevos/RegressionNet)
+
+> we propose to meta-learn classification of embedded points by regressing the closest approximation in every class subspace
+while using the regression error as a distance metric. Similarly to recent approaches for
+few-shot learning, regression networks reflect a simple inductive bias that is beneficial in
+this limited-data regime and they achieve excellent results, especially when more aggregate class representations can be formed with multiple shots
 
 
 
@@ -322,6 +333,9 @@ new more challenging experimental settings, namely generalized few-shot video cl
 video-based retrieval. Our results show that generalized more-way few-shot video classification is challenging and we encourage future research in this setting
 
 
+## Few-shot 3D cloud
+
+**[Few-shot 3D Point Cloud Semantic Segmentation,Arxiv2006](https://arxiv.org/pdf/2006.12052.pdf)**
 
 
 ## Few-shot Edge Detection
