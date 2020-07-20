@@ -162,6 +162,8 @@ few-shot learning, regression networks reflect a simple inductive bias that is b
 this limited-data regime and they achieve excellent results, especially when more aggregate class representations can be formed with multiple shots
 
 
+**[Texture Bias Of CNNs Limits Few-Shot Classification Performance,NeuIPS19,workshop](https://arxiv.org/pdf/1910.08519.pdf)**
+
 
 ## imbalanced classification
 
@@ -238,6 +240,9 @@ The work fills the void in practical benchmarks for imbalanced classification, f
 **[Trainable Undersampling for Class-Imbalance Learning,AAAI19](https://www.semanticscholar.org/paper/Trainable-Undersampling-for-Class-Imbalance-Peng-Zhang/d349207dee9dd782c34a6a6cd6d71fd5eb178d3a)**
 
 ## Few-shot segmentation
+
+
+**[On the Texture Bias for Few-Shot CNN Segmentation,Arxiv2003](https://arxiv.org/pdf/2003.04052.pdf)**
 
 
 **[CRNet: Cross-Reference Networks for Few-Shot Segmentation,CVPR20](https://arxiv.org/pdf/2003.10658.pdf)**
