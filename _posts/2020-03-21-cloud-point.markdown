@@ -12,6 +12,11 @@ categories: cv
 
 
 
+**[Mapping in a Cycle: Sinkhorn Regularized Unsupervised Learning for Point Cloud Shapes,ECCV20](https://arxiv.org/pdf/2007.09594.pdf)**
+
+
+
+
 ## Point Cloud Augmentation
 
 **[PointAugment: an Auto-Augmentation Framework

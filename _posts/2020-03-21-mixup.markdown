@@ -7,6 +7,10 @@ share: False
 categories: cv
 ---
 
+**[Improving Transformer Optimization Through Better Initialization,ICML20](http://www.cs.toronto.edu/~mvolkovs/ICML2020_tfixup.pdf)**
+
+[code](https://github.com/layer6ai-labs/T-Fixup)
+
 **[InstaBoost: Boosting Instance Segmentation via Probability Map Guided Copy-Pasting,ICCV19](https://arxiv.org/pdf/1908.07801.pdf)**
 
 jittering guided by appearance consistency map

@@ -357,6 +357,7 @@ combine with self-attention
 
 **[When and How Can Deep Generative Models be Inverted?,Arxiv2006](https://arxiv.org/pdf/2006.15555.pdf)**
 
+**[Riemannian Continuous Normalizing Flows,Arxiv2006](https://arxiv.org/pdf/2006.10605.pdf)**
 
 
 **[Disentanglement by Nonlinear ICA with General Incompressible-flow Networks (GIN),ICLR20](https://openreview.net/forum?id=rygeHgSFDH)**

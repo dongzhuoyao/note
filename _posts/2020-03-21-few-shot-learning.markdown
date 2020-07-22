@@ -85,6 +85,9 @@ The code is adapted from SimpleShot github.
 
 **[Meta-Dataset: A Dataset of Datasets for Learning to Learn from Few Examples,ICLR20](https://openreview.net/forum?id=rkgAGAVKPr)**
 
+- heterogeneous dataset compared with previous homogeneous dataset.
+- EFFECT OF TRAINING ON ALL DATASETS OVER TRAINING ON ILSVRC-2012 ONLY:As discussed in the main paper, we notice that we do not always observe a clear generalization advantage in training from a wider collection of image datasets.
+
 [iclr forum](https://openreview.net/forum?id=rkgAGAVKPr)
 
 [code only tf](https://github.com/google-research/meta-dataset)
@@ -337,6 +340,7 @@ new more challenging experimental settings, namely generalized few-shot video cl
 5-way setting. We further improve spatiotemporal CNNs by leveraging the weaklylabeled videos from YFCC100M using weak-labels such as tags for text-supported and
 video-based retrieval. Our results show that generalized more-way few-shot video classification is challenging and we encourage future research in this setting
 
+**[Few-shot Action Recognition with Permutation-invariant Attention,ECCV20,splotlight](https://arxiv.org/pdf/2001.03905.pdf)**
 
 ## Few-shot 3D cloud
 
