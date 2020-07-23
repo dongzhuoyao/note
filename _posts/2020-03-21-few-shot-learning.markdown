@@ -17,6 +17,11 @@ check [Meta-Learning in Neural Networks: A Survey](https://arxiv.org/pdf/2004.05
 
 **[One-Shot Generalization in Deep Generative Model](https://arxiv.org/pdf/1603.05106.pdf)**
 
+
+**[Bayesian Few-Shot Classification with One-vs-Each Pólya-Gamma Augmented Gaussian Processes,Arxiv2007](https://arxiv.org/pdf/2007.10417.pdf)**
+
+
+
 **[DeepEMD: Few-Shot Image Classification with Differentiable Earth Mover's Distance and Structured Classifiers,CVPR20,oral](https://arxiv.org/abs/2003.06777)**
 
 need to setup the formulation of cost c, supply s and demand d in advance. c is decided in cosine similary distance between patch features. s and d is setup by cross-reference mechanism(session4.4 )
@@ -167,6 +172,12 @@ this limited-data regime and they achieve excellent results, especially when mor
 
 **[Texture Bias Of CNNs Limits Few-Shot Classification Performance,NeuIPS19,workshop](https://arxiv.org/pdf/1910.08519.pdf)**
 
+**[Cross-Domain Few-Shot Classification via Learned Feature-Wise Transformation,ICLR20,spotlight](https://arxiv.org/abs/2001.08735)**
+
+[forum](https://openreview.net/forum?id=SJl5Np4tPr)
+
+
+- transductive setting, neet to know the unseen domain images-label pairs
 
 ## imbalanced classification
 

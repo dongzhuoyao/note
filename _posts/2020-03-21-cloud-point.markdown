@@ -12,8 +12,11 @@ categories: cv
 
 
 
-**[Mapping in a Cycle: Sinkhorn Regularized Unsupervised Learning for Point Cloud Shapes,ECCV20](https://arxiv.org/pdf/2007.09594.pdf)**
+**[PointContrast: Unsupervised Pre-training for 3D Point Cloud Understanding,ECCV20,spotlight](https://arxiv.org/pdf/2007.10985.pdf)**
 
+
+
+**[Mapping in a Cycle: Sinkhorn Regularized Unsupervised Learning for Point Cloud Shapes,ECCV20](https://arxiv.org/pdf/2007.09594.pdf)**
 
 
 
