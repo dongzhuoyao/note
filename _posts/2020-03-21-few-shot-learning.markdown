@@ -7,6 +7,9 @@ share: False
 categories: cv
 ---
 
+
+benchmark(https://few-shot.yyliu.net/miniimagenet.html)
+
 ## Few-shot learning
 
 check [Meta-Learning in Neural Networks: A Survey](https://arxiv.org/pdf/2004.05439.pdf)
@@ -196,6 +199,8 @@ this limited-data regime and they achieve excellent results, especially when mor
 - transductive setting, neet to know the unseen domain images-label pairs
 
 **[Meta Dropout: Learning to Perturb Latent Features for Generalization,ICLR20](https://openreview.net/forum?id=BJgd81SYwr)**
+
+[tf code](https://github.com/haebeom-lee/metadrop)
 
 - the learned noise generator can
 perturb the training examples of unseen tasks at the meta-test time for improved
