@@ -337,6 +337,11 @@ new benchmarks on PASCAL VOC, COCO and LVIS.
 
 ![](/imgs/frustrating-fsd.png)
 
+**[Few-Shot Object Detection and Viewpoint Estimation for Objects in the Wild,ECCV20](https://arxiv.org/pdf/2007.12107.pdf)**
+
+[code](http://imagine.enpc.fr/~xiaoy/FSDetView/)
+
+
 ## Few-shot instance segmentation
 
 [One-Shot Instance Segmentation,Arxiv](https://arxiv.org/pdf/1811.11507.pdf)
