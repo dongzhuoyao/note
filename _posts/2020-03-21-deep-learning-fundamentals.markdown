@@ -19,6 +19,17 @@ categories: cv
 
 **[LARS:Large Batch Training of Convolutional Networks,Arxiv1708](https://arxiv.org/abs/1708.03888)**
 
+
+**[Large Batch Optimization for Deep Learning: Training BERT in 76 minutes,ICLR20](https://openreview.net/forum?id=Syx4wnEtvH)**
+
+[forum](https://openreview.net/forum?id=Syx4wnEtvH)
+
+follower: [Accelerated Large Batch Optimization of BERT Pretraining in 54 minutes,Arxiv2006](https://arxiv.org/pdf/2006.13484.pdf)
+
+
+**[SGDR: Stochastic Gradient Descent with Warm Restarts,ICLR17](https://openreview.net/forum?id=Skq89Scxx)**
+
+
 ##  Normalization 
 
 check related work in [ICLR20](https://arxiv.org/pdf/2001.06838.pdf).

@@ -73,6 +73,104 @@ the current state-of-the-art on standard datasets such as Mini-ImageNet, TieredI
 [code only tf](https://github.com/google-research/meta-dataset)
 
 
+## Few-shot segmentation
+
+
+**[CRNet: Cross-Reference Networks for Few-Shot Segmentation,CVPR20](https://arxiv.org/pdf/2003.10658.pdf)**
+
+The motivation is interesting, k-pairs  can be utilized as k2 times. 
+
+The design of cross-reference includes a elementwise multiplication of two sigmoids. the intuition behind is , only the common features in the two branches will have a high activation in
+the fused importance vector. Finally, we use the fused vector to weight the input feature maps to generate reinforced feature representations.
+
+The condition module is quite simple by upsampling+concatenation along channel dimension.
+
+Also the thought of refinement is also worthy of learning.
+
+
+**[Self-Supervised Tuning for Few-Shot Segmentation,Arxiv2004](https://arxiv.org/pdf/2004.05538.pdf)**
+
+**[Pyramid Graph Networks with Connection Attentions for Region-Based
+One-Shot Semantic Segmentation,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Zhang_Pyramid_Graph_Networks_With_Connection_Attentions_for_Region-Based_One-Shot_Semantic_ICCV_2019_paper.pdf)**
+
+
+**[One-Shot Segmentation in Clutter,ICML18](https://arxiv.org/pdf/1803.09597.pdf)**
+
+**[CANet: Class-Agnostic Segmentation Networks with Iterative Refinement and
+Attentive Few-Shot Learning,CVPR19](https://arxiv.org/pdf/1903.02351.pdf)**
+
+Check Fig 2.
+
+**[PANet: Few-Shot Image Semantic Segmentation with Prototype Alignment,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_PANet_Few-Shot_Image_Semantic_Segmentation_With_Prototype_Alignment_ICCV_2019_paper.pdf)**
+
+Masked Average Pooling + Cosine similarity, obtain final segmentation result.
+
+**[Objectness-Aware One-Shot Semantic Segmentations,Arxiv20,April](https://arxiv.org/pdf/2004.02945.pdf)**
+
+- adopt HRNetV2-W48 as the backbone of the objectness module. 
+- The objectness module is trained to segment out all objects in the image.(train the objectness module for 300,000 iterations with batch size 4, which takes about 50 hours on GeForce GTX 1080Ti. )
+- Check Fig 2, support feature, query feature, and objectness feature are congregated by adding operation.
+
+
+**[Weakly Supervised Few-shot Object Segmentation using Co-Attention with Visual and Semantic Inputs,Arxiv20](https://arxiv.org/pdf/2001.09540.pdf)**
+
+only requiring image-level classification data for few-shot object segmentation. propose a novel multi-modal interaction module for few-shot object segmentation that utilizes a coattention mechanism using both visual and word embedding.
+
+Class wording embedding is then spatially tiled and concatenated with the visual features resulting in flattened matrix representations. 
+
+Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an extra $$C \times C$$ matrix in the very middle. Also, they consider two-directions by applying softmax along different dimensions. Check Fig 2.
+
+**[Attention-based Multi-Context Guiding for Few-Shot Semantic Segmentation,AAAI19](http://taohu.me/pdf/few-shot-seg.pdf)**
+
+## Few-shot detection
+
+
+**[Few-Shot Object Detection and Viewpoint Estimation for Objects in the Wild,ECCV20](https://arxiv.org/pdf/2007.12107.pdf)**
+
+
+
+**[Meta r-cnn: Towards general solver for instance-level low-shot learning,ICCV19](https://yanxp.github.io/metarcnn.html)**
+
+
+[code](https://github.com/yanxp/MetaR-CNN)
+
+**[Meta-Learning to Detect Rare Objects,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Meta-Learning_to_Detect_Rare_Objects_ICCV_2019_paper.pdf)**
+
+**[Few-Shot Object Detection with Attention-RPN and Multi-Relation Detector,CVPR20](https://arxiv.org/abs/1908.01998)**
+
+**[Context-Transformer: Tackling Object Confusion for Few-Shot Detection,AAAI20](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YangZ.2509.pdf)**
+
+**[Weakly-supervised Any-shot Object Detection,Arxiv2006](https://arxiv.org/abs/2006.07502)**
+
+## Few-shot instance segmentation
+
+[One-Shot Instance Segmentation,Arxiv](https://arxiv.org/pdf/1811.11507.pdf)
+
+[Differentiable Meta-learning Model for Few-shot Semantic Segmentation,AAAI20](https://arxiv.org/pdf/1911.10371.pdf)
+
+[FGN: Fully Guided Network for Few-Shot Instance Segmentation,CVPR20](https://arxiv.org/abs/2003.13954)
+
+
+## Few-shot video classification
+
+**[TAEN: Temporal Aware Embedding Network for Few-Shot Action Recognition,Arxiv2004](https://arxiv.org/pdf/2004.10141.pdf)**
+
+
+
+## Few-shot Edge Detection
+
+[CAFENet: Class-Agnostic Few-Shot
+Edge Detection Network,Arxiv](https://arxiv.org/pdf/2003.08235.pdf)
+
+## Few-shot video activity localization 
+
+**[METAL: Minimum Effort Temporal Activity Localization in Untrimmed Videos,CVPR20](https://sites.cs.ucsb.edu/~yfwang/papers/cvpr2020.pdf)**
+
+**[TAEN: Temporal Aware Embedding Network for Few-Shot Action Recognition,Arxiv2004](https://arxiv.org/pdf/2004.10141.pdf)**
+
+**[Weakly-Supervised Video Re-Localization with Multiscale Attention Model,AAAI20](http://vllab.cs.nctu.edu.tw/images/paper/aaai-huang20.pdf)**
+
+
 ## imbalanced classification
 
 ## Long-tailed recognition
@@ -150,99 +248,6 @@ the novelty of the open world.
 - Comprehensive experiments are conducted on artificially induced long-tailed CIFAR datasets and large-scale datasets including ImageNet and iNaturalist. Our results show that when trained with the proposed class-balanced loss, the network is able to achieve significant performance gains on long-tailed datasets.
 
 **[Trainable Undersampling for Class-Imbalance Learning,AAAI19](https://www.semanticscholar.org/paper/Trainable-Undersampling-for-Class-Imbalance-Peng-Zhang/d349207dee9dd782c34a6a6cd6d71fd5eb178d3a)**
-
-## Few-shot segmentation
-
-
-**[CRNet: Cross-Reference Networks for Few-Shot Segmentation,CVPR20](https://arxiv.org/pdf/2003.10658.pdf)**
-
-The motivation is interesting, k-pairs  can be utilized as k2 times. 
-
-The design of cross-reference includes a elementwise multiplication of two sigmoids. the intuition behind is , only the common features in the two branches will have a high activation in
-the fused importance vector. Finally, we use the fused vector to weight the input feature maps to generate reinforced feature representations.
-
-The condition module is quite simple by upsampling+concatenation along channel dimension.
-
-Also the thought of refinement is also worthy of learning.
-
-
-**[Self-Supervised Tuning for Few-Shot Segmentation,Arxiv2004](https://arxiv.org/pdf/2004.05538.pdf)**
-
-**[Pyramid Graph Networks with Connection Attentions for Region-Based
-One-Shot Semantic Segmentation,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Zhang_Pyramid_Graph_Networks_With_Connection_Attentions_for_Region-Based_One-Shot_Semantic_ICCV_2019_paper.pdf)**
-
-
-**[One-Shot Segmentation in Clutter,ICML18](https://arxiv.org/pdf/1803.09597.pdf)**
-
-**[CANet: Class-Agnostic Segmentation Networks with Iterative Refinement and
-Attentive Few-Shot Learning,CVPR19](https://arxiv.org/pdf/1903.02351.pdf)**
-
-Check Fig 2.
-
-**[PANet: Few-Shot Image Semantic Segmentation with Prototype Alignment,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_PANet_Few-Shot_Image_Semantic_Segmentation_With_Prototype_Alignment_ICCV_2019_paper.pdf)**
-
-Masked Average Pooling + Cosine similarity, obtain final segmentation result.
-
-**[Objectness-Aware One-Shot Semantic Segmentations,Arxiv20,April](https://arxiv.org/pdf/2004.02945.pdf)**
-
-- adopt HRNetV2-W48 as the backbone of the objectness module. 
-- The objectness module is trained to segment out all objects in the image.(train the objectness module for 300,000 iterations with batch size 4, which takes about 50 hours on GeForce GTX 1080Ti. )
-- Check Fig 2, support feature, query feature, and objectness feature are congregated by adding operation.
-
-
-**[Weakly Supervised Few-shot Object Segmentation using Co-Attention with Visual and Semantic Inputs,Arxiv20](https://arxiv.org/pdf/2001.09540.pdf)**
-
-only requiring image-level classification data for few-shot object segmentation. propose a novel multi-modal interaction module for few-shot object segmentation that utilizes a coattention mechanism using both visual and word embedding.
-
-Class wording embedding is then spatially tiled and concatenated with the visual features resulting in flattened matrix representations. 
-
-Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an extra $$C \times C$$ matrix in the very middle. Also, they consider two-directions by applying softmax along different dimensions. Check Fig 2.
-
-**[Attention-based Multi-Context Guiding for Few-Shot Semantic Segmentation,AAAI19](http://taohu.me/pdf/few-shot-seg.pdf)**
-
-## Few-shot detection
-
-
-**[Meta r-cnn: Towards general solver for instance-level low-shot learning,ICCV19](https://yanxp.github.io/metarcnn.html)**
-
-
-[code](https://github.com/yanxp/MetaR-CNN)
-
-**[Meta-Learning to Detect Rare Objects,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Meta-Learning_to_Detect_Rare_Objects_ICCV_2019_paper.pdf)**
-
-**[Few-Shot Object Detection with Attention-RPN and Multi-Relation Detector,CVPR20](https://arxiv.org/abs/1908.01998)**
-
-**[Context-Transformer: Tackling Object Confusion for Few-Shot Detection,AAAI20](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YangZ.2509.pdf)**
-
-**[Weakly-supervised Any-shot Object Detection](https://arxiv.org/pdf/2006.07502.pdf)**
-
-## Few-shot instance segmentation
-
-[One-Shot Instance Segmentation,Arxiv](https://arxiv.org/pdf/1811.11507.pdf)
-
-[Differentiable Meta-learning Model for Few-shot Semantic Segmentation,AAAI20](https://arxiv.org/pdf/1911.10371.pdf)
-
-[FGN: Fully Guided Network for Few-Shot Instance Segmentation,CVPR20](https://arxiv.org/abs/2003.13954)
-
-
-## Few-shot video classification
-
-**[TAEN: Temporal Aware Embedding Network for Few-Shot Action Recognition,Arxiv2004](https://arxiv.org/pdf/2004.10141.pdf)**
-
-
-
-## Few-shot Edge Detection
-
-[CAFENet: Class-Agnostic Few-Shot
-Edge Detection Network,Arxiv](https://arxiv.org/pdf/2003.08235.pdf)
-
-## Few-shot video activity localization 
-
-**[METAL: Minimum Effort Temporal Activity Localization in Untrimmed Videos,CVPR20](https://sites.cs.ucsb.edu/~yfwang/papers/cvpr2020.pdf)**
-
-**[TAEN: Temporal Aware Embedding Network for Few-Shot Action Recognition,Arxiv2004](https://arxiv.org/pdf/2004.10141.pdf)**
-
-**[Weakly-Supervised Video Re-Localization with Multiscale Attention Model,AAAI20](http://vllab.cs.nctu.edu.tw/images/paper/aaai-huang20.pdf)**
 
 
 #### Footnotes

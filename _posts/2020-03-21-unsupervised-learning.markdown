@@ -350,6 +350,9 @@ We evaluate self-supervised feature learning methods and find that with sufficie
 
 ![](/imgs/scl.png)
 
+[reddit](https://www.reddit.com/r/MachineLearning/comments/g6yzyc/research_supervised_contrastive_learning/)
+
+
 - relation between triplet loss
 - Analysis on ImageNet-C.
 - batch size 8192 for ResNet-50 and batch size 2048 for ResNet-200;The LARS optimizer;RMSProp optimizer works best for training the linear classifier. 

@@ -11,6 +11,19 @@ categories: cv
 [https://github.com/nicolas-chaulet/torch-points3d](https://github.com/nicolas-chaulet/torch-points3d)
 
 
+## Unsupversed
+
+**[Total Denoising: Unsupervised Learning of 3D Point Cloud Cleaning,ICCV19](https://arxiv.org/pdf/1904.07615.pdf)**
+
+**Task Unsupervised denoising:** Our results demonstrate unsupervised denoising performance similar to that of supervised learning with
+clean data when given enough training examples - whereby
+we do not need any pairs of noisy and clean training data.
+
+**[Unsupervised Multi-Task Feature Learning on Point Clouds,ICCV19](https://openaccess.thecvf.com/content_ICCV_2019/papers/Hassani_Unsupervised_Multi-Task_Feature_Learning_on_Point_Clouds_ICCV_2019_paper.pdf)**
+
+**[Self-supervised Modal and View Invariant Feature Learning,Arxiv2005](https://arxiv.org/pdf/2005.14169.pdf)**
+
+
 
 ## Point Cloud Augmentation
 
