@@ -349,6 +349,8 @@ result is worse than https://arxiv.org/pdf/2006.09882.pdf
 We evaluate self-supervised feature learning methods and find that with sufficient data augmentation early layers can be learned using just one image.  This is informative about self-supervision and the role of augmentations.
 
 
+**[Demystifying Contrastive Self-Supervised Learning: Invariances, Augmentations and Dataset Biases,Arxiv2007](https://arxiv.org/pdf/2007.13916.pdf)**
+
 
 
 **[Debiased Contrastive Learning,Arxiv2007](https://arxiv.org/pdf/2007.00224.pdf)**
@@ -359,13 +361,9 @@ We evaluate self-supervised feature learning methods and find that with sufficie
 
 ![](/imgs/scl.png)
 
-<<<<<<< HEAD
 [reddit](https://www.reddit.com/r/MachineLearning/comments/g6yzyc/research_supervised_contrastive_learning/)
 
 
-=======
-- This of course comes at the cost of requiring large batch sizes to allow for the inclusion of many positives and negatives, some of which will be hard in expectation as training proceeds. batch size 8192 for ResNet-50 and batch size 2048 for ResNet-200;
->>>>>>> 56f6067f6eed189a886fa7817312a60ccbbb0e27
 - relation between triplet loss
 - Analysis on ImageNet-C.
 - batch size 8192 for ResNet-50 and batch size 2048 for ResNet-200;The LARS optimizer;RMSProp optimizer works best for training the linear classifier. 
