@@ -116,6 +116,9 @@ The code is adapted from SimpleShot github.
 
 [code only tf](https://github.com/google-research/meta-dataset)
 
+**[Cross-Domain Few-Shot Classification via Learned Feature-Wise Transformation,ICLR20](https://openreview.net/forum?id=SJl5Np4tPr)**
+
+
 
 ## Few-shot segmentation
 
