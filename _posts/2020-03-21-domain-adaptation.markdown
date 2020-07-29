@@ -9,8 +9,11 @@ categories: cv
 ---
 
 
-**[Towards Discriminability and Diversity:
-Batch Nuclear-norm Maximization under Label Insufficient Situations,CVPR20,oral](https://arxiv.org/pdf/2003.12237.pdf)**
+**[Frustratingly Simple Domain Generalization via Image Stylization,Arxiv2006](https://arxiv.org/pdf/2006.11207.pdf)**
+
+**[Towards Discriminability and Diversity: Batch Nuclear-norm Maximization under Label Insufficient Situations,CVPR20,oral](https://arxiv.org/pdf/2003.12237.pdf)**
+
+**[Domain Contrast for Domain Adaptive Object Detection,Arxiv2006](https://arxiv.org/pdf/2006.14863.pdf)**
 
 
 **[Unsupervised Intra-domain Adaptation for Semantic Segmentation through Self-Supervision,CVPR20,oral](https://128.84.21.199/abs/2004.07703)**

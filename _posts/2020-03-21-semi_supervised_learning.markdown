@@ -103,6 +103,9 @@ that even when controlling for model architecture as is recommended in [31], the
 directly compared across different implementations.
 
 
+
+**[Rethinking Semi–Supervised Learning in VAEs,Arxiv2006](https://arxiv.org/pdf/2006.10102.pdf)**
+
 **[Semisupervised knowledge transfer for deep learning from private training data.ICLR17 best paper]()**
 
 relate SSL and differential privacy

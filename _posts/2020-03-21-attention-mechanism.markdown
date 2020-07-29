@@ -38,6 +38,10 @@ Relation between gram matrix and non-local block.
 check [https://arxiv.org/pdf/1701.01036.pdf](https://arxiv.org/pdf/1701.01036.pdf)
 
 
+**[Object-Centric Learning with Slot Attention,Arxiv2006](https://arxiv.org/pdf/2006.15055.pdf)**
+
+dataset!
+
 **[Exploring Self-attention for Image Recognition,CVPR20](https://hszhao.github.io/papers/cvpr20_san.pdf)**
 
 

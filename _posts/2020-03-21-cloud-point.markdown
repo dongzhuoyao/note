@@ -25,6 +25,14 @@ we do not need any pairs of noisy and clean training data.
 
 
 
+**[PointContrast: Unsupervised Pre-training for 3D Point Cloud Understanding,ECCV20,spotlight](https://arxiv.org/pdf/2007.10985.pdf)**
+
+
+
+**[Mapping in a Cycle: Sinkhorn Regularized Unsupervised Learning for Point Cloud Shapes,ECCV20](https://arxiv.org/pdf/2007.09594.pdf)**
+
+
+
 ## Point Cloud Augmentation
 
 **[PointAugment: an Auto-Augmentation Framework

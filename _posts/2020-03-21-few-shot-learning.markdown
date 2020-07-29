@@ -7,6 +7,9 @@ share: False
 categories: cv
 ---
 
+
+benchmark(https://few-shot.yyliu.net/miniimagenet.html)
+
 ## Few-shot learning
 
 check [Meta-Learning in Neural Networks: A Survey](https://arxiv.org/pdf/2004.05439.pdf)
@@ -16,6 +19,27 @@ check [Meta-Learning in Neural Networks: A Survey](https://arxiv.org/pdf/2004.05
 **[Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks,ICML17](https://arxiv.org/pdf/1703.03400.pdf)**
 
 **[One-Shot Generalization in Deep Generative Model](https://arxiv.org/pdf/1603.05106.pdf)**
+
+
+**[Bayesian Few-Shot Classification with One-vs-Each Pólya-Gamma Augmented Gaussian Processes,Arxiv2007](https://arxiv.org/pdf/2007.10417.pdf)**
+
+**[CrossTransformers: spatially-aware few-shot transfer,Arxiv2007](https://arxiv.org/pdf/2007.11498.pdf)**
+
+ - In this work, we illustrate how the neural network
+representations which underpin modern vision systems are subject to supervision
+collapse, whereby they lose any information that is not necessary for performing
+the training task, including information that may be necessary for transfer to new
+tasks or domains. We then propose two methods to mitigate this problem. First, we
+employ self-supervised learning to encourage general-purpose features that transfer
+better. Second, we propose a novel Transformer based neural network architecture
+called CrossTransformers, which can take a small number of labeled images and
+an unlabeled query, find coarse spatial correspondence between the query and the
+labeled images, and then infer class membership by computing distances between
+spatially-corresponding features.
+- state-of-the-art performance on Meta-Dataset, a recent dataset for evaluating transfer from ImageNet to many other
+vision datasets.
+
+
 
 **[DeepEMD: Few-Shot Image Classification with Differentiable Earth Mover's Distance and Structured Classifiers,CVPR20,oral](https://arxiv.org/abs/2003.06777)**
 
@@ -34,12 +58,16 @@ new task
 
 ![](/imgs/fsl2003.png)
 
-**[Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?,Arxiv2003](https://arxiv.org/pdf/2003.11539.pdf)**
+**[RFS:Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?,Arxiv2003](https://arxiv.org/pdf/2003.11539.pdf)**
 
 [code](https://github.com/WangYueFt/rfs/)
 
 
 - miniImageNet, tieredImageNet, CIFAR-FS, and FC100, Meta-Dataset
+
+**[Improving Few-Shot Learning using Composite Rotation based Auxiliary Task,Arxiv2006](https://arxiv.org/pdf/2006.15919.pdf)**
+
+Based on RFS.
 
 **[Self-Supervised Learning For Few-Shot Image Classification,Arxiv1911](https://arxiv.org/pdf/1911.06045.pdf)**
 
@@ -56,6 +84,10 @@ CUB150-SL is the supervised trained model. Image1K-SSL is SSL
 trained from all images from ImageNet1K without label
 
 
+**[SimpleShot: Revisiting Nearest-Neighbor Classification for Few-Shot Learning,Arxiv1911](https://arxiv.org/pdf/1911.04623.pdf)**
+
+Meta-iNat dataset
+
 
 **[A Baseline for Few-Shot Image Classification,ICLR20](https://openreview.net/forum?id=rylXBkrYDS)**
 
@@ -66,7 +98,19 @@ the current state-of-the-art on standard datasets such as Mini-ImageNet, TieredI
 - The proposed approach includes a standard cross-entropy loss on the labeled support samples and a Shannon entropy loss on the unlabeled query samples.
 
 
+**[LaplacianShot: Laplacian Regularized Few Shot Learning,ICML20](https://github.com/imtiazziko/LaplacianShot)**
+
+The code is adapted from SimpleShot github.
+
+
+**[Few-Shot Class-Incremental Learning via Feature Space Composition,Arxiv2006](https://arxiv.org/pdf/2006.15524.pdf)**
+
+![](/imgs/fsl-il.png)
+
 **[Meta-Dataset: A Dataset of Datasets for Learning to Learn from Few Examples,ICLR20](https://openreview.net/forum?id=rkgAGAVKPr)**
+
+- heterogeneous dataset compared with previous homogeneous dataset.
+- EFFECT OF TRAINING ON ALL DATASETS OVER TRAINING ON ILSVRC-2012 ONLY:As discussed in the main paper, we notice that we do not always observe a clear generalization advantage in training from a wider collection of image datasets.
 
 [iclr forum](https://openreview.net/forum?id=rkgAGAVKPr)
 
@@ -74,6 +118,9 @@ the current state-of-the-art on standard datasets such as Mini-ImageNet, TieredI
 
 
 ## Few-shot segmentation
+
+
+**[On the Texture Bias for Few-Shot CNN Segmentation,Arxiv2003](https://arxiv.org/pdf/2003.04052.pdf)**
 
 
 **[CRNet: Cross-Reference Networks for Few-Shot Segmentation,CVPR20](https://arxiv.org/pdf/2003.10658.pdf)**
@@ -122,17 +169,28 @@ Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an
 
 **[Attention-based Multi-Context Guiding for Few-Shot Semantic Segmentation,AAAI19](http://taohu.me/pdf/few-shot-seg.pdf)**
 
+
+
+
+
+
+
+
+
 ## Few-shot detection
 
 
-**[Few-Shot Object Detection and Viewpoint Estimation for Objects in the Wild,ECCV20](https://arxiv.org/pdf/2007.12107.pdf)**
+**[Meta-RCNN: Meta Learning for Few-Shot Object Detection,ICLR20, reject](https://openreview.net/forum?id=B1xmOgrFPS)**
 
+bbbo
 
 
 **[Meta r-cnn: Towards general solver for instance-level low-shot learning,ICCV19](https://yanxp.github.io/metarcnn.html)**
 
 
 [code](https://github.com/yanxp/MetaR-CNN)
+
+**[RepMet: Representative-based metric learning for classification and few-shot object detection,CVPR19](https://github.com/jshtok/RepMet)**
 
 **[Meta-Learning to Detect Rare Objects,ICCV19](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Meta-Learning_to_Detect_Rare_Objects_ICCV_2019_paper.pdf)**
 
@@ -141,6 +199,19 @@ Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an
 **[Context-Transformer: Tackling Object Confusion for Few-Shot Detection,AAAI20](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YangZ.2509.pdf)**
 
 **[Weakly-supervised Any-shot Object Detection,Arxiv2006](https://arxiv.org/abs/2006.07502)**
+
+**[Frustratingly Simple Few-Shot Object Detection,ICML20](https://arxiv.org/pdf/2003.06957.pdf)**
+
+[code](https://github.com/ucbdrive/few-shot-object-detection)
+
+new benchmarks on PASCAL VOC, COCO and LVIS.
+
+![](/imgs/frustrating-fsd.png)
+
+**[Few-Shot Object Detection and Viewpoint Estimation for Objects in the Wild,ECCV20](https://arxiv.org/pdf/2007.12107.pdf)**
+
+[code](http://imagine.enpc.fr/~xiaoy/FSDetView/)
+
 
 ## Few-shot instance segmentation
 
@@ -155,6 +226,20 @@ Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an
 
 **[TAEN: Temporal Aware Embedding Network for Few-Shot Action Recognition,Arxiv2004](https://arxiv.org/pdf/2004.10141.pdf)**
 
+
+**[Generalized Many-Way Few-Shot Video Classification,Arxiv2007](https://arxiv.org/pdf/2007.04755.pdf)**
+
+In this work, we point out that a spatiotemporal CNN trained on a large-scale video
+dataset saturates existing few-shot video classification benchmarks. Hence, we propose
+new more challenging experimental settings, namely generalized few-shot video classification (GFSV) and few-shot video classification with more ways than the classical
+5-way setting. We further improve spatiotemporal CNNs by leveraging the weaklylabeled videos from YFCC100M using weak-labels such as tags for text-supported and
+video-based retrieval. Our results show that generalized more-way few-shot video classification is challenging and we encourage future research in this setting
+
+**[Few-shot Action Recognition with Permutation-invariant Attention,ECCV20,splotlight](https://arxiv.org/pdf/2001.03905.pdf)**
+
+## Few-shot 3D cloud
+
+**[Few-shot 3D Point Cloud Semantic Segmentation,Arxiv2006](https://arxiv.org/pdf/2006.12052.pdf)**
 
 
 ## Few-shot Edge Detection

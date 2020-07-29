@@ -19,6 +19,8 @@ https://loewex.github.io/GreedyInfoMax.html
 [Self-supervised Visual Feature Learning with
 Deep Neural Networks: A Survey,PAMI20](https://arxiv.org/pdf/1902.06162.pdf)
 
+[A Survey on Semi-, Self- and Unsupervised Learning in Image Classification,Arxiv2002](https://arxiv.org/pdf/2002.08721.pdf)
+
 check [zhihu discussion](https://www.zhihu.com/question/355779873)
 
 
@@ -323,6 +325,9 @@ How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from
 
 **[BYOL:Bootstrap Your Own Latent A New Approach to Self-Supervised Learning,Arxiv2006](https://arxiv.org/pdf/2006.07733.pdf)**
 
+[code](https://github.com/lucidrains/byol-pytorch)
+
+
 > **without using negative pair**
 > This experimental finding is the core
 motivation for BYOL: from a given representation, referred to as target, we can train a new, potentially enhanced
@@ -346,13 +351,21 @@ We evaluate self-supervised feature learning methods and find that with sufficie
 
 
 
+**[Debiased Contrastive Learning,Arxiv2007](https://arxiv.org/pdf/2007.00224.pdf)**
+
+![](/imgs/debiased.png)
+
 **[Supervised Contrastive Learning,Arxiv2004](https://arxiv.org/pdf/2004.11362.pdf)**
 
 ![](/imgs/scl.png)
 
+<<<<<<< HEAD
 [reddit](https://www.reddit.com/r/MachineLearning/comments/g6yzyc/research_supervised_contrastive_learning/)
 
 
+=======
+- This of course comes at the cost of requiring large batch sizes to allow for the inclusion of many positives and negatives, some of which will be hard in expectation as training proceeds. batch size 8192 for ResNet-50 and batch size 2048 for ResNet-200;
+>>>>>>> 56f6067f6eed189a886fa7817312a60ccbbb0e27
 - relation between triplet loss
 - Analysis on ImageNet-C.
 - batch size 8192 for ResNet-50 and batch size 2048 for ResNet-200;The LARS optimizer;RMSProp optimizer works best for training the linear classifier. 
@@ -447,6 +460,21 @@ of epochs. Step 2 can be interleaved at any point in the optimization; to amorti
 - By virtue of the method, the resulting self-labels can be used to quickly learn features for
 new architectures using simple cross-entropy training.
 
+**[Labelling unlabelled videos from scratch with multi-modal self-supervision,Arxiv2006](https://arxiv.org/pdf/2006.13662.pdf)**
+
+A large part of the current success of deep learning lies in the effectiveness of
+data – more precisely: labelled data. Yet, labelling a dataset with human annotation continues to carry high costs, especially for videos. While in the image
+domain, recent methods have allowed to generate meaningful (pseudo-) labels
+for unlabelled datasets without supervision, this development is missing for the
+video domain where learning feature representations is the current focus. In this
+work, we a) show that unsupervised labelling of a video dataset does not come
+for free from strong feature encoders and b) propose a novel clustering method
+that allows pseudo-labelling of a video dataset without any human annotations, by
+leveraging the natural correspondence between the audio and visual modalities.
+An extensive analysis shows that the resulting clusters have high semantic overlap
+to ground truth human labels. We further introduce the first benchmarking results
+on unsupervised labelling of common video datasets Kinetics, Kinetics-Sound,
+VGG-Sound and AVE.
 
 **[Power Iteration Clustering,ICML10](http://www.cs.cmu.edu/~frank/papers/icml2010-pic-final.pdf)**
 
@@ -550,6 +578,10 @@ video supervison use binary order prediction(forward or backward).
 <!--
 https://zhuanlan.zhihu.com/p/125506819
 -->
+
+## Application
+
+Landmarks: [Unsupervised Discovery of Object Landmarks via Contrastive Learning](https://arxiv.org/pdf/2006.14787.pdf)
 
 
 
