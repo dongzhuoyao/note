@@ -18,7 +18,7 @@ check [Meta-Learning in Neural Networks: A Survey](https://arxiv.org/pdf/2004.05
 
 **[Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks,ICML17](https://arxiv.org/pdf/1703.03400.pdf)**
 
-**[One-Shot Generalization in Deep Generative Model](https://arxiv.org/pdf/1603.05106.pdf)**
+**[One-Shot Generalization in Deep Generative Model,JMLR16](https://arxiv.org/pdf/1603.05106.pdf)**
 
 
 **[Bayesian Few-Shot Classification with One-vs-Each Pólya-Gamma Augmented Gaussian Processes,Arxiv2007](https://arxiv.org/pdf/2007.10417.pdf)**
@@ -168,10 +168,6 @@ Class wording embedding is then spatially tiled and concatenated with the visual
 Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an extra $$C \times C$$ matrix in the very middle. Also, they consider two-directions by applying softmax along different dimensions. Check Fig 2.
 
 **[Attention-based Multi-Context Guiding for Few-Shot Semantic Segmentation,AAAI19](http://taohu.me/pdf/few-shot-seg.pdf)**
-
-
-
-
 
 
 
@@ -333,6 +329,31 @@ the novelty of the open world.
 - Comprehensive experiments are conducted on artificially induced long-tailed CIFAR datasets and large-scale datasets including ImageNet and iNaturalist. Our results show that when trained with the proposed class-balanced loss, the network is able to achieve significant performance gains on long-tailed datasets.
 
 **[Trainable Undersampling for Class-Imbalance Learning,AAAI19](https://www.semanticscholar.org/paper/Trainable-Undersampling-for-Class-Imbalance-Peng-Zhang/d349207dee9dd782c34a6a6cd6d71fd5eb178d3a)**
+
+
+
+
+
+
+
+## TTT
+
+**[Test-Time Training with Self-Supervision for Generalization under Distribution Shifts,ICML20](https://arxiv.org/pdf/1909.13231.pdf)**
+
+**[Self-Supervised Policy Adaptation during Deployment,Arxiv2007](https://nicklashansen.github.io/PAD/)**
+
+**[Fully Test-time Adaptation by Entropy Minimization,Arxiv2006](https://arxiv.org/abs/2006.10726)**
+
+
+
+
+
+
+
+
+
+
+
 
 
 #### Footnotes

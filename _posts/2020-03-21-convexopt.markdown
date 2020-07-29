@@ -16,6 +16,8 @@ categories: ml
 
 ## Deep learning Optimizers
 
+[Recent Optimization Algorithms for Deep Learning](https://nicklashansen.github.io/)
+
 **[Adaptive Learning of the Optimal Mini-Batch Size of SGD,Arxiv2005](https://arxiv.org/pdf/2005.01097.pdf)**
 
 Adaptively change the batch size
