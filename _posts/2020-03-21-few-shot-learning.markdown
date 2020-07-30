@@ -118,6 +118,7 @@ The code is adapted from SimpleShot github.
 
 **[Cross-Domain Few-Shot Classification via Learned Feature-Wise Transformation,ICLR20](https://openreview.net/forum?id=SJl5Np4tPr)**
 
+still need to see the out-of-domain images when training. similar to transductive setting.
 
 
 ## Few-shot segmentation
