@@ -120,7 +120,9 @@ The code is adapted from SimpleShot github.
 
 still need to see the out-of-domain images when training. similar to transductive setting.[check code](https://github.com/hytseng0509/CrossDomainFewShot/blob/master/methods/LFTNet.py#L99)
 
-
+- auxiliary classifier: The training in the initial stage is not stable and may harm the model performance. We use the auxiliary training to solve the problem and decay the weight of the auxiliary training loss for later epochs.
+- The learned transformation layers are not used when testing. The feature-wise transformation layers are used only during the training phase to improve the model generalization.
+- gnn implementation: The code we provide here can only train the model with the pre-trained feature encoder. You can refer to the original implementation here for training the model from scratch.
 
 
 ## Few-shot segmentation
