@@ -8,6 +8,13 @@ categories: ml
 ---
 
 
+**[Are Labels Necessary for Neural Architecture Search?,ECCV20,spotlight](https://arxiv.org/pdf/2003.12056.pdf)**
+
+
+
+**[Neural Architecture Search as Sparse Supernet,Arxiv2007](https://arxiv.org/pdf/2007.16112.pdf)**
+
+
 **[Designing Network Design Spaces,CVPR20](https://arxiv.org/pdf/2003.13678.pdf)**
 
 [zhihu](https://www.zhihu.com/question/384255803)

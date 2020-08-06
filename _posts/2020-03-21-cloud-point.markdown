@@ -32,6 +32,8 @@ we do not need any pairs of noisy and clean training data.
 **[Mapping in a Cycle: Sinkhorn Regularized Unsupervised Learning for Point Cloud Shapes,ECCV20](https://arxiv.org/pdf/2007.09594.pdf)**
 
 
+**[Self-Supervised Learning of Point Clouds via Orientation Estimation,Arxiv2008](https://arxiv.org/pdf/2008.00305.pdf)**
+
 
 ## Point Cloud Augmentation
 

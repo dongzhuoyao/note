@@ -11,7 +11,11 @@ categories: cv
 
 ## Augmentation
 
+**[DADA，ECCV2020](https://arxiv.org/abs/2003.03780)**
+
+
 **[AutoAugment: Learning Augmentation Strategies from Data,CVPR19](https://arxiv.org/abs/1805.09501)**
+
 
 
 

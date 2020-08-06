@@ -184,6 +184,15 @@ Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an
 ## Few-shot detection
 
 
+**[Multi-Scale Positive Sample Refinement for Few-Shot Object Detection,ECCV20](https://arxiv.org/abs/2007.09384)**
+
+competitor: YOLO-FS,meta-RCNN;dataset: VOC,COCO.
+
+[code](https://github.com/jiaxi-wu/MPSR/issues)
+
+
+
+
 **[Meta-RCNN: Meta Learning for Few-Shot Object Detection,ICLR20, reject](https://openreview.net/forum?id=B1xmOgrFPS)**
 
 bbbo

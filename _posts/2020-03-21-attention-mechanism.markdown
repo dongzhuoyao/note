@@ -38,6 +38,12 @@ Relation between gram matrix and non-local block.
 check [https://arxiv.org/pdf/1701.01036.pdf](https://arxiv.org/pdf/1701.01036.pdf)
 
 
+**[Tensor Low-Rank Reconstruction for Semantic Segmentation,ECCV20](https://arxiv.org/pdf/2008.00490.pdf)**
+
+**[Feature Pyramid Transformer,ECCV20](https://arxiv.org/pdf/2007.09451.pdf)**
+
+
+
 **[Object-Centric Learning with Slot Attention,Arxiv2006](https://arxiv.org/pdf/2006.15055.pdf)**
 
 dataset!

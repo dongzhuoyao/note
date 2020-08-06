@@ -513,6 +513,13 @@ is prone to trivial solutions. Two tricky ways are introduced to avoid trival so
 
 Interesting analysis in the experimental part.
 
+**[Memory-augmented Dense Predictive Coding for Video Representation Learning,ECCV20](https://arxiv.org/pdf/2008.01065.pdf)**
+
+
+
+**[Multi-view Contrastive Learning for Online Knowledge Distillation,Arxiv2006](https://arxiv.org/pdf/2006.04093.pdf)**
+
+![](/imgs/online-kd.png)
 
 **[S4L: Self-Supervised Semi-Supervised Learning,ICCV19](https://arxiv.org/pdf/1905.03670.pdf)**
 
