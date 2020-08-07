@@ -125,6 +125,13 @@ still need to see the out-of-domain images when training. similar to transductiv
 - gnn implementation: The code we provide here can only train the model with the pre-trained feature encoder. You can refer to the original implementation here for training the model from scratch.
 
 
+**[Few-shot Classification via Adaptive Attention,Arxiv2008](https://arxiv.org/pdf/2008.02465.pdf)**
+
+
+
+
+
+
 ## Few-shot segmentation
 
 
