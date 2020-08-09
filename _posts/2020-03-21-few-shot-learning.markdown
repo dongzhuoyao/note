@@ -135,6 +135,9 @@ still need to see the out-of-domain images when training. similar to transductiv
 ## Few-shot segmentation
 
 
+**[Prior Guided Feature Enrichment Network for Few-Shot Segmentation,Arxiv2008](https://arxiv.org/pdf/2008.01449.pdf)**
+
+
 **[On the Texture Bias for Few-Shot CNN Segmentation,Arxiv2003](https://arxiv.org/pdf/2003.04052.pdf)**
 
 
