@@ -315,6 +315,12 @@ Gradient is isolated between modules, but still need gradient in modules. Each m
 
 For vision task context feature c is replaced by z for simplicity.
 
+**[LoCo: Local Contrastive Representation Learning,Arxiv2008](https://arxiv.org/pdf/2008.01342.pdf)**
+
+Extension on greedy infomax
+
+![](/imgs/loco.png)
+
 
 
 ![](imgs/greedy-infomax.png)

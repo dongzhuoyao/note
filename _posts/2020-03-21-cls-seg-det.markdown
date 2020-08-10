@@ -186,7 +186,7 @@ Affinity matrix construction is similar to **[Adaptive Pyramid Context Network f
 
 
 
-
+**[Class-wise Dynamic Graph Convolution for Semantic Segmentation,ECCV20](https://arxiv.org/pdf/2007.09690.pdf)**
 
 
 ## Instance Segmentation

@@ -324,3 +324,8 @@ too complex
 
 **[Implicit Neural Representations with Periodic Activation Functions](https://vsitzmann.github.io/siren/)**
 
+**[Funnel Activation for Visual Recognition,ECCV20](https://arxiv.org/pdf/2007.11824.pdf)**
+
+![](/imgs/funnel.png)
+
+[easy impl](https://github.com/megvii-model/FunnelAct/blob/master/resnet/frelu.py)

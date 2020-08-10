@@ -128,7 +128,14 @@ still need to see the out-of-domain images when training. similar to transductiv
 **[Few-shot Classification via Adaptive Attention,Arxiv2008](https://arxiv.org/pdf/2008.02465.pdf)**
 
 
+**[Associative Alignment for Few-shot Image Classification,Arxiv1912](https://arxiv.org/pdf/1912.05094.pdf)**
 
+This paper proposes
+the idea of associative alignment for leveraging part of the base data by
+aligning the novel training instances to the closely related ones in the
+base training set. This expands the size of the effective novel training set
+by adding extra “related base” instances to the few novel ones, thereby
+allowing a constructive fine-tuning.
 
 
 

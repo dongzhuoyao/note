@@ -10,5 +10,19 @@ categories: ml
 
 **[Batch-shaping for learning conditional channel gated networks,ICLR20](https://openreview.net/forum?id=Bke89JBtvB)**
 
+**[Spatially Adaptive Inference with Stochastic Feature Sampling and Interpolation,ECCV20,oral](https://arxiv.org/pdf/2003.08866.pdf)**
+
+traditional: prune weights and neurons
+
+this paper: prune feature map.
+
+
+We further remove the interpolation module from our method and fill the
+features of unsampled points with 0. Results show that removing interpolation
+does not affect performance on the ImageNet validation set. This is inconsistent with object detection and semantic segmentation. We believe that this is
+because the classification network is focused on extracting global feature representations. Therefore, as long as the features of certain key points are calculated
+and preserved, the global features will not be affected and the performance will
+not be hurt. In other words, in the image classification task, it is not important
+to reconstruct the features of unsampled points by interpolation.
 
 
