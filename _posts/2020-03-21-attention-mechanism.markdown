@@ -75,6 +75,9 @@ Most of the heads can be removed by the stochastic gates.
 
 Gumbel sofmax
 
+**[DCANet: Learning Connected Attentions for Convolutional Neural Networks,ECCV20reject](https://arxiv.org/pdf/2007.05099.pdf)**
+
+
 **[Normalized Attention Without Probability Cage,Arxiv2005](https://github.com/OliverRichter/normalized-attention)**
 
 [code](https://github.com/OliverRichter/normalized-attention)

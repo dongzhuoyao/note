@@ -142,6 +142,14 @@ allowing a constructive fine-tuning.
 ## Few-shot segmentation
 
 
+**[Prototype Mixture Models for Few-shot Semantic Segmentation,ECCV20](https://arxiv.org/pdf/2008.03898.pdf)**
+
+Our approach utilizes CANet without iterative
+optimization as the baseline, which uses VGG16 or ResNet50 as backbone CNN
+for feature extraction.
+
+
+
 **[Prior Guided Feature Enrichment Network for Few-Shot Segmentation,Arxiv2008](https://arxiv.org/pdf/2008.01449.pdf)**
 
 

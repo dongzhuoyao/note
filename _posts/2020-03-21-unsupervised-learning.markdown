@@ -282,6 +282,11 @@ fine-tuning on a few labeled examples, and distillation with unlabeled examples
 for refining and transferring the task-specific knowledge.
 
 
+**[Spatiotemporal Contrastive Video Representation Learning,Arxiv2008](https://arxiv.org/abs/2008.03800)**
+
+simclr in video, compare with inflated simclr...
+
+
 **[Unsupervised Learning by Predicting Noise](https://arxiv.org/abs/1704.05310)**
 
 
@@ -415,6 +420,13 @@ initialisation, and we call these concrete instantiations subheads. Each sub-hea
  ![](/imgs/iic.png)
 
 
+**[PICA:Deep Semantic Clustering by Partition Confidence Maximisation,CVPR20](http://www.eecs.qmul.ac.uk/~sgg/papers/HuangEtAl_CVPR2020.pdf)**
+
+following IIC.
+
+**[Deep Robust Clustering by Contrastive Learning,Arxiv2008](https://arxiv.org/pdf/2008.03030.pdf)**
+
+following PICA
 
 
 **[SwAV: Unsupervised Learning of Visual Features by Contrasting Cluster Assignments,Arxiv2006](https://arxiv.org/pdf/2006.09882.pdf)**
