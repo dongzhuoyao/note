@@ -71,7 +71,9 @@ similar to Mosaic tricks in YOLOv4
 
 feedback-driven data provider is interesting
 
+**[ECCV20,oral](https://arxiv.org/abs/2005.12872)**
 
+![](/imgs/detr.png)
 
 
 #### Different det heads
