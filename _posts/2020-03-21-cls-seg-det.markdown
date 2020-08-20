@@ -14,6 +14,11 @@ For main progress check [Survey 2019](https://link.springer.com/content/pdf/10.1
 
 #### Mainstream progress
 
+**[TIDE: A General Toolbox for Identifying Object Detection Errors,ECCV20,spotlight](https://arxiv.org/pdf/2008.08115.pdf)**
+
+[website](https://dbolya.github.io/tide/)
+
+
 **[End-to-End Object Detection with Transformers,Arxiv2005](https://arxiv.org/pdf/2005.12872.pdf)**
 
 **[EfficientDet: Scalable and Efficient Object Detection,CVPR20](https://arxiv.org/pdf/1911.09070.pdf)**

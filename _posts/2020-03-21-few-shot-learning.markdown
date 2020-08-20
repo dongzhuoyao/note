@@ -209,6 +209,9 @@ Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an
 ## Few-shot detection
 
 
+**[OS2D: One-Stage One-Shot Object Detection by Matching Anchor Features(ECCV20)](https://arxiv.org/pdf/2003.06800.pdf)**
+
+
 **[Multi-Scale Positive Sample Refinement for Few-Shot Object Detection,ECCV20](https://arxiv.org/abs/2007.09384)**
 
 competitor: YOLO-FS,meta-RCNN;dataset: VOC,COCO.
