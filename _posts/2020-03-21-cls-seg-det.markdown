@@ -80,6 +80,14 @@ feedback-driven data provider is interesting
 
 ![](/imgs/detr.png)
 
+**[AP-Loss for Accurate One-Stage Object Detection,PAMI](https://arxiv.org/pdf/2008.07294.pdf)**
+
+One-stage object detectors are trained by optimizing classification-loss and localization-loss simultaneously, with the former
+suffering much from extreme foreground-background class imbalance issue due to the large number of anchors. This paper alleviates
+this issue by proposing a novel framework to replace the classification task in one-stage detectors with a ranking task, and adopting the
+Average-Precision loss (AP-loss) for the ranking problem. Due to its non-differentiability and non-convexity, the AP-loss cannot be
+optimized directly. For this purpose, we develop a novel optimization algorithm.....
+
 
 #### Different det heads
 
@@ -194,6 +202,12 @@ Affinity matrix construction is similar to **[Adaptive Pyramid Context Network f
 
 
 **[Class-wise Dynamic Graph Convolution for Semantic Segmentation,ECCV20](https://arxiv.org/pdf/2007.09690.pdf)**
+
+**[Improving Semantic Segmentation via Decoupled Body and Edge Supervision,ECCV20](https://arxiv.org/pdf/2007.10035.pdf)**
+
+[code](https://github.com/lxtGH/DecoupleSegNets)
+
+
 
 
 ## Instance Segmentation

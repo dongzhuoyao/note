@@ -137,12 +137,51 @@ base training set. This expands the size of the effective novel training set
 by adding extra “related base” instances to the few novel ones, thereby
 allowing a constructive fine-tuning.
 
+**[A Broader Study of Cross-Domain Few-Shot Learning,ECCV20](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123720120.pdf)**
+
+focus on aerial and medical imaging.
+
+[code](https://github.com/IBM/cdfsl-benchmark)
+
+[related workshop](https://www.learning-with-limited-labels.com/challenge)
+
+![](/imgs/bscd-fsl.png)
+
+**[EPNet:Embedding Propagation: Smoother Manifold for Few-Shot Classification,ECCV20](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123710120.pdf)**
+
+b.......
+
+**[SEN: A Novel Feature Normalization Dissimilarity Measure for Prototypical Few-Shot Learning Networks,ECCV20](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123680120.pdf)**
+
+no code.
+
+**[Impact of base dataset design on few-shot image classification,ECCV20](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123610579.pdf)**
+
+What is the influence of the similarity between base and test classes?
+Given a fixed annotation budget, what is the optimal trade-off between
+the number of images per class and the number of classes? Given a fixed
+dataset, can features be improved by splitting or combining different
+classes? Should simple or diverse classes be annotated?
+
+
+**[TAFSSL: Task-Adaptive Feature Sub-Space Learning for few-shot classification,ECCV20](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123520511.pdf)**
+
+While number of techniques have been proposed for FSL, several factors
+have emerged as most important for FSL performance, awarding SOTA
+even to the simplest of techniques. These are: the backbone architecture
+(bigger is better), type of pre-training (meta-training vs multi-class),
+quantity and diversity of the base classes (the more the merrier), and using auxiliary self-supervised tasks (a proxy for increasing the diversity).
+In this paper we propose TAFSSL, a simple technique for improving
+the few shot performance in cases when some additional unlabeled data
+accompanies the few-shot task
 
 
 ## Few-shot segmentation
 
 
 **[Prototype Mixture Models for Few-shot Semantic Segmentation,ECCV20](https://arxiv.org/pdf/2008.03898.pdf)**
+
+[code](https://github.com/Yang-Bob/PMMs)
 
 Our approach utilizes CANet without iterative
 optimization as the baseline, which uses VGG16 or ResNet50 as backbone CNN
@@ -202,12 +241,36 @@ Unlike non-local block relating $$WH \times C$$ and $$C \times WH$$, they add an
 
 **[Attention-based Multi-Context Guiding for Few-Shot Semantic Segmentation,AAAI19](http://taohu.me/pdf/few-shot-seg.pdf)**
 
+**[Part-aware Prototype Network for Few-shot Semantic Segmentation,ECCV20](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123540137.pdf)**
+
+.....
+
+[code](https://github.com/Xiangyi1996/PPNet-PyTorch)
+
+**[Few-Shot Semantic Segmentation with Democratic Attention Networks,ECCV20](http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123580715.pdf)**
+
+no code
+
 
 
 
 
 ## Few-shot detection
 
+
+**[UFO2: A Unified Framework towards Omni-supervised Object Detection,ECCV20](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123640290.pdf)**
+
+no code
+
+UFO2 incorporates strong supervision (e.g., boxes), various
+forms of partial supervision (e.g., class tags, points, and scribbles), and
+unlabeled data. Through rigorous evaluations, we demonstrate that each
+form of label can be utilized to either train a model from scratch or to
+further improve a pre-trained model. 
+
+![](/imgs/UFO2.png)
+
+How to uniform?
 
 **[OS2D: One-Stage One-Shot Object Detection by Matching Anchor Features(ECCV20)](https://arxiv.org/pdf/2003.06800.pdf)**
 
@@ -277,6 +340,10 @@ new more challenging experimental settings, namely generalized few-shot video cl
 video-based retrieval. Our results show that generalized more-way few-shot video classification is challenging and we encourage future research in this setting
 
 **[Few-shot Action Recognition with Permutation-invariant Attention,ECCV20,splotlight](https://arxiv.org/pdf/2001.03905.pdf)**
+
+
+
+
 
 ## Few-shot 3D cloud
 

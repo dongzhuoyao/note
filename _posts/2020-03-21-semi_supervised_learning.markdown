@@ -52,6 +52,10 @@ Summmary from FixMatch:
 
 
 
+**[Label Propagation for Deep Semi-supervised Learning,CVPR19](https://arxiv.org/abs/1904.04717)**
+
+![](/imgs/lp.png)
+
 
 **[Realistic Evaluation of Deep Semi-Supervised Learning Algorithms,NeuIPS18](https://arxiv.org/pdf/1804.09170.pdf)**
 
