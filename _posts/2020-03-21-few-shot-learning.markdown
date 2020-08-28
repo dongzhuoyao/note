@@ -88,8 +88,14 @@ trained from all images from ImageNet1K without label
 
 Meta-iNat dataset
 
+**Transductive few-shot learning**
 
-**[A Baseline for Few-Shot Image Classification,ICLR20](https://openreview.net/forum?id=rylXBkrYDS)**
+[https://opencv.org/understanding-transductive-few-shot-learning/](https://opencv.org/understanding-transductive-few-shot-learning/)
+
+> In few-shot learning, transductive algorithms make use of all the queries in an episode instead of treating them individually. One possible criticism of this scenario is that there are usually 15 queries per class, and it is unrealistic that we get balanced unlabeled data in real life applications. As Nichol et al. point in their paper, note that many few-shot algorithms are already transductive thanks to batchnorm.
+
+
+**[A Baseline for Few-Shot Image Classification,ICLR19](https://openreview.net/forum?id=rylXBkrYDS)**
 
 When **fine-tuned transductively**, this outperforms
 the current state-of-the-art on standard datasets such as Mini-ImageNet, TieredImageNet, CIFAR-FS and FC-100 with the same hyper-parameters.
