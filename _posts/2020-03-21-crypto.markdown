@@ -14,4 +14,4 @@ categories: ml
 [http://bitcoinbook.cs.princeton.edu/](http://bitcoinbook.cs.princeton.edu/)
 
 
-COMPOUND,YAM,SUSHI contract understanding
+YFI,YFII,COMPOUND,YAM,SUSHI contract understanding
