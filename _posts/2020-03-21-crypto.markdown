@@ -14,4 +14,7 @@ categories: ml
 [http://bitcoinbook.cs.princeton.edu/](http://bitcoinbook.cs.princeton.edu/)
 
 
+[solidity](https://solidity.readthedocs.io/en/v0.7.1/)
+
+
 YFI,YFII,COMPOUND,YAM,SUSHI contract understanding
