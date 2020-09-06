@@ -88,20 +88,6 @@ trained from all images from ImageNet1K without label
 
 Meta-iNat dataset
 
-**Transductive few-shot learning**
-
-[https://opencv.org/understanding-transductive-few-shot-learning/](https://opencv.org/understanding-transductive-few-shot-learning/)
-
-> In few-shot learning, transductive algorithms make use of all the queries in an episode instead of treating them individually. One possible criticism of this scenario is that there are usually 15 queries per class, and it is unrealistic that we get balanced unlabeled data in real life applications. As Nichol et al. point in their paper, note that many few-shot algorithms are already transductive thanks to batchnorm.
-
-
-**[A Baseline for Few-Shot Image Classification,ICLR19](https://openreview.net/forum?id=rylXBkrYDS)**
-
-When **fine-tuned transductively**, this outperforms
-the current state-of-the-art on standard datasets such as Mini-ImageNet, TieredImageNet, CIFAR-FS and FC-100 with the same hyper-parameters.
-
-- Dataset: ImageNet-21k, also in meta-dataset.
-- The proposed approach includes a standard cross-entropy loss on the labeled support samples and a Shannon entropy loss on the unlabeled query samples.
 
 
 **[LaplacianShot: Laplacian Regularized Few Shot Learning,ICML20](https://github.com/imtiazziko/LaplacianShot)**
@@ -180,6 +166,35 @@ quantity and diversity of the base classes (the more the merrier), and using aux
 In this paper we propose TAFSSL, a simple technique for improving
 the few shot performance in cases when some additional unlabeled data
 accompanies the few-shot task
+
+
+**Transductive few-shot learning**
+
+[https://opencv.org/understanding-transductive-few-shot-learning/](https://opencv.org/understanding-transductive-few-shot-learning/)
+
+> In few-shot learning, transductive algorithms make use of all the queries in an episode instead of treating them individually. One possible criticism of this scenario is that there are usually 15 queries per class, and it is unrealistic that we get balanced unlabeled data in real life applications. As Nichol et al. point in their paper, note that many few-shot algorithms are already transductive thanks to batchnorm.
+
+
+**[A Baseline for Few-Shot Image Classification,ICLR19](https://openreview.net/forum?id=rylXBkrYDS)**
+
+When **fine-tuned transductively**, this outperforms
+the current state-of-the-art on standard datasets such as Mini-ImageNet, TieredImageNet, CIFAR-FS and FC-100 with the same hyper-parameters.
+
+- Dataset: ImageNet-21k, also in meta-dataset.
+- The proposed approach includes a standard cross-entropy loss on the labeled support samples and a Shannon entropy loss on the unlabeled query samples.
+
+**[Low-Shot Learning with Imprinted Weights,CVPR18](https://arxiv.org/pdf/1712.07136.pdf)**
+
+>  Our approach, called imprinting, is to
+compute these activations from a training image for a new
+object category and use an appropriately scaled version of
+these activation values as the final layer weights for the new
+category while leaving the weights of existing categories
+unchanged.
+
+sec3.1 Metric Learning and Softmax Classifiers is interesting.
+
+
 
 
 ## Few-shot segmentation
