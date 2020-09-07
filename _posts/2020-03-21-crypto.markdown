@@ -37,3 +37,7 @@ YFI,YFII,COMPOUND,YAM,SUSHI contract understanding
 
 [Ren project doc](https://docs.renproject.io/developers/)
 
+[XMR]
+
+[ZEC]
+
