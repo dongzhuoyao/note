@@ -18,3 +18,22 @@ categories: ml
 
 
 YFI,YFII,COMPOUND,YAM,SUSHI contract understanding
+
+[acala white paper](https://github.com/AcalaNetwork/Acala-white-paper)
+
+[interesting, risks per asset](https://docs.aave.com/risk/asset-risk/risks-per-asset)
+
+[Aave whitepaper](https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf)
+
+[MakerDAO whitepaper](https://makerdao.com/en/whitepaper/#abstract)
+
+[synthetix github](https://github.com/Synthetixio/synthetix)
+
+[uniswap whitepaper](https://uniswap.org/docs/v2/),[balancer whitepaper](https://balancer.finance/whitepaper/)
+
+[Let's run on-chain decentralized exchanges the way we run prediction markets](https://www.reddit.com/r/ethereum/comments/55m04x/lets_run_onchain_decentralized_exchanges_the_way/)
+
+[Euler: The simplest exchange and currency](https://www.reddit.com/r/ethereum/comments/54l32y/euler_the_simplest_exchange_and_currency/)
+
+[Ren project doc](https://docs.renproject.io/developers/)
+
