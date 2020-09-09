@@ -33,3 +33,10 @@ Anchor-free based activity localization.
 
 Check Fig 2. An action tubelet is represented by its center point in the key frame and offsets of other frames with respect to this center point. To determine the tubelet shape, we directly regress the bounding box size along the moving point trajectory on each frame.
 
+
+## Optical Flow
+
+**[RAFT: Recurrent All-Pairs Field Transforms,ECCV20](https://arxiv.org/pdf/2003.12039.pdf)**
+
+
+
