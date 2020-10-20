@@ -428,6 +428,21 @@ following IIC.
 
 following PICA
 
+**[Contrastive Learning with Stronger Augmentations,ICLR21 submission](https://openreview.net/forum?id=KJSC_AsN14)**
+
+![](/imgs/clsa.png)
+
+- **Intuition**: Instead of applying strongly augmented views to the contrastive loss, we propose to minimize the distribution divergence between the weakly and strongly augmented images
+over a representation bank to supervise the retrieval of stronger queries. This avoids an overoptimistic assumption that could overfit the strongly augmented queries containing distorted visual
+structures into the positive targets, while still being able to distinguish them from the negative samples by leveraging the distributions of weakly augmented counterparts. The learned representation
+will not only explore the novel patterns exposed by the stronger augmentations, but also inherits the
+knowledge about the relative similarities to the negative samples.
+- Strong aug: In particular, to transform an image, we randomly select an augmentation from
+the above 14 types of transformations, and apply it to the image with a probability of 0.5. This
+process is repeated five times and that will strongly augment an image as the example shown in the
+right panel of Fig. 2.
+- Typically, the experiment with a single strong augmentation for each training image takes roughly 70 hours to finish on 8 V100 GPUs.
+
 
 **[SwAV: Unsupervised Learning of Visual Features by Contrasting Cluster Assignments,Arxiv2006](https://arxiv.org/pdf/2006.09882.pdf)**
 
