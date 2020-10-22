@@ -71,17 +71,17 @@ Expansion in which we want the student to be better than
 the teacher by giving the student model enough capacity and
 difficult environments in terms of noise to learn through.
 
-**[Rethinking Pre-training and Self-training](https://arxiv.org/pdf/2006.06882.pdf)**
+**[Rethinking Pre-training and Self-training,Arxiv2006](https://arxiv.org/pdf/2006.06882.pdf)**
 
-> Our study reveals the generality and
-flexibility of self-training with three additional insights: 1) stronger data augmentation and more labeled data further diminish the value of pre-training, 2) unlike
-pre-training, self-training is always helpful when using stronger data augmentation,
-in both low-data and high-data regimes, and 3) in the case that pre-training is
-helpful, self-training improves upon pre-training.Our study reveals the generality and
-flexibility of self-training with three additional insights: 1) stronger data augmentation and more labeled data further diminish the value of pre-training, 2) unlike
-pre-training, self-training is always helpful when using stronger data augmentation,
-in both low-data and high-data regimes, and 3) in the case that pre-training is
-helpful, self-training improves upon pre-training.
+[zhihu](https://www.zhihu.com/question/401621721)
+
+Our study reveals the generality and
+flexibility of self-training with three additional insights: 
+
+- 1) stronger data augmentation and more labeled data further diminish the value of pre-training, 
+- 2) unlike pre-training, self-training is always helpful when using stronger data augmentation,
+in both low-data and high-data regimes
+- 3) in the case that pre-training is helpful, self-training improves upon pre-training.
 
 
 **[Improving Semantic Segmentation via Self-Training,Arxiv2004](https://arxiv.org/pdf/2004.14960.pdf)**

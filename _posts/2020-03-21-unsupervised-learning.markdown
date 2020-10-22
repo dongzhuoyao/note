@@ -334,7 +334,7 @@ Extension on greedy infomax
 How Useful is Self-Supervised Pretraining for Visual Tasks? see observation from [CVPR20](https://arxiv.org/abs/2003.14323)
 
 
-**[BYOL:Bootstrap Your Own Latent A New Approach to Self-Supervised Learning,Arxiv2006](https://arxiv.org/pdf/2006.07733.pdf)**
+**[BYOL:Bootstrap Your Own Latent A New Approach to Self-Supervised Learning,NeurIPS20](https://arxiv.org/pdf/2006.07733.pdf)**
 
 [code](https://github.com/lucidrains/byol-pytorch)
 
@@ -428,7 +428,11 @@ following IIC.
 
 following PICA
 
-**[Contrastive Learning with Stronger Augmentations,ICLR21 submission](https://openreview.net/forum?id=KJSC_AsN14)**
+**[Local Aggregation for Unsupervised Learning of Visual Embeddings](https://arxiv.org/pdf/1903.12355.pdf)**
+
+TODO
+
+**[CLSA: Contrastive Learning with Stronger Augmentations,ICLR21 submission](https://openreview.net/forum?id=KJSC_AsN14)**
 
 ![](/imgs/clsa.png)
 
