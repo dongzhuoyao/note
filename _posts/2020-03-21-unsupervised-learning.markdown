@@ -454,19 +454,28 @@ right panel of Fig. 2.
 
 ![](/imgs/swav.png)
 
+- image x, feature z, codebook q, prototype c.  zq=c. B: batch size. K cluster size. C feature dimension from convnet.
+- $$ z \in C\times B, q \in K \times B , c \in C \times K$$
+-  An alternative to approximate the loss is to approximate the task—that is
+**to relax the instance discrimination problem. For example, clustering-based methods discriminate
+between groups of images with similar features instead of individual images**
 - Swapped prediction problem. It seems that method can also work without swapping, it's great if the author can ablate this.
 - Check supp for pseudo-code.
 - in Moco,SimCLR, ConSup, the negative sample is the image feature of another image. In clustering-based method, the negative sample is the typical feature of other cluster centers( a representative feature of other **all** negatives).
 - Note that SwAV is the first self-supervised method to surpass ImageNet supervised features on these datasets, see Table 2.
 - Also, Q is not binary(0 and 1 in Sela.ICLR20), Eq 2 is is soft cross-entropy(similar to label smoothing in mixup paper).
-- image x, feature z, codebook q, prototype c.  zq=c. B: batch size. K cluster size. C feature dimension from convnet.
-- $$ z \in C\times B, q \in K \times B , c \in C \times K$$
-- $$tr(Q^{T} C^{T} Z)$$, BxK, KxC, CxB, Q is calculated by softmax(with temperature) rowly? columnly?, feature z is prejected to the unit sphere by L2 normalization; prototype C is updated by gradient descent(Equation 2). As code q is code needed in cross entroy(equation 2), therefore, we need design a method to update q(better online)
-- The online updating of Q is heavily borrowed from [Self-labelling via simultaneous clustering and representation learning,ICLR20](https://openreview.net/forum?id=Hyx-jyBFPr).
+- $$tr(Q^{T} C^{T} Z)$$, BxK, KxC, CxB(trace writing here is coherent to the inner product writing in SeLa)  feature z is projected to the unit sphere by L2 normalization; prototype C is updated by gradient descent(Equation 2). Q is a probability matrix(transpotation polytope), as code q is code needed in cross entroy(equation 2), therefore, we need design a method to calculate q by matrix rescaling(better online)
+- The online updating of Q is heavily borrowed from [Self-labelling via simultaneous clustering and representation learning,ICLR20](https://openreview.net/forum?id=Hyx-jyBFPr), why exp(CtZ/e) rather than Plamda in Sela in eq 5?
 - multi-crop(large crop and small crop) is crucial, check Figure 3. As noted in prior works [10, 42], comparing random crops of an image plays a central role by capturing information in terms of relations between parts of a scene or an object.
 -  Interestingly, multi-crop seems to benefit more clustering-based methods than contrastive methods. We note that multi-crop does not improve the supervised model. see Fig 3.
 -  Supervised pretraining is too easy to saturate as model complexity increase. For SwAV, it can still take advantage of it. check Fig 4.
 - We distribute the batches over 64 V100 16Gb GPUs, resulting in each GPU treating 64 instances.To help the very beginning of the optimization, we freeze the prototypes during the first epoch of training.Check more details in the supp. learning rate warm up. freeze prototype update in first epoch;
+- **Sharp point:**Note that SwAV is more suitable for a multi-node distributed implementation compared to contrastive
+approaches SimCLR or MoCo. The latter methods require sharing the feature matrix across all
+GPUs at every batch which might become a bottleneck when distributing across many GPUs. On
+the contrary, SwAV requires sharing only matrix normalization statistics (sum of rows and columns)
+during the Sinkhorn algorithm.
+- Number of prototypes is 8k, check C.1
   
 
 
@@ -544,12 +553,10 @@ ImageNet (updating the clustering every epoch) was nearly optimal.
 
 ![](/imgs/deepcluster.png)
 
-C is dxk matrix, denoting the cenntriod of k centers with dimenstion d. even though K-means is non-parametric clustering. C can be implicitly obtained when convergent.
-
-Two stage optimization like ADMM. 1). update the parameters of the backbone by predicting these pseudo-labels. 2).update the dxk matrix(centriod feature/clustering center) by the new feature of overall dataset. This type of alternating procedure is prone to trivial solutions. Two tricky ways are introduced to avoid trival solutions.
-
-
-Interesting analysis in the experimental part.
+- C is dxk matrix, denoting the cenntriod of k centers with dimenstion d. even though K-means is non-parametric clustering. C can be implicitly obtained when convergent.
+- Two stage optimization like ADMM. 1). update the parameters of the backbone by predicting these pseudo-labels. 2).update the dxk matrix(centriod feature/clustering center) by the new feature of overall dataset. This type of alternating procedure is prone to trivial solutions. Two tricky ways are introduced to avoid trival solutions.
+- Interesting analysis in the experimental part.
+- BTW, the order in the matrix is not important, you can even shuffle it, it's not order-sensitive.
 
 **[Memory-augmented Dense Predictive Coding for Video Representation Learning,ECCV20](https://arxiv.org/pdf/2008.01065.pdf)**
 
