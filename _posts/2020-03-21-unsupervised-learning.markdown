@@ -454,6 +454,7 @@ right panel of Fig. 2.
 
 ![](/imgs/swav.png)
 
+- deep cluster->sela->Swav
 - image x, feature z, codebook q, prototype c.  zq=c. B: batch size. K cluster size. C feature dimension from convnet.
 - $$ z \in C\times B, q \in K \times B , c \in C \times K$$
 -  An alternative to approximate the loss is to approximate the task—that is
