@@ -434,6 +434,8 @@ TODO
 
 **[CLSA: Contrastive Learning with Stronger Augmentations,ICLR21 submission](https://openreview.net/forum?id=KJSC_AsN14)**
 
+![](/imgs/clsa-fig1.png)
+
 ![](/imgs/clsa.png)
 
 - **Intuition**: Instead of applying strongly augmented views to the contrastive loss, we propose to minimize the distribution divergence between the weakly and strongly augmented images
@@ -544,8 +546,7 @@ ImageNet (updating the clustering every epoch) was nearly optimal.
 
 C is dxk matrix, denoting the cenntriod of k centers with dimenstion d. even though K-means is non-parametric clustering. C can be implicitly obtained when convergent.
 
-Two stage optimization like ADMM. 1). clustering the features to produce pesudo-label y;2). update the parameters of the convnet by predicting these pseudo-labels. This type of alternating procedure
-is prone to trivial solutions. Two tricky ways are introduced to avoid trival solutions.
+Two stage optimization like ADMM. 1). update the parameters of the backbone by predicting these pseudo-labels. 2).update the dxk matrix(centriod feature/clustering center) by the new feature of overall dataset. This type of alternating procedure is prone to trivial solutions. Two tricky ways are introduced to avoid trival solutions.
 
 
 Interesting analysis in the experimental part.
