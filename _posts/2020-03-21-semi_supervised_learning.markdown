@@ -81,6 +81,10 @@ is common practice.
 - Interleave to stablize the BN witch: [https://github.com/YU1ut/MixMatch-pytorch/issues/20#issuecomment-583770295](https://github.com/YU1ut/MixMatch-pytorch/issues/20#issuecomment-583770295)
 
 
+**[ReMixMatch: Semi-Supervised Learning with Distribution Matching and Augmentation Anchoring,ICLR20](https://openreview.net/forum?id=HklkeR4KPB)**
+
+TODO
+
 **[FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence,NeurIPS20](https://arxiv.org/pdf/2001.07685.pdf)**
 
 ![](/imgs/fixmatch.png)
