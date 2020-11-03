@@ -118,9 +118,12 @@ relate SSL and differential privacy
 **[MixMatch: A Holistic Approach to Semi-Supervised Learning,NeuIPS19](https://arxiv.org/pdf/1905.02249.pdf)**
 
 ![](/imgs/mixmatch.png)
+![](/imgs/mixmatch0.png)
 
 - Table 4 is full of information.
 - The relation of privacy-preserving is also interesting.
+- finicky point:mixup has max function to gurantee the mixed result biases towards labelled image x.
+- finicky point： X use shannon-entropy, U use MSE.
 
 
 **[Temporal Ensembling for Semi-Supervised Learning,ICLR17](https://arxiv.org/pdf/1610.02242.pdf)**
@@ -193,7 +196,7 @@ the masks.
 
 ## Semi-supervised detection
 
-**[Consistency-based Semi-supervised Learning for Object Detection,NeuIPS19](https://papers.nips.cc/paper/9259-consistency-based-semi-supervised-learning-for-object-detection)**
+**[Consistency-based Semi-supervised Learning for Object Detection,NeurIPS19](https://papers.nips.cc/paper/9259-consistency-based-semi-supervised-learning-for-object-detection)**
 
 
 **[A Simple Semi-Supervised Learning Framework for Object Detection,Arxiv2005](https://arxiv.org/pdf/2005.04757.pdf)**
