@@ -67,6 +67,18 @@ motivated by barely-supervised learniing in FixMatch.
 A combination of fixmatch, self-training, etc.
 
 
+**[MixMatch: A Holistic Approach to Semi-Supervised Learning,NeuIPS19](https://arxiv.org/pdf/1905.02249.pdf)**
+
+![](/imgs/mixmatch.png)
+![](/imgs/mixmatch0.png)
+
+- Table 4 is full of information.
+- The relation of privacy-preserving is also interesting.
+- finicky point:mixup has max function to gurantee the mixed result biases towards labelled image x.
+- finicky point： X use shannon-entropy, U use MSE.
+-  In all experiments, we linearly ramp up λU to its maximum value over the first 16,000 steps of training as
+is common practice.
+- Interleave to stablize the BN witch: [https://github.com/YU1ut/MixMatch-pytorch/issues/20#issuecomment-583770295](https://github.com/YU1ut/MixMatch-pytorch/issues/20#issuecomment-583770295)
 
 
 **[FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence,Arxiv2001](https://arxiv.org/pdf/2001.07685.pdf)**
@@ -115,15 +127,6 @@ directly compared across different implementations.
 relate SSL and differential privacy
 
 
-**[MixMatch: A Holistic Approach to Semi-Supervised Learning,NeuIPS19](https://arxiv.org/pdf/1905.02249.pdf)**
-
-![](/imgs/mixmatch.png)
-![](/imgs/mixmatch0.png)
-
-- Table 4 is full of information.
-- The relation of privacy-preserving is also interesting.
-- finicky point:mixup has max function to gurantee the mixed result biases towards labelled image x.
-- finicky point： X use shannon-entropy, U use MSE.
 
 
 **[Temporal Ensembling for Semi-Supervised Learning,ICLR17](https://arxiv.org/pdf/1610.02242.pdf)**
