@@ -13,6 +13,10 @@ categories: ml
 
 [https://www.zhihu.com/question/269309035](https://www.zhihu.com/question/269309035)
 
-**[Ordered Neurons: Integrating Tree Structures into Recurrent Neural Networks,ICLR20](https://arxiv.org/abs/1810.09536)**
+**[Reversible Recurrent Neural Networks,NeurIPS18](https://papers.nips.cc/paper/2018/file/4ff6fa96179cdc2838e8d8ce64cd10a7-Paper.pdf)**
+
+
+
+**[Ordered Neurons: Integrating Tree Structures into Recurrent Neural Networks,ICLR19](https://arxiv.org/abs/1810.09536)**
 
 ICLR19 best paper 
