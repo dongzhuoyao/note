@@ -84,6 +84,8 @@ is common practice.
 
 TODO
 
+**[AugMix,ICLR20](https://github.com/google-research/augmix)**
+
 **[ReMixMatch: Semi-Supervised Learning with Distribution Matching and Augmentation Anchoring,ICLR20](https://openreview.net/forum?id=HklkeR4KPB)**
 
 TODO
