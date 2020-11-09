@@ -48,13 +48,13 @@ $$p(y|x) = p(x,y)/p(x)$$
 
 Summmary from FixMatch:
 
-![](/imgs/fixmatch-compare.png)
+![](imgs/fixmatch-compare.png)
 
 
 
 **[Label Propagation for Deep Semi-supervised Learning,CVPR19](https://arxiv.org/abs/1904.04717)**
 
-![](/imgs/lp.png)
+![](imgs/lp.png)
 
 
 **[Realistic Evaluation of Deep Semi-Supervised Learning Algorithms,NeuIPS18](https://arxiv.org/pdf/1804.09170.pdf)**
@@ -69,8 +69,8 @@ A combination of fixmatch, self-training, etc.
 
 **[MixMatch: A Holistic Approach to Semi-Supervised Learning,NeuIPS19](https://arxiv.org/pdf/1905.02249.pdf)**
 
-![](/imgs/mixmatch.png)
-![](/imgs/mixmatch0.png)
+![](imgs/mixmatch.png)
+![](imgs/mixmatch0.png)
 
 - Table 4 is full of information.
 - The relation of privacy-preserving is also interesting.
@@ -92,7 +92,7 @@ TODO
 
 **[FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence,NeurIPS20](https://arxiv.org/pdf/2001.07685.pdf)**
 
-![](/imgs/fixmatch.png)
+![](imgs/fixmatch.png)
 
 - weak-augmentation-> only flip-and-shift data augmentation.
 - stron-augmentation-> Inspired
@@ -140,7 +140,7 @@ relate SSL and differential privacy
 
 **[Temporal Ensembling for Semi-Supervised Learning,ICLR17](https://arxiv.org/pdf/1610.02242.pdf)**
 
-![](/imgs/temporal-ensembling.png)
+![](imgs/temporal-ensembling.png)
 
 
 $$z_{i}$$ is $$N \times C$$, will moving averaged to $$\tilde{z_{i}}$$, check alg 1 in the paper.
@@ -172,7 +172,7 @@ Semi-Supervised Learning,PAMI17](https://arxiv.org/pdf/1704.03976.pdf)**
 
 - interesting and simple idea, high citation.
   
-![](/imgs/vat.png)
+![](imgs/vat.png)
 
 sceenshot from [S4L: Self-Supervised Semi-Supervised Learning,ICCV19](https://arxiv.org/pdf/1905.03670.pdf)
 
@@ -192,7 +192,7 @@ inputs that are perturbed in various ways.
 
 **[Adversarial Learning for Semi-Supervised Semantic Segmentation,BMVC18](https://arxiv.org/pdf/1802.07934.pdf)**
 
-![](/imgs/adv-semi-seg.png)
+![](imgs/adv-semi-seg.png)
 
 Pay more attention to $$L_{semi}$$ loss, by thresholding the output of discriminator network to construct a psydo label.
 

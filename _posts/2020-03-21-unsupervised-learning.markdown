@@ -134,7 +134,7 @@ Check [NIPS invited talks here](https://slideslive.com/38922758/invited-talk-con
 For a brief summary, you can check the session 2 of [this paper](https://arxiv.org/pdf/1905.11786.pdf).
 
 
-![](/imgs/cpc.png)
+![](imgs/cpc.png)
 
 ### Basic idea
 
@@ -206,7 +206,7 @@ TODO
 **[MoCo: Momentum Contrast for Unsupervised Visual Representation Learning,CVPR20](https://arxiv.org/abs/1911.05722)**
 
 
-![](/imgs/moco.png)
+![](imgs/moco.png)
 
 Preliminary: InfoNCE paper.
 
@@ -253,7 +253,7 @@ Margin in Few-shot Classification,Arxiv2003](https://arxiv.org/pdf/2003.12060.pd
 
 **[MoCoV2]()**
 
-![](/imgs/mocov2.png)
+![](imgs/mocov2.png)
 
 **[SimCLR:A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709)**
 
@@ -324,7 +324,7 @@ For vision task context feature c is replaced by z for simplicity.
 
 Extension on greedy infomax
 
-![](/imgs/loco.png)
+![](imgs/loco.png)
 
 
 
@@ -347,7 +347,7 @@ sequence of representations of increasing quality by iterating this procedure, u
 new target networks for further training.
 - result is worse than Contrasting Cluster Assignments.
 
-![](/imgs/byol.png)
+![](imgs/byol.png)
 
 
 
@@ -366,11 +366,11 @@ We evaluate self-supervised feature learning methods and find that with sufficie
 
 **[Debiased Contrastive Learning,Arxiv2007](https://arxiv.org/pdf/2007.00224.pdf)**
 
-![](/imgs/debiased.png)
+![](imgs/debiased.png)
 
 **[Supervised Contrastive Learning,Arxiv2004](https://arxiv.org/pdf/2004.11362.pdf)**
 
-![](/imgs/scl.png)
+![](imgs/scl.png)
 
 [reddit](https://www.reddit.com/r/MachineLearning/comments/g6yzyc/research_supervised_contrastive_learning/)
 
@@ -417,7 +417,7 @@ initialisation, and we call these concrete instantiations subheads. Each sub-hea
 
 > For IIC, the main and auxiliary heads are trained by maximising eq. (3) in alternate epochs.
 
- ![](/imgs/iic.png)
+ ![](imgs/iic.png)
 
 
 **[PICA:Deep Semantic Clustering by Partition Confidence Maximisation,CVPR20](http://www.eecs.qmul.ac.uk/~sgg/papers/HuangEtAl_CVPR2020.pdf)**
@@ -434,9 +434,9 @@ TODO
 
 **[CLSA: Contrastive Learning with Stronger Augmentations,ICLR21 submission](https://openreview.net/forum?id=KJSC_AsN14)**
 
-![](/imgs/clsa-fig1.png)
+![](imgs/clsa-fig1.png)
 
-![](/imgs/clsa.png)
+![](imgs/clsa.png)
 
 - **Intuition**: Instead of applying strongly augmented views to the contrastive loss, we propose to minimize the distribution divergence between the weakly and strongly augmented images
 over a representation bank to supervise the retrieval of stronger queries. This avoids an overoptimistic assumption that could overfit the strongly augmented queries containing distorted visual
@@ -452,7 +452,7 @@ right panel of Fig. 2.
 
 **[SwAV: Unsupervised Learning of Visual Features by Contrasting Cluster Assignments,Arxiv2006](https://arxiv.org/pdf/2006.09882.pdf)**
 
-![](/imgs/swav.png)
+![](imgs/swav.png)
 
 - deep cluster->sela->Swav
 - image x, feature z, codebook q, prototype c.  zq=c. B: batch size. K cluster size. C feature dimension from convnet.
@@ -525,7 +525,7 @@ VGG-Sound and AVE.
 
 **[Power Iteration Clustering,ICML10](http://www.cs.cmu.edu/~frank/papers/icml2010-pic-final.pdf)**
 
-![](/imgs/pic.png)
+![](imgs/pic.png)
 
 **[AND: Unsupervised Deep Learning by Neighbourhood Discovery,ICML19](https://arxiv.org/pdf/1904.11567.pdf)**
 
@@ -552,7 +552,7 @@ a third of the time because a forward pass on the full dataset is needed. One
 could reassign the clusters every n epochs, but we found out that our setup on
 ImageNet (updating the clustering every epoch) was nearly optimal.
 
-![](/imgs/deepcluster.png)
+![](imgs/deepcluster.png)
 
 - C is dxk matrix, denoting the cenntriod of k centers with dimenstion d. even though K-means is non-parametric clustering. C can be implicitly obtained when convergent.
 - Two stage optimization like ADMM. 1). update the parameters of the backbone by predicting these pseudo-labels. 2).update the dxk matrix(centriod feature/clustering center) by the new feature of overall dataset. This type of alternating procedure is prone to trivial solutions. Two tricky ways are introduced to avoid trival solutions.
@@ -565,7 +565,7 @@ ImageNet (updating the clustering every epoch) was nearly optimal.
 
 **[Multi-view Contrastive Learning for Online Knowledge Distillation,Arxiv2006](https://arxiv.org/pdf/2006.04093.pdf)**
 
-![](/imgs/online-kd.png)
+![](imgs/online-kd.png)
 
 **[S4L: Self-Supervised Semi-Supervised Learning,ICCV19](https://arxiv.org/pdf/1905.03670.pdf)**
 
