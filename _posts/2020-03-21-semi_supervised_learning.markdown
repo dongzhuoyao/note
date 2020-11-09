@@ -50,14 +50,54 @@ Summmary from FixMatch:
 
 ![](imgs/fixmatch-compare.png)
 
+**[EntMin: Semi-supervised learning by entropy minimization,NIPS05](https://papers.nips.cc/paper/2004/file/96f2b50b5d3613adf9c27049b2a888c7-Paper.pdf)**
+
+**[VAT:Virtual Adversarial Training:
+A Regularization Method for Supervised and
+Semi-Supervised Learning,PAMI17](https://arxiv.org/pdf/1704.03976.pdf)**
+
+- interesting and simple idea, high citation.
+  
+![](imgs/vat.png)
+
+sceenshot from [S4L: Self-Supervised Semi-Supervised Learning,ICCV19](https://arxiv.org/pdf/1905.03670.pdf)
+
+
+
+
+**[Temporal Ensembling for Semi-Supervised Learning,ICLR17](https://arxiv.org/pdf/1610.02242.pdf)**
+
+![](imgs/temporal-ensembling.png)
+
+
+$$z_{i}$$ is $$N \times C$$, will moving averaged to $$\tilde{z_{i}}$$, check alg 1 in the paper.
+
+
+
+**[Mean Teacher,Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results,NIPS17](https://arxiv.org/abs/1703.01780)**
+
+Motivated by Temporal Emsembling. Temporal Emsembling is moving averaged on output, mean teacher is moving averaged on network parameters.
+
+Teacher model is the moving average of student model, do not reverse.
+
+![](imgs/mean-teacher.png)
+
+mean squared error (MSE) as our consistency cost function, MSE is better than KL-divergence experimentally.
+
+Three different noises $$\upeta$$ are considered: The model architecture is a 13-layer convolutional neural network (ConvNet) with three types of noise: random translations and horizontal flips of the input images, Gaussian noise on the input layer, and dropout applied within the network.
 
 
 **[Label Propagation for Deep Semi-supervised Learning,CVPR19](https://arxiv.org/abs/1904.04717)**
 
+Based on Mean Teacher.
+
+![](imgs/semi-lp-main.png)
+
 ![](imgs/lp.png)
 
+![](imgs/semi-lp-ressult.png)
 
-**[Realistic Evaluation of Deep Semi-Supervised Learning Algorithms,NeuIPS18](https://arxiv.org/pdf/1804.09170.pdf)**
+**[Realistic Evaluation of Deep Semi-Supervised Learning Algorithms,NeurIPS18](https://arxiv.org/pdf/1804.09170.pdf)**
 
 
 **[Building One-Shot Semi-supervised (BOSS) Learning up to Fully Supervised Performance,Arxiv2006](https://arxiv.org/pdf/2006.09363.pdf)**
@@ -67,7 +107,7 @@ motivated by barely-supervised learniing in FixMatch.
 A combination of fixmatch, self-training, etc.
 
 
-**[MixMatch: A Holistic Approach to Semi-Supervised Learning,NeuIPS19](https://arxiv.org/pdf/1905.02249.pdf)**
+**[MixMatch: A Holistic Approach to Semi-Supervised Learning,NeurIPS19](https://arxiv.org/pdf/1905.02249.pdf)**
 
 ![](imgs/mixmatch.png)
 ![](imgs/mixmatch0.png)
@@ -90,7 +130,6 @@ is common practice.
 
 TODO
 
-**[AugMix,ICLR20](https://github.com/google-research/augmix)**
 
 
 
@@ -142,43 +181,17 @@ relate SSL and differential privacy
 
 
 
-**[Temporal Ensembling for Semi-Supervised Learning,ICLR17](https://arxiv.org/pdf/1610.02242.pdf)**
-
-![](imgs/temporal-ensembling.png)
 
 
-$$z_{i}$$ is $$N \times C$$, will moving averaged to $$\tilde{z_{i}}$$, check alg 1 in the paper.
+**[Improved Regularization of Convolutional Neural Networks with Cutout,Arxiv17](https://arxiv.org/abs/1708.04552)**
 
+**[CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features,ICCV19,oral](https://arxiv.org/pdf/1905.04899.pdf)**
 
+![](imgs/cutmix.png)
 
-**[Mean Teacher,Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results,NIPS17](https://arxiv.org/abs/1703.01780)**
-
-Motivated by Temporal Emsembling. Temporal Emsembling is moving averaged on output, mean teacher is moving averaged on network parameters.
-
-Teacher model is the moving average of student model, do not reverse.
-
-![](imgs/mean-teacher.png)
-
-mean squared error (MSE) as our consistency cost function, MSE is better than KL-divergence experimentally.
-
-Three different noises $$\upeta$$ are considered: The model architecture is a 13-layer convolutional neural network (ConvNet) with three types of noise: random translations and horizontal flips of the input images, Gaussian noise on the input layer, and dropout applied within the network.
-
-
-**CutOut**
-
-**CutMix**
+**[AugMix: A Simple Data Processing Method to Improve Robustness and Uncertainty,ICLR20](https://github.com/google-research/augmix)**
 
 ## Semi-supervised semantic segmentation
-
-**[Virtual Adversarial Training:
-A Regularization Method for Supervised and
-Semi-Supervised Learning,PAMI17](https://arxiv.org/pdf/1704.03976.pdf)**
-
-- interesting and simple idea, high citation.
-  
-![](imgs/vat.png)
-
-sceenshot from [S4L: Self-Supervised Semi-Supervised Learning,ICCV19](https://arxiv.org/pdf/1905.03670.pdf)
 
 
 **Consistency regularization**
