@@ -153,7 +153,7 @@ Motivated by Temporal Emsembling. Temporal Emsembling is moving averaged on outp
 
 Teacher model is the moving average of student model, do not reverse.
 
-![](/imgs/mean-teacher.png)
+![](imgs/mean-teacher.png)
 
 mean squared error (MSE) as our consistency cost function, MSE is better than KL-divergence experimentally.
 
