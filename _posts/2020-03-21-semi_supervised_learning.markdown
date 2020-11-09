@@ -46,7 +46,7 @@ $$p(y|x) = p(x,y)/p(x)$$
 
 ## Semi-supervised image classification
 
-Summmary from FixMatch:
+Summary from FixMatch:
 
 ![](imgs/fixmatch-compare.png)
 
@@ -229,6 +229,8 @@ the masks.
 
 
 **[A Simple Semi-Supervised Learning Framework for Object Detection,Arxiv2005](https://arxiv.org/pdf/2005.04757.pdf)**
+
+Kihyuk Sohn
 
 
 #### Footnotes
