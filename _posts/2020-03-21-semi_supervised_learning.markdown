@@ -70,7 +70,7 @@ sceenshot from [S4L: Self-Supervised Semi-Supervised Learning,ICCV19](https://ar
 ![](imgs/temporal-ensembling.png)
 
 
-$$z_{i}$$ is $$N \times C$$, will moving averaged to $$\tilde{z_{i}}$$, check alg 1 in the paper.
+$$z_{i}$$ is $$N \times C$$, will move averaged to $$\tilde{z_{i}}$$, check alg 2 in the paper.
 
 
 
@@ -99,6 +99,10 @@ Based on Mean Teacher.
 
 **[Realistic Evaluation of Deep Semi-Supervised Learning Algorithms,NeurIPS18](https://arxiv.org/pdf/1804.09170.pdf)**
 
+**P.4 Considering Class Distribution Mismatch.** consider the following example: Say you are trying to train a model to distinguish between ten different faces, but you only have a few images for each of these ten faces. As a result, you
+augment your dataset with a large unlabeled dataset of images of random people’s faces. In this
+case, it is extremely unlikely that any of the images in DUL will be one of the ten people the model
+is trained to classify.
 
 **[Building One-Shot Semi-supervised (BOSS) Learning up to Fully Supervised Performance,Arxiv2006](https://arxiv.org/pdf/2006.09363.pdf)**
 
