@@ -66,7 +66,7 @@ Evaluation details: For MNIST we report the negative log-likelihood in nats as i
 
 ![](/imgs/made.png)
 
-**[MAF: Masked Autoregressive Flow for Density Estimation,NeuIPS17](https://arxiv.org/abs/1705.07057)**
+**[MAF: Masked Autoregressive Flow for Density Estimation,NeurIPS17](https://arxiv.org/abs/1705.07057)**
 
 Based on MADE
 
@@ -90,7 +90,7 @@ Have a detail comparison beteen MADE,IAF,MAF
 
 **[(IAF)Improved Variational Inference with Inverse Autoregressive Flow,NIPS16](https://arxiv.org/abs/1606.04934)**
 
-[NeuIPS review](https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow)
+[NeurIPS review](https://papers.nips.cc/paper/6581-improved-variational-inference-with-inverse-autoregressive-flow)
 
 Preliminary: PixelCNN , PixelRNN，MADE
 
@@ -478,7 +478,7 @@ Based on fastMRI task.
 
 **[Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation,Arxiv2003](https://arxiv.org/pdf/1308.3432.pdf)**
 
-**[Integer Discrete Flows and Lossless Compression,NeuIPS19](https://papers.nips.cc/paper/9383-integer-discrete-flows-and-lossless-compression)**
+**[Integer Discrete Flows and Lossless Compression,NeurIPS19](https://papers.nips.cc/paper/9383-integer-discrete-flows-and-lossless-compression)**
 
 intuition the latent variable is discrete?
 

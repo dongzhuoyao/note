@@ -58,6 +58,14 @@ The long term vision for Cover Protocol is to allow anyone to buy coverage on an
 
 [whitepaper](https://docsend.com/view/kcsm42mqiyu5t6ej)
 
+## Binance Smart Chain
+
+[whitepaper](https://dex-bin.bnbstatic.com/static/Whitepaper_%20Binance%20Smart%20Chain.pdf)
+
+## chainlink
+
+[Chainlink is the most overvalued "cryptocurrency" the world has ever seen](https://www.reddit.com/r/CryptoCurrency/comments/g2cswj/chainlink_is_the_most_overvalued_cryptocurrency/)
+
 ## TELLOR
 
 [whitepaper](https://docs.tellor.io/tellor/whitepaper/introduction)
@@ -66,7 +74,7 @@ difference between chainlink,band?
 
 ## BAND
 
-[between chainlink](https://bitcointalk.org/index.php?topic=5243097.0)
+[difference between chainlink](https://bitcointalk.org/index.php?topic=5243097.0)
 
 ## others
 

@@ -309,7 +309,7 @@ without end-to-end backpropagation != without backpropagation
 
 [NIPS proceeding link](http://papers.nips.cc/paper/8568-putting-an-end-to-end-to-end-gradient-isolated-learning-of-representations)
 
-[NeuIPS talk](https://slideslive.com/38923276/putting-an-end-to-endtoend-gradientisolated-learning-of-representations)
+[NeurIPS talk](https://slideslive.com/38923276/putting-an-end-to-endtoend-gradientisolated-learning-of-representations)
 
 [code](https://github.com/loeweX/Greedy_InfoMax/blob/8f91dc27fcc6edf1f5b9f005a9f5566bb796dce2/GreedyInfoMax/vision/models/InfoNCE_Loss.py#L9)
 
@@ -455,8 +455,8 @@ right panel of Fig. 2.
 ![](imgs/swav.png)
 
 - deep cluster->sela->Swav
-- image x, feature z, codebook q, prototype c.  zq=c. B: batch size. K cluster size. C feature dimension from convnet.
-- $$ z \in C\times B, q \in K \times B , c \in C \times K$$
+- image x, feature z, code q, prototype c.  $$ q=z^{T}c $$. B: batch size. K cluster size. C feature dimension from convnet.
+- $$ z \in C\times B, q \in B \times K , c \in C \times K$$
 -  An alternative to approximate the loss is to approximate the task—that is
 **to relax the instance discrimination problem. For example, clustering-based methods discriminate
 between groups of images with similar features instead of individual images**

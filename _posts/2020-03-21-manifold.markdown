@@ -9,7 +9,7 @@ categories: ml
 ---
 
 
-**[Riemannian approach to batch normalization,NeuIPS17](https://arxiv.org/pdf/1709.09603.pdf)**
+**[Riemannian approach to batch normalization,NeurIPS17](https://arxiv.org/pdf/1709.09603.pdf)**
 
 A brief summary about Riemannian manifold check session2.2 
 

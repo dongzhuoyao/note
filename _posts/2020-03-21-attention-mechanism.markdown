@@ -103,7 +103,7 @@ Replace $$Q(x)K(x)^{T}$$ as direction function F(x) mapping from d to l.
 [code](https://github.com/carrierlxk/COSNet/blob/master/deeplab/siamese_model_conf.py#L264)
 
 
-**[Cross Attention Network for Few-shot Classification,NeuIPS19](https://papers.nips.cc/paper/8655-cross-attention-network-for-few-shot-classification.pdf)**
+**[Cross Attention Network for Few-shot Classification,NeurIPS19](https://papers.nips.cc/paper/8655-cross-attention-network-for-few-shot-classification.pdf)**
 
 [Review](shttp://papers.nips.cc/paper/8655-cross-attention-network-for-few-shot-classification)
 
@@ -133,7 +133,7 @@ introduce the hard and soft attention.
 
 ## Variants
 
-**[Multi Head Attention,NeuIPS17](http://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf)**
+**[Multi Head Attention,NeurIPS17](http://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf)**
 
 Concatenated the result of $$softmax(\frac{QK^{T}}{\sqrt{n}} V)$$ and send them into a linear layer to remap back to original shape.s
 
@@ -148,7 +148,7 @@ check demo code: [https://github.com/gjylt/DoubleAttentionNet](https://github.co
 
 [colab demo](https://colab.research.google.com/drive/1sHSWP9Z_dTLH3hkJ5rbdJeWwpQ4GfK9G)
 
-[NeuIPS review](https://media.nips.cc/nipsbooks/nipspapers/paper_files/nips31/reviews/233.html)
+[NeurIPS review](https://media.nips.cc/nipsbooks/nipspapers/paper_files/nips31/reviews/233.html)
 
 
 check figure tensor size illustration: [drive google](https://docs.google.com/presentation/d/1oeBbvqvvzddo6G6j43NaYSW6u0dZrxkMc1yoJS02sgk/edit?usp=sharing).

@@ -10,7 +10,7 @@ categories: cv
 
 [PPT: Optimal Transport for Machine Learning](http://imagine.enpc.fr/~langloip/data/OptimalTransport.pdf)
 
-An important paper: **Marco Cuturi: [Sinkhorn Distances:Lightspeed Computation of Optimal Transport, NeuIPS](https://papers.nips.cc/paper/4927-sinkhorn-distances-lightspeed-computation-of-optimal-transport.pdf)**
+An important paper: **Marco Cuturi: [Sinkhorn Distances:Lightspeed Computation of Optimal Transport, NeurIPS](https://papers.nips.cc/paper/4927-sinkhorn-distances-lightspeed-computation-of-optimal-transport.pdf)**
 
 
 

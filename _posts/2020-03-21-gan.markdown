@@ -37,7 +37,7 @@ better on flow model?
 - Mixup in AutoEncoder, not VAE. Focused on the bility of interpolation rather than reconstruction/generation.
   > [openview:](https://openreview.net/forum?id=S1fQSiCcYm&noteId=SJgQLPtKTm)In general we do not expect this regularizer to improve the sample quality of a given autoencoder, since the critic's primary objective is to discriminate between interpolants and reconstructions (not interpolants and "real" data). The goal instead is to take an autoencoder which already reconstructs well but interpolates poorly and improve the quality of the interpolations. The VAE typically has the opposite problem - it reconstructs poorly but interpolates smoothly. In other words, the latent space of the VAE is already "continuous" in some sense (due to the enforcement of the prior) but many regions in latent space map to "unrealistic" (i.e. blurry) outputs. So, we aren't sure whether our regularizer would improve VAE reconstructions. 
 
-- similar work: [On Adversarial Mixup Resynthesis,NeuIPS19](https://papers.nips.cc/paper/8686-on-adversarial-mixup-resynthesis)
+- similar work: [On Adversarial Mixup Resynthesis,NeurIPS19](https://papers.nips.cc/paper/8686-on-adversarial-mixup-resynthesis)
 > methodologically, the main difference and advantage of the proposed method over ACAI lie in the flexibility of mixing functions, but in the full training data setting (Table 1) it seems the simplest mixup performs the best. This suggests that it may not be necessary to use different mixing functions. While the proposed method still outperforms ACAI in this case, the gain is more from a different GAN variant under the ACAI framework than a different mixing function, which is less novel and interesting.
 
 
