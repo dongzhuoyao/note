@@ -12,6 +12,7 @@ categories: cv
 **[Foundation Models: A New Approach to Image Classification,ICCV21](https://arxiv.org/pdf/2108.01938.pdf)**
 
 
+[mPLUG-2: A Modularized Multi-modal Foundation Model Across Text, Image and Video](https://arxiv.org/pdf/2302.00402.pdf)
 
 
 
